@@ -8,7 +8,6 @@ export default async function Home() {
    return (
       <section className='pt-24 pb-8 px-8 h-screen bg-slate-600 flex'>
          <Background />
-         <PerfilUpdate />
       </section>
    );
 }
