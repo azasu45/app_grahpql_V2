@@ -63,46 +63,26 @@ model VerificationToken {
 }
 
 model Perfil {
-  id               String           @id @default(cuid())
-  subName          String
-  userId           String?          @unique
-  cedula           String           @unique @db.Text
-  cuentasFavoritas CuentaFavorita[]
-  cuentas          Cuenta[]
-  participante     Participante[]
+  id      String @id @default(cuid())
+  subName String
+  cedula  String @unique @db.Text
+
+  userId String? @unique
+
+  Grupo Grupo[]
+  Cobro Cobro[]
+  Pago  Pago[]
 
   @@index([userId])
 }
 
-model Cuenta {
-  id               String           @id @default(cuid())
-  nombre           String
-  perfilId         String
-  perfil           Perfil           @relation(fields: [perfilId], references: [id], onDelete: Cascade)
-  cobros           Cobro[]
-  grupo            Grupo[]
-  cuentasFavoritas CuentaFavorita[]
-}
-
 model Grupo {
-  id           String         @id @default(cuid())
-  cuentaId     String
-  orden        Int
-  nombre       String
-  cuenta       Cuenta         @relation(fields: [cuentaId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  Participante Participante[]
-}
-
-model Participante {
-  id       String  @id @default(cuid())
-  nombre   String?
-  cedula   String?
-  image    String?
+  id       String @id @default(cuid())
   perfilId String
-  grupoId  String
-  perfil   Perfil  @relation(fields: [perfilId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  grupo    Grupo   @relation(fields: [grupoId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  pagos    Pago[]
+  orden    Int
+  nombre   String
+  perfil   Perfil @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  Pago     Pago[]
 }
 
 model Cobro {
@@ -110,27 +90,21 @@ model Cobro {
   descripcion String   @db.VarChar(150)
   fecha       DateTime @default(now())
   monto       Float
-  cuentaId    String
-  cuenta      Cuenta   @relation(fields: [cuentaId], references: [id], onDelete: Cascade)
+  perfilId    String
+  perfil      Perfil   @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
   pagos       Pago[]
 }
 
 model Pago {
-  id             String       @id @default(cuid())
-  referencia     Int          @default(autoincrement())
-  captureImg     String
-  monto          Float
-  fecha          DateTime     @default(now())
-  cobroId        String
-  participanteId String
-  cobro          Cobro        @relation(fields: [cobroId], references: [id], onDelete: Cascade)
-  participante   Participante @relation(fields: [participanteId], references: [id], onDelete: Cascade)
-}
-
-model CuentaFavorita {
-  id       String @id @default(cuid())
-  perfilId String
-  cuentaId String
-  perfil   Perfil @relation(fields: [perfilId], references: [id])
-  cuenta   Cuenta @relation(fields: [cuentaId], references: [id])
+  id         String   @id @default(cuid())
+  referencia Int      @default(autoincrement())
+  captureImg String
+  monto      Float
+  fecha      DateTime @default(now())
+  grupoId    String
+  perfilId   String
+  cobroId    String
+  grupo      Grupo    @relation(fields: [grupoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  perfil     Perfil   @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  cobro      Cobro    @relation(fields: [cobroId], references: [id], onDelete: Cascade)
 }

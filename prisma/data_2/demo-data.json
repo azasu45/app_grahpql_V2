@@ -1,0 +1,2210 @@
+{
+   "perfil": [
+      {
+         "id": "clihwg1nk0000vuvk0kvd1l18",
+         "subName": "Giovanni",
+         "userId": "clik9qknj0000vud8jqdyz2ko",
+         "cedula": "23488859-1"
+      },
+      {
+         "id": "clihwg1oh0002vuvkwtvxk013",
+         "subName": "Miguel",
+         "userId": "cligoh2vv0000vugojgj326fv",
+         "cedula": "23488859"
+      },
+      {
+         "id": "clihwg1ox0004vuvkmk03zhv5",
+         "subName": "Carlos",
+         "userId": null,
+         "cedula": "333"
+      },
+      {
+         "id": "clihwg1pe0006vuvks28xyhjn",
+         "subName": "Luis",
+         "userId": null,
+         "cedula": "444"
+      },
+      {
+         "id": "clihwg1pv0008vuvkwgqb6i4e",
+         "subName": "Manuel",
+         "userId": null,
+         "cedula": "555"
+      },
+      {
+         "id": "clihwg1qb000avuvkscokey4c",
+         "subName": "Raul",
+         "userId": null,
+         "cedula": "666"
+      },
+      {
+         "id": "clihwg1qr000cvuvk558fmt80",
+         "subName": "Josefa",
+         "userId": null,
+         "cedula": "777"
+      },
+      {
+         "id": "clihwg1re000evuvk8e78av56",
+         "subName": "Maria",
+         "userId": null,
+         "cedula": "888"
+      },
+      {
+         "id": "clihwg1rv000gvuvkj69vwchl",
+         "subName": "Luisa",
+         "userId": null,
+         "cedula": "999"
+      },
+      {
+         "id": "clihwg1sc000ivuvkoszgpe98",
+         "subName": "Juan",
+         "userId": null,
+         "cedula": "101010"
+      },
+      {
+         "id": "clihwg1sx000kvuvkrqgu10ez",
+         "subName": "Raiza",
+         "userId": null,
+         "cedula": "111111"
+      },
+      {
+         "id": "clihwg1tf000mvuvkregb9vs2",
+         "subName": "Mery",
+         "userId": null,
+         "cedula": "121212"
+      },
+      {
+         "id": "clihwg1tz000ovuvkjygnh4jf",
+         "subName": "Liz",
+         "userId": null,
+         "cedula": "131313"
+      },
+      {
+         "id": "clihwg1ui000qvuvko4sf5qe1",
+         "subName": "Fredo",
+         "userId": null,
+         "cedula": "141414"
+      },
+      {
+         "id": "clihwg1uz000svuvkh3xf28hw",
+         "subName": "Isabel",
+         "userId": null,
+         "cedula": "151515"
+      },
+      {
+         "id": "clihwg1vg000uvuvklq1jr9db",
+         "subName": "Abel",
+         "userId": null,
+         "cedula": "161616"
+      },
+      {
+         "id": "clihwg1vv000wvuvkzkkx2djm",
+         "subName": "Carmen",
+         "userId": null,
+         "cedula": "171717"
+      },
+      {
+         "id": "clihwg1we000yvuvkuthu7rvd",
+         "subName": "Leidy",
+         "userId": null,
+         "cedula": "181818"
+      },
+      {
+         "id": "clihwg1ws0010vuvk2by0ubnc",
+         "subName": "Walter",
+         "userId": null,
+         "cedula": "191919"
+      },
+      {
+         "id": "clihwg1x80012vuvk9z1xten2",
+         "subName": "Taiz",
+         "userId": null,
+         "cedula": "202020"
+      },
+      {
+         "id": "clihwg1xp0014vuvk49etdul7",
+         "subName": "Olga",
+         "userId": null,
+         "cedula": "212121"
+      },
+      {
+         "id": "clihwg1y30016vuvk94uf2yps",
+         "subName": "Paul",
+         "userId": null,
+         "cedula": "222222"
+      },
+      {
+         "id": "clihwg1yh0018vuvkkbux3f6i",
+         "subName": "Lina",
+         "userId": null,
+         "cedula": "232323"
+      },
+      {
+         "id": "clihwg1yw001avuvk2121kjx0",
+         "subName": "Diana",
+         "userId": null,
+         "cedula": "242424"
+      },
+      {
+         "id": "clihwg1zi001cvuvk74b8fg64",
+         "subName": "Mario",
+         "userId": null,
+         "cedula": "252525"
+      },
+      {
+         "id": "clihwg204001evuvko2zd0tcl",
+         "subName": "Saul",
+         "userId": null,
+         "cedula": "262626"
+      },
+      {
+         "id": "clihwg20m001gvuvk60wfczle",
+         "subName": "Bertha",
+         "userId": null,
+         "cedula": "272727"
+      },
+      {
+         "id": "clihwg212001ivuvk3jygmind",
+         "subName": "Nieves",
+         "userId": null,
+         "cedula": "282828"
+      },
+      {
+         "id": "clihwg21l001kvuvkozhjw0ec",
+         "subName": "Zaida",
+         "userId": null,
+         "cedula": "292929"
+      },
+      {
+         "id": "clihwg21z001mvuvkfypiz56x",
+         "subName": "Kenya",
+         "userId": null,
+         "cedula": "303030"
+      },
+      {
+         "id": "clihwg22h001ovuvk4wudt48y",
+         "subName": "Beto",
+         "userId": null,
+         "cedula": "313131"
+      },
+      {
+         "id": "clihwg22w001qvuvknbea4tfz",
+         "subName": "Jaime",
+         "userId": null,
+         "cedula": "323232"
+      },
+      {
+         "id": "clihwg23a001svuvkuj6czwv1",
+         "subName": "Elias",
+         "userId": null,
+         "cedula": "333333"
+      },
+      {
+         "id": "clihwg23o001uvuvkivw5tat6",
+         "subName": "Rosa",
+         "userId": null,
+         "cedula": "343434"
+      },
+      {
+         "id": "clihwg243001wvuvk11wjpvft",
+         "subName": "Toro",
+         "userId": null,
+         "cedula": "353535"
+      },
+      {
+         "id": "clihwg24h001yvuvkv8kd3gll",
+         "subName": "Yayo",
+         "userId": null,
+         "cedula": "363636"
+      },
+      {
+         "id": "clihwg24u0020vuvkhi5usp2c",
+         "subName": "Ulises",
+         "userId": null,
+         "cedula": "373737"
+      },
+      {
+         "id": "clihwg25b0022vuvkjul5qc1l",
+         "subName": "Nene",
+         "userId": null,
+         "cedula": "383838"
+      },
+      {
+         "id": "clihwg25p0024vuvksvjju3xs",
+         "subName": "Pepe",
+         "userId": null,
+         "cedula": "393939"
+      },
+      {
+         "id": "clihwg2630026vuvku3yuaubi",
+         "subName": "Wilman",
+         "userId": null,
+         "cedula": "404040"
+      },
+      {
+         "id": "clihwg26j0028vuvko6e307ni",
+         "subName": "Hilda",
+         "userId": null,
+         "cedula": "414141"
+      },
+      {
+         "id": "clihwg26w002avuvk09uqbwp2",
+         "subName": "Jesus",
+         "userId": null,
+         "cedula": "424242"
+      },
+      {
+         "id": "clihwg27a002cvuvkf4jtfo3v",
+         "subName": "Isaias",
+         "userId": null,
+         "cedula": "434343"
+      },
+      {
+         "id": "clihwg27o002evuvkfxhtlc99",
+         "subName": "Horacio",
+         "userId": null,
+         "cedula": "444444"
+      },
+      {
+         "id": "clihwg285002gvuvktdi7lbu3",
+         "subName": "Ignacio",
+         "userId": null,
+         "cedula": "454545"
+      },
+      {
+         "id": "clihwg28k002ivuvktnde6dgv",
+         "subName": "German",
+         "userId": null,
+         "cedula": "464646"
+      },
+      {
+         "id": "clihwg28z002kvuvkvhzj6cm9",
+         "subName": "Guillermo",
+         "userId": null,
+         "cedula": "474747"
+      },
+      {
+         "id": "clihwg29g002mvuvkdpb140vf",
+         "subName": "Pablo",
+         "userId": null,
+         "cedula": "484848"
+      },
+      {
+         "id": "clihwg29u002ovuvkrhx9y49r",
+         "subName": "Fidel",
+         "userId": null,
+         "cedula": "494949"
+      },
+      {
+         "id": "clihwg2a9002qvuvkm24ylua0",
+         "subName": "Armando",
+         "userId": null,
+         "cedula": "505050"
+      }
+   ],
+   "grupo": [
+      {
+         "id": "clihwg2e7002yvuvk5adcez5n",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 1,
+         "nombre": "Kinder",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (1,1,1,'Kinder');"
+      },
+      {
+         "id": "clihwg2f70030vuvkvlw9t5w9",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 2,
+         "nombre": "1er grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (2,1,2,'1er grado');"
+      },
+      {
+         "id": "clihwg2fu0032vuvkxjmyjo5b",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 3,
+         "nombre": "2do grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (3,1,3,'2do grado');"
+      },
+      {
+         "id": "clihwg2gm0034vuvkowcrw0d4",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 4,
+         "nombre": "3er grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (4,1,4,'3er grado');"
+      },
+      {
+         "id": "clihwg2h90036vuvk2dyibmjo",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 5,
+         "nombre": "4to grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (5,1,5,'4to grado');"
+      },
+      {
+         "id": "clihwg2hz0038vuvk8h4wxi9g",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 6,
+         "nombre": "5to grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (6,1,6,'5to grado');"
+      },
+      {
+         "id": "clihwg2im003avuvkuvxnjl7w",
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "orden": 7,
+         "nombre": "6to grado",
+         "perfilNombre": "Giovanni",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (7,1,7,'6to grado');"
+      },
+      {
+         "id": "clihwg2jc003cvuvk5pbl67av",
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "orden": 1,
+         "nombre": "Niños",
+         "perfilNombre": "Miguel",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (8,3,1,'Niños');"
+      },
+      {
+         "id": "clihwg2k3003evuvkkgteaj2y",
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "orden": 2,
+         "nombre": "Juvenil",
+         "perfilNombre": "Miguel",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (9,3,2,'Juvenil');"
+      },
+      {
+         "id": "clihwg2kt003gvuvklnrsmcub",
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "orden": 3,
+         "nombre": "Mujeres",
+         "perfilNombre": "Miguel",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (10,3,3,'Mujeres');"
+      },
+      {
+         "id": "clihwg2lq003ivuvk8penrkf9",
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "orden": 4,
+         "nombre": "Hombres",
+         "perfilNombre": "Miguel",
+         "sql": "insert into grupo (id,perfilId,orden,nombre) values (11,3,4,'Hombres');"
+      }
+   ],
+   "cobro": [
+      {
+         "id": 1,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "descripcion": "Inscripción",
+         "fecha": "2023-02-01",
+         "monto": 20,
+         "perfilNombre": "Giovanni",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (1,1,'Inscripción','2023-02-01',20);"
+      },
+      {
+         "id": 2,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "descripcion": "Mes febrero",
+         "fecha": "2023-02-01",
+         "monto": 30,
+         "perfilNombre": "Giovanni",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (2,1,'Mes febrero','2023-02-01',30);"
+      },
+      {
+         "id": 3,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "descripcion": "Mes marzo",
+         "fecha": "2023-03-01",
+         "monto": 30,
+         "perfilNombre": "Giovanni",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (3,1,'Mes marzo','2023-03-01',30);"
+      },
+      {
+         "id": 4,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "descripcion": "Mes abril",
+         "fecha": "2023-05-01",
+         "monto": 30,
+         "perfilNombre": "Giovanni",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (4,1,'Mes abril','2023-05-01',30);"
+      },
+      {
+         "id": 5,
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "descripcion": "Inscripción",
+         "fecha": "2023-03-01",
+         "monto": 10,
+         "perfilNombre": "Miguel",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (5,3,'Inscripción','2023-03-01',10);"
+      },
+      {
+         "id": 6,
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "descripcion": "Mes de marzo",
+         "fecha": "2023-03-01",
+         "monto": 15,
+         "perfilNombre": "Miguel",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (6,3,'Mes de marzo','2023-03-01',15);"
+      },
+      {
+         "id": 7,
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "descripcion": "Mes de abril",
+         "fecha": "2023-04-01",
+         "monto": 15,
+         "perfilNombre": "Miguel",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (7,3,'Mes de abril','2023-04-01',15);"
+      },
+      {
+         "id": 8,
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "descripcion": "Mes de mayo",
+         "fecha": "2023-05-01",
+         "monto": 15,
+         "perfilNombre": "Miguel",
+         "sql": "insert into cobro (id,perfilId,descripcion,fecha,monto) values (8,3,'Mes de mayo','2023-05-01',15);"
+      }
+   ],
+   "pago": [
+      {
+         "id": 1,
+         "cobroId": 0,
+         "grupoId": 3,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "fecha": "06/08/2023",
+         "monto": 22,
+         "referencia": 5775,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (1,NULL,1,1,'2023-06-08',22,5775);"
+      },
+      {
+         "id": 2,
+         "cobroId": 4,
+         "grupoId": 6,
+         "perfilId": "clihwg1nk0000vuvk0kvd1l18",
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 9749,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (2,4,1,1,'2023-05-01',30,9749);"
+      },
+      {
+         "id": 3,
+         "cobroId": 6,
+         "grupoId": 11,
+         "perfilId": 2,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 1258,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (3,6,2,2,'2023-03-01',15,1258);"
+      },
+      {
+         "id": 4,
+         "cobroId": 5,
+         "grupoId": 0,
+         "perfilId": 2,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 3722,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (4,5,NULL,2,'2023-03-01',10,3722);"
+      },
+      {
+         "id": 5,
+         "cobroId": 7,
+         "grupoId": 0,
+         "perfilId": 2,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 1798,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (5,7,NULL,2,'2023-04-01',15,1798);"
+      },
+      {
+         "id": 6,
+         "cobroId": 6,
+         "grupoId": 6,
+         "perfilId": 2,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 1904,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (6,6,2,2,'2023-03-01',15,1904);"
+      },
+      {
+         "id": 7,
+         "cobroId": 1,
+         "grupoId": 10,
+         "perfilId": "clihwg1oh0002vuvkwtvxk013",
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 7491,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (7,1,3,3,'2023-02-01',20,7491);"
+      },
+      {
+         "id": 8,
+         "cobroId": 4,
+         "grupoId": 5,
+         "perfilId": 4,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 4690,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (8,4,4,4,'2023-05-01',30,4690);"
+      },
+      {
+         "id": 9,
+         "cobroId": 7,
+         "grupoId": 1,
+         "perfilId": 5,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 7350,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (9,7,5,5,'2023-04-01',15,7350);"
+      },
+      {
+         "id": 10,
+         "cobroId": 8,
+         "grupoId": 3,
+         "perfilId": 5,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 4167,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (10,8,5,5,'2023-05-01',15,4167);"
+      },
+      {
+         "id": 11,
+         "cobroId": 1,
+         "grupoId": 3,
+         "perfilId": 5,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 2304,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (11,1,5,5,'2023-02-01',20,2304);"
+      },
+      {
+         "id": 12,
+         "cobroId": 7,
+         "grupoId": 9,
+         "perfilId": 5,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 5185,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (12,7,5,5,'2023-04-01',15,5185);"
+      },
+      {
+         "id": 13,
+         "cobroId": 8,
+         "grupoId": 7,
+         "perfilId": 5,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 4328,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (13,8,5,5,'2023-05-01',15,4328);"
+      },
+      {
+         "id": 14,
+         "cobroId": 8,
+         "grupoId": 11,
+         "perfilId": 6,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 7496,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (14,8,6,6,'2023-05-01',15,7496);"
+      },
+      {
+         "id": 15,
+         "cobroId": 7,
+         "grupoId": 0,
+         "perfilId": 7,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 6686,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (15,7,NULL,7,'2023-04-01',15,6686);"
+      },
+      {
+         "id": 16,
+         "cobroId": 7,
+         "grupoId": 4,
+         "perfilId": 8,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 9350,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (16,7,8,8,'2023-04-01',15,9350);"
+      },
+      {
+         "id": 17,
+         "cobroId": 4,
+         "grupoId": 7,
+         "perfilId": 8,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 6109,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (17,4,8,8,'2023-05-01',30,6109);"
+      },
+      {
+         "id": 18,
+         "cobroId": 7,
+         "grupoId": 5,
+         "perfilId": 8,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 8025,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (18,7,8,8,'2023-04-01',15,8025);"
+      },
+      {
+         "id": 19,
+         "cobroId": 6,
+         "grupoId": 9,
+         "perfilId": 8,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 8128,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (19,6,8,8,'2023-03-01',15,8128);"
+      },
+      {
+         "id": 20,
+         "cobroId": 3,
+         "grupoId": 5,
+         "perfilId": 8,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 8754,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (20,3,8,8,'2023-03-01',30,8754);"
+      },
+      {
+         "id": 21,
+         "cobroId": 6,
+         "grupoId": 1,
+         "perfilId": 8,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 8850,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (21,6,8,8,'2023-03-01',15,8850);"
+      },
+      {
+         "id": 22,
+         "cobroId": 5,
+         "grupoId": 6,
+         "perfilId": 9,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 2965,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (22,5,9,9,'2023-03-01',10,2965);"
+      },
+      {
+         "id": 23,
+         "cobroId": 5,
+         "grupoId": 1,
+         "perfilId": 10,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 8664,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (23,5,10,10,'2023-03-01',10,8664);"
+      },
+      {
+         "id": 24,
+         "cobroId": 5,
+         "grupoId": 3,
+         "perfilId": 11,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 1177,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (24,5,11,11,'2023-03-01',10,1177);"
+      },
+      {
+         "id": 25,
+         "cobroId": 7,
+         "grupoId": 5,
+         "perfilId": 12,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 4389,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (25,7,12,12,'2023-04-01',15,4389);"
+      },
+      {
+         "id": 26,
+         "cobroId": 8,
+         "grupoId": 2,
+         "perfilId": 12,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 1777,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (26,8,12,12,'2023-05-01',15,1777);"
+      },
+      {
+         "id": 27,
+         "cobroId": 2,
+         "grupoId": 2,
+         "perfilId": 12,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 7986,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (27,2,12,12,'2023-02-01',30,7986);"
+      },
+      {
+         "id": 28,
+         "cobroId": 2,
+         "grupoId": 5,
+         "perfilId": 12,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 6828,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (28,2,12,12,'2023-02-01',30,6828);"
+      },
+      {
+         "id": 29,
+         "cobroId": 6,
+         "grupoId": 3,
+         "perfilId": 13,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 9587,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (29,6,13,13,'2023-03-01',15,9587);"
+      },
+      {
+         "id": 30,
+         "cobroId": 1,
+         "grupoId": 1,
+         "perfilId": 14,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 3575,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (30,1,14,14,'2023-02-01',20,3575);"
+      },
+      {
+         "id": 31,
+         "cobroId": 6,
+         "grupoId": 6,
+         "perfilId": 14,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 6907,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (31,6,14,14,'2023-03-01',15,6907);"
+      },
+      {
+         "id": 32,
+         "cobroId": 2,
+         "grupoId": 4,
+         "perfilId": 14,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 2470,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (32,2,14,14,'2023-02-01',30,2470);"
+      },
+      {
+         "id": 33,
+         "cobroId": 8,
+         "grupoId": 10,
+         "perfilId": 15,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 7649,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (33,8,15,15,'2023-05-01',15,7649);"
+      },
+      {
+         "id": 34,
+         "cobroId": 1,
+         "grupoId": 7,
+         "perfilId": 15,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 4276,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (34,1,15,15,'2023-02-01',20,4276);"
+      },
+      {
+         "id": 35,
+         "cobroId": 1,
+         "grupoId": 6,
+         "perfilId": 15,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 3761,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (35,1,15,15,'2023-02-01',20,3761);"
+      },
+      {
+         "id": 36,
+         "cobroId": 5,
+         "grupoId": 2,
+         "perfilId": 15,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 5633,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (36,5,15,15,'2023-03-01',10,5633);"
+      },
+      {
+         "id": 37,
+         "cobroId": 3,
+         "grupoId": 9,
+         "perfilId": 15,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 6875,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (37,3,15,15,'2023-03-01',30,6875);"
+      },
+      {
+         "id": 38,
+         "cobroId": 6,
+         "grupoId": 1,
+         "perfilId": 15,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 8214,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (38,6,15,15,'2023-03-01',15,8214);"
+      },
+      {
+         "id": 39,
+         "cobroId": 8,
+         "grupoId": 9,
+         "perfilId": 16,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 3718,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (39,8,16,16,'2023-05-01',15,3718);"
+      },
+      {
+         "id": 40,
+         "cobroId": 0,
+         "grupoId": 6,
+         "perfilId": 16,
+         "fecha": "06/08/2023",
+         "monto": 21,
+         "referencia": 3975,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (40,NULL,16,16,'2023-06-08',21,3975);"
+      },
+      {
+         "id": 41,
+         "cobroId": 8,
+         "grupoId": 10,
+         "perfilId": 16,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 5820,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (41,8,16,16,'2023-05-01',15,5820);"
+      },
+      {
+         "id": 42,
+         "cobroId": 3,
+         "grupoId": 1,
+         "perfilId": 16,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 6953,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (42,3,16,16,'2023-03-01',30,6953);"
+      },
+      {
+         "id": 43,
+         "cobroId": 2,
+         "grupoId": 11,
+         "perfilId": 17,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 7814,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (43,2,17,17,'2023-02-01',30,7814);"
+      },
+      {
+         "id": 44,
+         "cobroId": 8,
+         "grupoId": 4,
+         "perfilId": 17,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 3191,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (44,8,17,17,'2023-05-01',15,3191);"
+      },
+      {
+         "id": 45,
+         "cobroId": 6,
+         "grupoId": 11,
+         "perfilId": 17,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 7963,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (45,6,17,17,'2023-03-01',15,7963);"
+      },
+      {
+         "id": 46,
+         "cobroId": 3,
+         "grupoId": 11,
+         "perfilId": 17,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 3372,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (46,3,17,17,'2023-03-01',30,3372);"
+      },
+      {
+         "id": 47,
+         "cobroId": 5,
+         "grupoId": 2,
+         "perfilId": 18,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 5630,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (47,5,18,18,'2023-03-01',10,5630);"
+      },
+      {
+         "id": 48,
+         "cobroId": 8,
+         "grupoId": 2,
+         "perfilId": 18,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 2980,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (48,8,18,18,'2023-05-01',15,2980);"
+      },
+      {
+         "id": 49,
+         "cobroId": 5,
+         "grupoId": 4,
+         "perfilId": 18,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 8206,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (49,5,18,18,'2023-03-01',10,8206);"
+      },
+      {
+         "id": 50,
+         "cobroId": 4,
+         "grupoId": 10,
+         "perfilId": 18,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 1480,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (50,4,18,18,'2023-05-01',30,1480);"
+      },
+      {
+         "id": 51,
+         "cobroId": 4,
+         "grupoId": 5,
+         "perfilId": 18,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 6568,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (51,4,18,18,'2023-05-01',30,6568);"
+      },
+      {
+         "id": 52,
+         "cobroId": 3,
+         "grupoId": 0,
+         "perfilId": 19,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 6117,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (52,3,NULL,19,'2023-03-01',30,6117);"
+      },
+      {
+         "id": 53,
+         "cobroId": 8,
+         "grupoId": 9,
+         "perfilId": 19,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 6187,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (53,8,19,19,'2023-05-01',15,6187);"
+      },
+      {
+         "id": 54,
+         "cobroId": 5,
+         "grupoId": 10,
+         "perfilId": 19,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 1462,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (54,5,19,19,'2023-03-01',10,1462);"
+      },
+      {
+         "id": 55,
+         "cobroId": 5,
+         "grupoId": 9,
+         "perfilId": 19,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 2705,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (55,5,19,19,'2023-03-01',10,2705);"
+      },
+      {
+         "id": 56,
+         "cobroId": 1,
+         "grupoId": 0,
+         "perfilId": 19,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 3731,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (56,1,NULL,19,'2023-02-01',20,3731);"
+      },
+      {
+         "id": 57,
+         "cobroId": 1,
+         "grupoId": 5,
+         "perfilId": 20,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6873,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (57,1,20,20,'2023-02-01',20,6873);"
+      },
+      {
+         "id": 58,
+         "cobroId": 0,
+         "grupoId": 3,
+         "perfilId": 20,
+         "fecha": "06/08/2023",
+         "monto": 24,
+         "referencia": 6501,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (58,NULL,20,20,'2023-06-08',24,6501);"
+      },
+      {
+         "id": 59,
+         "cobroId": 4,
+         "grupoId": 6,
+         "perfilId": 20,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 8685,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (59,4,20,20,'2023-05-01',30,8685);"
+      },
+      {
+         "id": 60,
+         "cobroId": 5,
+         "grupoId": 0,
+         "perfilId": 20,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 7120,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (60,5,NULL,20,'2023-03-01',10,7120);"
+      },
+      {
+         "id": 61,
+         "cobroId": 2,
+         "grupoId": 9,
+         "perfilId": 20,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 1541,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (61,2,20,20,'2023-02-01',30,1541);"
+      },
+      {
+         "id": 62,
+         "cobroId": 8,
+         "grupoId": 0,
+         "perfilId": 21,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 8296,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (62,8,NULL,21,'2023-05-01',15,8296);"
+      },
+      {
+         "id": 63,
+         "cobroId": 4,
+         "grupoId": 11,
+         "perfilId": 21,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 5192,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (63,4,21,21,'2023-05-01',30,5192);"
+      },
+      {
+         "id": 64,
+         "cobroId": 6,
+         "grupoId": 8,
+         "perfilId": 22,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 7336,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (64,6,22,22,'2023-03-01',15,7336);"
+      },
+      {
+         "id": 65,
+         "cobroId": 3,
+         "grupoId": 8,
+         "perfilId": 22,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 5908,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (65,3,22,22,'2023-03-01',30,5908);"
+      },
+      {
+         "id": 66,
+         "cobroId": 8,
+         "grupoId": 8,
+         "perfilId": 22,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 3356,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (66,8,22,22,'2023-05-01',15,3356);"
+      },
+      {
+         "id": 67,
+         "cobroId": 7,
+         "grupoId": 2,
+         "perfilId": 22,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 9874,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (67,7,22,22,'2023-04-01',15,9874);"
+      },
+      {
+         "id": 68,
+         "cobroId": 2,
+         "grupoId": 11,
+         "perfilId": 22,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 9492,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (68,2,22,22,'2023-02-01',30,9492);"
+      },
+      {
+         "id": 69,
+         "cobroId": 8,
+         "grupoId": 2,
+         "perfilId": 22,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 1184,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (69,8,22,22,'2023-05-01',15,1184);"
+      },
+      {
+         "id": 70,
+         "cobroId": 1,
+         "grupoId": 6,
+         "perfilId": 23,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6370,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (70,1,23,23,'2023-02-01',20,6370);"
+      },
+      {
+         "id": 71,
+         "cobroId": 0,
+         "grupoId": 7,
+         "perfilId": 23,
+         "fecha": "06/08/2023",
+         "monto": 27,
+         "referencia": 9569,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (71,NULL,23,23,'2023-06-08',27,9569);"
+      },
+      {
+         "id": 72,
+         "cobroId": 7,
+         "grupoId": 10,
+         "perfilId": 23,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 5904,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (72,7,23,23,'2023-04-01',15,5904);"
+      },
+      {
+         "id": 73,
+         "cobroId": 0,
+         "grupoId": 4,
+         "perfilId": 23,
+         "fecha": "06/08/2023",
+         "monto": 20,
+         "referencia": 5828,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (73,NULL,23,23,'2023-06-08',20,5828);"
+      },
+      {
+         "id": 74,
+         "cobroId": 3,
+         "grupoId": 4,
+         "perfilId": 23,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 7990,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (74,3,23,23,'2023-03-01',30,7990);"
+      },
+      {
+         "id": 75,
+         "cobroId": 6,
+         "grupoId": 8,
+         "perfilId": 23,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 5338,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (75,6,23,23,'2023-03-01',15,5338);"
+      },
+      {
+         "id": 76,
+         "cobroId": 1,
+         "grupoId": 11,
+         "perfilId": 23,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 8916,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (76,1,23,23,'2023-02-01',20,8916);"
+      },
+      {
+         "id": 77,
+         "cobroId": 4,
+         "grupoId": 10,
+         "perfilId": 23,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 6156,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (77,4,23,23,'2023-05-01',30,6156);"
+      },
+      {
+         "id": 78,
+         "cobroId": 2,
+         "grupoId": 4,
+         "perfilId": 24,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 7163,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (78,2,24,24,'2023-02-01',30,7163);"
+      },
+      {
+         "id": 79,
+         "cobroId": 3,
+         "grupoId": 5,
+         "perfilId": 24,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 2416,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (79,3,24,24,'2023-03-01',30,2416);"
+      },
+      {
+         "id": 80,
+         "cobroId": 1,
+         "grupoId": 6,
+         "perfilId": 24,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 7579,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (80,1,24,24,'2023-02-01',20,7579);"
+      },
+      {
+         "id": 81,
+         "cobroId": 7,
+         "grupoId": 5,
+         "perfilId": 24,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 4330,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (81,7,24,24,'2023-04-01',15,4330);"
+      },
+      {
+         "id": 82,
+         "cobroId": 4,
+         "grupoId": 11,
+         "perfilId": 24,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 9499,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (82,4,24,24,'2023-05-01',30,9499);"
+      },
+      {
+         "id": 83,
+         "cobroId": 6,
+         "grupoId": 10,
+         "perfilId": 24,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 1132,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (83,6,24,24,'2023-03-01',15,1132);"
+      },
+      {
+         "id": 84,
+         "cobroId": 4,
+         "grupoId": 11,
+         "perfilId": 25,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 2959,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (84,4,25,25,'2023-05-01',30,2959);"
+      },
+      {
+         "id": 85,
+         "cobroId": 3,
+         "grupoId": 3,
+         "perfilId": 25,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 7897,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (85,3,25,25,'2023-03-01',30,7897);"
+      },
+      {
+         "id": 86,
+         "cobroId": 5,
+         "grupoId": 1,
+         "perfilId": 25,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 6676,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (86,5,25,25,'2023-03-01',10,6676);"
+      },
+      {
+         "id": 87,
+         "cobroId": 3,
+         "grupoId": 11,
+         "perfilId": 25,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 3302,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (87,3,25,25,'2023-03-01',30,3302);"
+      },
+      {
+         "id": 88,
+         "cobroId": 1,
+         "grupoId": 10,
+         "perfilId": 26,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 3975,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (88,1,26,26,'2023-02-01',20,3975);"
+      },
+      {
+         "id": 89,
+         "cobroId": 3,
+         "grupoId": 6,
+         "perfilId": 26,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 2526,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (89,3,26,26,'2023-03-01',30,2526);"
+      },
+      {
+         "id": 90,
+         "cobroId": 5,
+         "grupoId": 3,
+         "perfilId": 26,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 8925,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (90,5,26,26,'2023-03-01',10,8925);"
+      },
+      {
+         "id": 91,
+         "cobroId": 1,
+         "grupoId": 2,
+         "perfilId": 26,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 5504,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (91,1,26,26,'2023-02-01',20,5504);"
+      },
+      {
+         "id": 92,
+         "cobroId": 4,
+         "grupoId": 9,
+         "perfilId": 26,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 9160,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (92,4,26,26,'2023-05-01',30,9160);"
+      },
+      {
+         "id": 93,
+         "cobroId": 3,
+         "grupoId": 6,
+         "perfilId": 26,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 8472,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (93,3,26,26,'2023-03-01',30,8472);"
+      },
+      {
+         "id": 94,
+         "cobroId": 1,
+         "grupoId": 4,
+         "perfilId": 27,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6853,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (94,1,27,27,'2023-02-01',20,6853);"
+      },
+      {
+         "id": 95,
+         "cobroId": 4,
+         "grupoId": 2,
+         "perfilId": 27,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 1573,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (95,4,27,27,'2023-05-01',30,1573);"
+      },
+      {
+         "id": 96,
+         "cobroId": 1,
+         "grupoId": 0,
+         "perfilId": 27,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6985,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (96,1,NULL,27,'2023-02-01',20,6985);"
+      },
+      {
+         "id": 97,
+         "cobroId": 4,
+         "grupoId": 11,
+         "perfilId": 27,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 5532,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (97,4,27,27,'2023-05-01',30,5532);"
+      },
+      {
+         "id": 98,
+         "cobroId": 6,
+         "grupoId": 8,
+         "perfilId": 27,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 4358,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (98,6,27,27,'2023-03-01',15,4358);"
+      },
+      {
+         "id": 99,
+         "cobroId": 0,
+         "grupoId": 0,
+         "perfilId": 28,
+         "fecha": "06/08/2023",
+         "monto": 19,
+         "referencia": 1718,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (99,NULL,NULL,28,'2023-06-08',19,1718);"
+      },
+      {
+         "id": 100,
+         "cobroId": 4,
+         "grupoId": 9,
+         "perfilId": 28,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 1601,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (100,4,28,28,'2023-05-01',30,1601);"
+      },
+      {
+         "id": 101,
+         "cobroId": 1,
+         "grupoId": 9,
+         "perfilId": 28,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 2144,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (101,1,28,28,'2023-02-01',20,2144);"
+      },
+      {
+         "id": 102,
+         "cobroId": 0,
+         "grupoId": 6,
+         "perfilId": 28,
+         "fecha": "06/08/2023",
+         "monto": 15,
+         "referencia": 1256,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (102,NULL,28,28,'2023-06-08',15,1256);"
+      },
+      {
+         "id": 103,
+         "cobroId": 2,
+         "grupoId": 5,
+         "perfilId": 28,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 6220,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (103,2,28,28,'2023-02-01',30,6220);"
+      },
+      {
+         "id": 104,
+         "cobroId": 2,
+         "grupoId": 5,
+         "perfilId": 29,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 7075,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (104,2,29,29,'2023-02-01',30,7075);"
+      },
+      {
+         "id": 105,
+         "cobroId": 6,
+         "grupoId": 4,
+         "perfilId": 29,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 3006,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (105,6,29,29,'2023-03-01',15,3006);"
+      },
+      {
+         "id": 106,
+         "cobroId": 1,
+         "grupoId": 0,
+         "perfilId": 29,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6612,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (106,1,NULL,29,'2023-02-01',20,6612);"
+      },
+      {
+         "id": 107,
+         "cobroId": 8,
+         "grupoId": 6,
+         "perfilId": 29,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 2672,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (107,8,29,29,'2023-05-01',15,2672);"
+      },
+      {
+         "id": 108,
+         "cobroId": 2,
+         "grupoId": 6,
+         "perfilId": 29,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 6234,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (108,2,29,29,'2023-02-01',30,6234);"
+      },
+      {
+         "id": 109,
+         "cobroId": 1,
+         "grupoId": 0,
+         "perfilId": 30,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 4580,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (109,1,NULL,30,'2023-02-01',20,4580);"
+      },
+      {
+         "id": 110,
+         "cobroId": 2,
+         "grupoId": 4,
+         "perfilId": 30,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 2769,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (110,2,30,30,'2023-02-01',30,2769);"
+      },
+      {
+         "id": 111,
+         "cobroId": 7,
+         "grupoId": 8,
+         "perfilId": 30,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 1617,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (111,7,30,30,'2023-04-01',15,1617);"
+      },
+      {
+         "id": 112,
+         "cobroId": 5,
+         "grupoId": 2,
+         "perfilId": 30,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 4561,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (112,5,30,30,'2023-03-01',10,4561);"
+      },
+      {
+         "id": 113,
+         "cobroId": 4,
+         "grupoId": 7,
+         "perfilId": 30,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 1545,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (113,4,30,30,'2023-05-01',30,1545);"
+      },
+      {
+         "id": 114,
+         "cobroId": 5,
+         "grupoId": 10,
+         "perfilId": 31,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 2410,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (114,5,31,31,'2023-03-01',10,2410);"
+      },
+      {
+         "id": 115,
+         "cobroId": 6,
+         "grupoId": 0,
+         "perfilId": 31,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 1487,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (115,6,NULL,31,'2023-03-01',15,1487);"
+      },
+      {
+         "id": 116,
+         "cobroId": 7,
+         "grupoId": 11,
+         "perfilId": 31,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 8130,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (116,7,31,31,'2023-04-01',15,8130);"
+      },
+      {
+         "id": 117,
+         "cobroId": 5,
+         "grupoId": 11,
+         "perfilId": 31,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 6321,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (117,5,31,31,'2023-03-01',10,6321);"
+      },
+      {
+         "id": 118,
+         "cobroId": 4,
+         "grupoId": 9,
+         "perfilId": 31,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 5423,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (118,4,31,31,'2023-05-01',30,5423);"
+      },
+      {
+         "id": 119,
+         "cobroId": 2,
+         "grupoId": 11,
+         "perfilId": 32,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 8620,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (119,2,32,32,'2023-02-01',30,8620);"
+      },
+      {
+         "id": 120,
+         "cobroId": 4,
+         "grupoId": 4,
+         "perfilId": 32,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 1288,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (120,4,32,32,'2023-05-01',30,1288);"
+      },
+      {
+         "id": 121,
+         "cobroId": 6,
+         "grupoId": 3,
+         "perfilId": 32,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 8000,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (121,6,32,32,'2023-03-01',15,8000);"
+      },
+      {
+         "id": 122,
+         "cobroId": 5,
+         "grupoId": 2,
+         "perfilId": 32,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 9568,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (122,5,32,32,'2023-03-01',10,9568);"
+      },
+      {
+         "id": 123,
+         "cobroId": 2,
+         "grupoId": 10,
+         "perfilId": 33,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 9026,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (123,2,33,33,'2023-02-01',30,9026);"
+      },
+      {
+         "id": 124,
+         "cobroId": 2,
+         "grupoId": 7,
+         "perfilId": 33,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 3378,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (124,2,33,33,'2023-02-01',30,3378);"
+      },
+      {
+         "id": 125,
+         "cobroId": 1,
+         "grupoId": 3,
+         "perfilId": 33,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 9818,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (125,1,33,33,'2023-02-01',20,9818);"
+      },
+      {
+         "id": 126,
+         "cobroId": 0,
+         "grupoId": 7,
+         "perfilId": 34,
+         "fecha": "06/08/2023",
+         "monto": 14,
+         "referencia": 5899,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (126,NULL,34,34,'2023-06-08',14,5899);"
+      },
+      {
+         "id": 127,
+         "cobroId": 2,
+         "grupoId": 9,
+         "perfilId": 34,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 8099,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (127,2,34,34,'2023-02-01',30,8099);"
+      },
+      {
+         "id": 128,
+         "cobroId": 3,
+         "grupoId": 1,
+         "perfilId": 34,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 9408,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (128,3,34,34,'2023-03-01',30,9408);"
+      },
+      {
+         "id": 129,
+         "cobroId": 0,
+         "grupoId": 0,
+         "perfilId": 34,
+         "fecha": "06/08/2023",
+         "monto": 20,
+         "referencia": 7198,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (129,NULL,NULL,34,'2023-06-08',20,7198);"
+      },
+      {
+         "id": 130,
+         "cobroId": 3,
+         "grupoId": 1,
+         "perfilId": 34,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 1298,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (130,3,34,34,'2023-03-01',30,1298);"
+      },
+      {
+         "id": 131,
+         "cobroId": 1,
+         "grupoId": 5,
+         "perfilId": 35,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 6811,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (131,1,35,35,'2023-02-01',20,6811);"
+      },
+      {
+         "id": 132,
+         "cobroId": 7,
+         "grupoId": 1,
+         "perfilId": 35,
+         "fecha": "04/01/2023",
+         "monto": 15,
+         "referencia": 5941,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (132,7,35,35,'2023-04-01',15,5941);"
+      },
+      {
+         "id": 133,
+         "cobroId": 3,
+         "grupoId": 8,
+         "perfilId": 35,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 5707,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (133,3,35,35,'2023-03-01',30,5707);"
+      },
+      {
+         "id": 134,
+         "cobroId": 0,
+         "grupoId": 8,
+         "perfilId": 35,
+         "fecha": "06/08/2023",
+         "monto": 29,
+         "referencia": 2506,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (134,NULL,35,35,'2023-06-08',29,2506);"
+      },
+      {
+         "id": 135,
+         "cobroId": 3,
+         "grupoId": 2,
+         "perfilId": 36,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 5481,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (135,3,36,36,'2023-03-01',30,5481);"
+      },
+      {
+         "id": 136,
+         "cobroId": 2,
+         "grupoId": 10,
+         "perfilId": 36,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 5356,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (136,2,36,36,'2023-02-01',30,5356);"
+      },
+      {
+         "id": 137,
+         "cobroId": 0,
+         "grupoId": 1,
+         "perfilId": 36,
+         "fecha": "06/08/2023",
+         "monto": 14,
+         "referencia": 9240,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (137,NULL,36,36,'2023-06-08',14,9240);"
+      },
+      {
+         "id": 138,
+         "cobroId": 4,
+         "grupoId": 0,
+         "perfilId": 36,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 7894,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (138,4,NULL,36,'2023-05-01',30,7894);"
+      },
+      {
+         "id": 139,
+         "cobroId": 2,
+         "grupoId": 9,
+         "perfilId": 37,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 8745,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (139,2,37,37,'2023-02-01',30,8745);"
+      },
+      {
+         "id": 140,
+         "cobroId": 3,
+         "grupoId": 2,
+         "perfilId": 37,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 9782,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (140,3,37,37,'2023-03-01',30,9782);"
+      },
+      {
+         "id": 141,
+         "cobroId": 6,
+         "grupoId": 0,
+         "perfilId": 37,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 8803,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (141,6,NULL,37,'2023-03-01',15,8803);"
+      },
+      {
+         "id": 142,
+         "cobroId": 6,
+         "grupoId": 2,
+         "perfilId": 37,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 6632,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (142,6,37,37,'2023-03-01',15,6632);"
+      },
+      {
+         "id": 143,
+         "cobroId": 4,
+         "grupoId": 10,
+         "perfilId": 37,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 5205,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (143,4,37,37,'2023-05-01',30,5205);"
+      },
+      {
+         "id": 144,
+         "cobroId": 8,
+         "grupoId": 2,
+         "perfilId": 38,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 6410,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (144,8,38,38,'2023-05-01',15,6410);"
+      },
+      {
+         "id": 145,
+         "cobroId": 6,
+         "grupoId": 11,
+         "perfilId": 38,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 2116,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (145,6,38,38,'2023-03-01',15,2116);"
+      },
+      {
+         "id": 146,
+         "cobroId": 2,
+         "grupoId": 1,
+         "perfilId": 38,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 4858,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (146,2,38,38,'2023-02-01',30,4858);"
+      },
+      {
+         "id": 147,
+         "cobroId": 8,
+         "grupoId": 2,
+         "perfilId": 38,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 6112,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (147,8,38,38,'2023-05-01',15,6112);"
+      },
+      {
+         "id": 148,
+         "cobroId": 6,
+         "grupoId": 3,
+         "perfilId": 39,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 7630,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (148,6,39,39,'2023-03-01',15,7630);"
+      },
+      {
+         "id": 149,
+         "cobroId": 0,
+         "grupoId": 5,
+         "perfilId": 39,
+         "fecha": "06/08/2023",
+         "monto": 16,
+         "referencia": 7635,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (149,NULL,39,39,'2023-06-08',16,7635);"
+      },
+      {
+         "id": 150,
+         "cobroId": 4,
+         "grupoId": 9,
+         "perfilId": 39,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 8497,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (150,4,39,39,'2023-05-01',30,8497);"
+      },
+      {
+         "id": 151,
+         "cobroId": 8,
+         "grupoId": 7,
+         "perfilId": 39,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 5523,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (151,8,39,39,'2023-05-01',15,5523);"
+      },
+      {
+         "id": 152,
+         "cobroId": 6,
+         "grupoId": 6,
+         "perfilId": 40,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 7580,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (152,6,40,40,'2023-03-01',15,7580);"
+      },
+      {
+         "id": 153,
+         "cobroId": 0,
+         "grupoId": 5,
+         "perfilId": 40,
+         "fecha": "06/08/2023",
+         "monto": 22,
+         "referencia": 8619,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (153,NULL,40,40,'2023-06-08',22,8619);"
+      },
+      {
+         "id": 154,
+         "cobroId": 0,
+         "grupoId": 3,
+         "perfilId": 40,
+         "fecha": "06/08/2023",
+         "monto": 19,
+         "referencia": 3680,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (154,NULL,40,40,'2023-06-08',19,3680);"
+      },
+      {
+         "id": 155,
+         "cobroId": 4,
+         "grupoId": 1,
+         "perfilId": 40,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 5290,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (155,4,40,40,'2023-05-01',30,5290);"
+      },
+      {
+         "id": 156,
+         "cobroId": 0,
+         "grupoId": 4,
+         "perfilId": 41,
+         "fecha": "06/08/2023",
+         "monto": 10,
+         "referencia": 7872,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (156,NULL,41,41,'2023-06-08',10,7872);"
+      },
+      {
+         "id": 157,
+         "cobroId": 0,
+         "grupoId": 3,
+         "perfilId": 41,
+         "fecha": "06/08/2023",
+         "monto": 15,
+         "referencia": 1487,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (157,NULL,41,41,'2023-06-08',15,1487);"
+      },
+      {
+         "id": 158,
+         "cobroId": 8,
+         "grupoId": 5,
+         "perfilId": 41,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 4674,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (158,8,41,41,'2023-05-01',15,4674);"
+      },
+      {
+         "id": 159,
+         "cobroId": 5,
+         "grupoId": 3,
+         "perfilId": 42,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 6524,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (159,5,42,42,'2023-03-01',10,6524);"
+      },
+      {
+         "id": 160,
+         "cobroId": 0,
+         "grupoId": 2,
+         "perfilId": 43,
+         "fecha": "06/08/2023",
+         "monto": 19,
+         "referencia": 9296,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (160,NULL,43,43,'2023-06-08',19,9296);"
+      },
+      {
+         "id": 161,
+         "cobroId": 5,
+         "grupoId": 0,
+         "perfilId": 44,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 6095,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (161,5,NULL,44,'2023-03-01',10,6095);"
+      },
+      {
+         "id": 162,
+         "cobroId": 0,
+         "grupoId": 3,
+         "perfilId": 45,
+         "fecha": "06/08/2023",
+         "monto": 15,
+         "referencia": 6914,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (162,NULL,45,45,'2023-06-08',15,6914);"
+      },
+      {
+         "id": 163,
+         "cobroId": 5,
+         "grupoId": 4,
+         "perfilId": 45,
+         "fecha": "03/01/2023",
+         "monto": 10,
+         "referencia": 8576,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (163,5,45,45,'2023-03-01',10,8576);"
+      },
+      {
+         "id": 164,
+         "cobroId": 0,
+         "grupoId": 10,
+         "perfilId": 46,
+         "fecha": "06/08/2023",
+         "monto": 28,
+         "referencia": 5177,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (164,NULL,46,46,'2023-06-08',28,5177);"
+      },
+      {
+         "id": 165,
+         "cobroId": 4,
+         "grupoId": 7,
+         "perfilId": 46,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 8869,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (165,4,46,46,'2023-05-01',30,8869);"
+      },
+      {
+         "id": 166,
+         "cobroId": 1,
+         "grupoId": 8,
+         "perfilId": 46,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 4412,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (166,1,46,46,'2023-02-01',20,4412);"
+      },
+      {
+         "id": 167,
+         "cobroId": 3,
+         "grupoId": 8,
+         "perfilId": 46,
+         "fecha": "03/01/2023",
+         "monto": 30,
+         "referencia": 3885,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (167,3,46,46,'2023-03-01',30,3885);"
+      },
+      {
+         "id": 168,
+         "cobroId": 6,
+         "grupoId": 11,
+         "perfilId": 47,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 7041,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (168,6,47,47,'2023-03-01',15,7041);"
+      },
+      {
+         "id": 169,
+         "cobroId": 6,
+         "grupoId": 11,
+         "perfilId": 48,
+         "fecha": "03/01/2023",
+         "monto": 15,
+         "referencia": 6067,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (169,6,48,48,'2023-03-01',15,6067);"
+      },
+      {
+         "id": 170,
+         "cobroId": 2,
+         "grupoId": 10,
+         "perfilId": 49,
+         "fecha": "02/01/2023",
+         "monto": 30,
+         "referencia": 1358,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (170,2,49,49,'2023-02-01',30,1358);"
+      },
+      {
+         "id": 171,
+         "cobroId": 0,
+         "grupoId": 1,
+         "perfilId": 49,
+         "fecha": "06/08/2023",
+         "monto": 30,
+         "referencia": 5894,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (171,NULL,49,49,'2023-06-08',30,5894);"
+      },
+      {
+         "id": 172,
+         "cobroId": 1,
+         "grupoId": 5,
+         "perfilId": 49,
+         "fecha": "02/01/2023",
+         "monto": 20,
+         "referencia": 7544,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (172,1,49,49,'2023-02-01',20,7544);"
+      },
+      {
+         "id": 173,
+         "cobroId": 8,
+         "grupoId": 1,
+         "perfilId": 50,
+         "fecha": "05/01/2023",
+         "monto": 15,
+         "referencia": 7380,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (173,8,50,50,'2023-05-01',15,7380);"
+      },
+      {
+         "id": 174,
+         "cobroId": 4,
+         "grupoId": 11,
+         "perfilId": 50,
+         "fecha": "05/01/2023",
+         "monto": 30,
+         "referencia": 4895,
+         "sql": "insert into pago (id,cobroId,grupoId,perfilId,fecha,monto,referencia) values (174,4,50,50,'2023-05-01',30,4895);"
+      }
+   ]
+}

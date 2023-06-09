@@ -1,4 +1,5 @@
 'use client';
+
 import { Card } from '@tremor/react';
 import Link from 'next/link';
 import { UrlObject } from 'url';

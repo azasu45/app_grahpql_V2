@@ -1,74 +1,74 @@
 [
-  {
-    "id": "clihwg2e7002yvuvk5adcez5n",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 1,
-    "nombre": "Kinder"
-  },
-  {
-    "id": "clihwg2f70030vuvkvlw9t5w9",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 2,
-    "nombre": "1er grado"
-  },
-  {
-    "id": "clihwg2fu0032vuvkxjmyjo5b",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 3,
-    "nombre": "2do grado"
-  },
-  {
-    "id": "clihwg2gm0034vuvkowcrw0d4",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 4,
-    "nombre": "3er grado"
-  },
-  {
-    "id": "clihwg2h90036vuvk2dyibmjo",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 5,
-    "nombre": "4to grado"
-  },
-  {
-    "id": "clihwg2hz0038vuvk8h4wxi9g",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 6,
-    "nombre": "5to grado"
-  },
-  {
-    "id": "clihwg2im003avuvkuvxnjl7w",
-    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-    "orden": 7,
-    "nombre": "6to grado"
-  },
-  {
-    "id": "clihwg2jc003cvuvk5pbl67av",
-    "cuentaId": "clihwg2c4002uvuvk6pg40lqq",
-    "orden": 1,
-    "nombre": "Rifa"
-  },
-  {
-    "id": "clihwg2k3003evuvkkgteaj2y",
-    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-    "orden": 1,
-    "nombre": "Niños"
-  },
-  {
-    "id": "clihwg2kt003gvuvklnrsmcub",
-    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-    "orden": 2,
-    "nombre": "Juvenil"
-  },
-  {
-    "id": "clihwg2lq003ivuvk8penrkf9",
-    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-    "orden": 3,
-    "nombre": "Mujeres"
-  },
-  {
-    "id": "clihwg2n2003kvuvkh29kvnu5",
-    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-    "orden": 4,
-    "nombre": "Hombres"
-  }
+   {
+      "id": "clihwg2e7002yvuvk5adcez5n",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 1,
+      "nombre": "Kinder"
+   },
+   {
+      "id": "clihwg2f70030vuvkvlw9t5w9",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 2,
+      "nombre": "1er grado"
+   },
+   {
+      "id": "clihwg2fu0032vuvkxjmyjo5b",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 3,
+      "nombre": "2do grado"
+   },
+   {
+      "id": "clihwg2gm0034vuvkowcrw0d4",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 4,
+      "nombre": "3er grado"
+   },
+   {
+      "id": "clihwg2h90036vuvk2dyibmjo",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 5,
+      "nombre": "4to grado"
+   },
+   {
+      "id": "clihwg2hz0038vuvk8h4wxi9g",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 6,
+      "nombre": "5to grado"
+   },
+   {
+      "id": "clihwg2im003avuvkuvxnjl7w",
+      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+      "orden": 7,
+      "nombre": "6to grado"
+   },
+   {
+      "id": "clihwg2jc003cvuvk5pbl67av",
+      "cuentaId": "clihwg2c4002uvuvk6pg40lqq",
+      "orden": 1,
+      "nombre": "Rifa"
+   },
+   {
+      "id": "clihwg2k3003evuvkkgteaj2y",
+      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+      "orden": 1,
+      "nombre": "Niños"
+   },
+   {
+      "id": "clihwg2kt003gvuvklnrsmcub",
+      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+      "orden": 2,
+      "nombre": "Juvenil"
+   },
+   {
+      "id": "clihwg2lq003ivuvk8penrkf9",
+      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+      "orden": 3,
+      "nombre": "Mujeres"
+   },
+   {
+      "id": "clihwg2n2003kvuvkh29kvnu5",
+      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+      "orden": 4,
+      "nombre": "Hombres"
+   }
 ]

@@ -1,6 +1,5 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import PerfilUpdate from './perfilUpdate';
 
 const Background = dynamic(() => import('./background'), { ssr: false });
 

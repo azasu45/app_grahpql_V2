@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Prisma, Account, Session, User, VerificationToken, Perfil, Cuenta, Grupo, Participante, Cobro, Pago, CuentaFavorita } from "@prisma/client";
+import type { Prisma, Account, Session, User, VerificationToken, Perfil, Grupo, Cobro, Pago } from "@prisma/client";
 export default interface PrismaTypes {
     Account: {
         Name: "Account";
@@ -86,51 +86,20 @@ export default interface PrismaTypes {
         Where: Prisma.PerfilWhereInput;
         Create: Prisma.PerfilCreateInput;
         Update: Prisma.PerfilUpdateInput;
-        RelationName: "cuentasFavoritas" | "cuentas" | "participante";
-        ListRelations: "cuentasFavoritas" | "cuentas" | "participante";
+        RelationName: "Grupo" | "Cobro" | "Pago";
+        ListRelations: "Grupo" | "Cobro" | "Pago";
         Relations: {
-            cuentasFavoritas: {
-                Shape: CuentaFavorita[];
-                Name: "CuentaFavorita";
-            };
-            cuentas: {
-                Shape: Cuenta[];
-                Name: "Cuenta";
-            };
-            participante: {
-                Shape: Participante[];
-                Name: "Participante";
-            };
-        };
-    };
-    Cuenta: {
-        Name: "Cuenta";
-        Shape: Cuenta;
-        Include: Prisma.CuentaInclude;
-        Select: Prisma.CuentaSelect;
-        OrderBy: Prisma.CuentaOrderByWithRelationInput;
-        WhereUnique: Prisma.CuentaWhereUniqueInput;
-        Where: Prisma.CuentaWhereInput;
-        Create: Prisma.CuentaCreateInput;
-        Update: Prisma.CuentaUpdateInput;
-        RelationName: "perfil" | "cobros" | "grupo" | "cuentasFavoritas";
-        ListRelations: "cobros" | "grupo" | "cuentasFavoritas";
-        Relations: {
-            perfil: {
-                Shape: Perfil;
-                Name: "Perfil";
-            };
-            cobros: {
-                Shape: Cobro[];
-                Name: "Cobro";
-            };
-            grupo: {
+            Grupo: {
                 Shape: Grupo[];
                 Name: "Grupo";
             };
-            cuentasFavoritas: {
-                Shape: CuentaFavorita[];
-                Name: "CuentaFavorita";
+            Cobro: {
+                Shape: Cobro[];
+                Name: "Cobro";
+            };
+            Pago: {
+                Shape: Pago[];
+                Name: "Pago";
             };
         };
     };
@@ -144,41 +113,14 @@ export default interface PrismaTypes {
         Where: Prisma.GrupoWhereInput;
         Create: Prisma.GrupoCreateInput;
         Update: Prisma.GrupoUpdateInput;
-        RelationName: "cuenta" | "Participante";
-        ListRelations: "Participante";
-        Relations: {
-            cuenta: {
-                Shape: Cuenta;
-                Name: "Cuenta";
-            };
-            Participante: {
-                Shape: Participante[];
-                Name: "Participante";
-            };
-        };
-    };
-    Participante: {
-        Name: "Participante";
-        Shape: Participante;
-        Include: Prisma.ParticipanteInclude;
-        Select: Prisma.ParticipanteSelect;
-        OrderBy: Prisma.ParticipanteOrderByWithRelationInput;
-        WhereUnique: Prisma.ParticipanteWhereUniqueInput;
-        Where: Prisma.ParticipanteWhereInput;
-        Create: Prisma.ParticipanteCreateInput;
-        Update: Prisma.ParticipanteUpdateInput;
-        RelationName: "perfil" | "grupo" | "pagos";
-        ListRelations: "pagos";
+        RelationName: "perfil" | "Pago";
+        ListRelations: "Pago";
         Relations: {
             perfil: {
                 Shape: Perfil;
                 Name: "Perfil";
             };
-            grupo: {
-                Shape: Grupo;
-                Name: "Grupo";
-            };
-            pagos: {
+            Pago: {
                 Shape: Pago[];
                 Name: "Pago";
             };
@@ -194,12 +136,12 @@ export default interface PrismaTypes {
         Where: Prisma.CobroWhereInput;
         Create: Prisma.CobroCreateInput;
         Update: Prisma.CobroUpdateInput;
-        RelationName: "cuenta" | "pagos";
+        RelationName: "perfil" | "pagos";
         ListRelations: "pagos";
         Relations: {
-            cuenta: {
-                Shape: Cuenta;
-                Name: "Cuenta";
+            perfil: {
+                Shape: Perfil;
+                Name: "Perfil";
             };
             pagos: {
                 Shape: Pago[];
@@ -217,39 +159,20 @@ export default interface PrismaTypes {
         Where: Prisma.PagoWhereInput;
         Create: Prisma.PagoCreateInput;
         Update: Prisma.PagoUpdateInput;
-        RelationName: "cobro" | "participante";
+        RelationName: "grupo" | "perfil" | "cobro";
         ListRelations: never;
         Relations: {
-            cobro: {
-                Shape: Cobro;
-                Name: "Cobro";
+            grupo: {
+                Shape: Grupo;
+                Name: "Grupo";
             };
-            participante: {
-                Shape: Participante;
-                Name: "Participante";
-            };
-        };
-    };
-    CuentaFavorita: {
-        Name: "CuentaFavorita";
-        Shape: CuentaFavorita;
-        Include: Prisma.CuentaFavoritaInclude;
-        Select: Prisma.CuentaFavoritaSelect;
-        OrderBy: Prisma.CuentaFavoritaOrderByWithRelationInput;
-        WhereUnique: Prisma.CuentaFavoritaWhereUniqueInput;
-        Where: Prisma.CuentaFavoritaWhereInput;
-        Create: Prisma.CuentaFavoritaCreateInput;
-        Update: Prisma.CuentaFavoritaUpdateInput;
-        RelationName: "perfil" | "cuenta";
-        ListRelations: never;
-        Relations: {
             perfil: {
                 Shape: Perfil;
                 Name: "Perfil";
             };
-            cuenta: {
-                Shape: Cuenta;
-                Name: "Cuenta";
+            cobro: {
+                Shape: Cobro;
+                Name: "Cobro";
             };
         };
     };
