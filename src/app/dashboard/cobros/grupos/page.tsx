@@ -1,12 +1,13 @@
 import React from 'react';
 import AllGrupos from './allGrupos';
-import { HtmlChangesObserver } from '@app/components/HtmlChangesObserver';
+import Filtros from './filtros';
 
 function Page() {
    return (
-      <HtmlChangesObserver>
+      <>
+         <Filtros />
          <AllGrupos />
-      </HtmlChangesObserver>
+      </>
    );
 }
 
