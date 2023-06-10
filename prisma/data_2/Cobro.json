@@ -1,0 +1,58 @@
+[
+  {
+    "id": "clip9jvd80001tt60gg9ljx10",
+    "descripcion": "Inscripción",
+    "fecha": "1/2/2023 00:00:00",
+    "monto": 20.0,
+    "perfilId": "clip954e40000ttt88bw9jn9a"
+  },
+  {
+    "id": "clip9jvdn0003tt601sry8t1d",
+    "descripcion": "Mes febrero",
+    "fecha": "1/2/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clip954e40000ttt88bw9jn9a"
+  },
+  {
+    "id": "clip9jvdx0005tt60jto3mmxq",
+    "descripcion": "Mes marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clip954e40000ttt88bw9jn9a"
+  },
+  {
+    "id": "clip9jve80007tt600t2a1hf8",
+    "descripcion": "Mes abril",
+    "fecha": "1/5/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clip954e40000ttt88bw9jn9a"
+  },
+  {
+    "id": "clip9jvei0009tt60tu106r85",
+    "descripcion": "Inscripción",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 10.0,
+    "perfilId": "clip954eu0004ttt87h5fe1se"
+  },
+  {
+    "id": "clip9jves000btt60gs9ucacf",
+    "descripcion": "Mes de marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clip954eu0004ttt87h5fe1se"
+  },
+  {
+    "id": "clip9jvf2000dtt60xj2xnzmn",
+    "descripcion": "Mes de abril",
+    "fecha": "1/4/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clip954eu0004ttt87h5fe1se"
+  },
+  {
+    "id": "clip9jvfb000ftt60v5g7sxy3",
+    "descripcion": "Mes de mayo",
+    "fecha": "1/5/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clip954eu0004ttt87h5fe1se"
+  }
+]

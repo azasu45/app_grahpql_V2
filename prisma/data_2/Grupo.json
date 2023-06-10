@@ -1,0 +1,68 @@
+[
+  {
+    "id": "clip9d07o0001ttyg17t9jgya",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 1,
+    "nombre": "Kinder"
+  },
+  {
+    "id": "clip9d0820003ttyghhsndgtz",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 2,
+    "nombre": "1er grado"
+  },
+  {
+    "id": "clip9d08c0005ttygmimgcve4",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 3,
+    "nombre": "2do grado"
+  },
+  {
+    "id": "clip9d08l0007ttyghzjw5ubz",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 4,
+    "nombre": "3er grado"
+  },
+  {
+    "id": "clip9d08v0009ttygj8s6v0dh",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 5,
+    "nombre": "4to grado"
+  },
+  {
+    "id": "clip9d094000bttygpi2qn9z2",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 6,
+    "nombre": "5to grado"
+  },
+  {
+    "id": "clip9d09d000dttygz69q0kmp",
+    "perfilId": "clip954e40000ttt88bw9jn9a",
+    "orden": 7,
+    "nombre": "6to grado"
+  },
+  {
+    "id": "clip9d09m000fttygdicaz2pi",
+    "perfilId": "clip954eu0004ttt87h5fe1se",
+    "orden": 1,
+    "nombre": "Niños"
+  },
+  {
+    "id": "clip9d09v000httygvy67u9qm",
+    "perfilId": "clip954eu0004ttt87h5fe1se",
+    "orden": 2,
+    "nombre": "Juvenil"
+  },
+  {
+    "id": "clip9d0a4000jttyg9a94r1be",
+    "perfilId": "clip954eu0004ttt87h5fe1se",
+    "orden": 3,
+    "nombre": "Mujeres"
+  },
+  {
+    "id": "clip9d0ad000lttygdge7himu",
+    "perfilId": "clip954eu0004ttt87h5fe1se",
+    "orden": 4,
+    "nombre": "Hombres"
+  }
+]
