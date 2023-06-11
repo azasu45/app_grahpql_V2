@@ -6,8 +6,8 @@ import SubNavbar from './subNavbar';
 import Link from 'next/link';
 
 const navigation = [
+   { name: 'General', href: '/dashboard/cobros/list' },
    { name: 'Grupos', href: '/dashboard/cobros/grupos' },
-   { name: 'Cobros', href: '/dashboard/cobros/list' },
    { name: 'Pagos Recibidos', href: '/dashboard/cobros/pagosRecibidos' },
 ];
 

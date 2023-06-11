@@ -1,9 +1,14 @@
-import { HtmlChangesObserver } from "@app/components/HtmlChangesObserver";
-import React from "react";
-import AllCobros from "./allCobros";
+import React from 'react';
+import AllCobros from './allCobros';
+import Filtros from './filtros';
 
 function Page() {
-  return <AllCobros />;
+   return (
+      <>
+         <Filtros />
+         <AllCobros />
+      </>
+   );
 }
 
 export default Page;

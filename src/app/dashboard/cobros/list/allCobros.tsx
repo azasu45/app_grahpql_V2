@@ -1,109 +1,136 @@
-"use client";
+'use client';
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
-import React from "react";
-import { gql } from "@apollo/client";
-import { useQuery } from "@apollo/experimental-nextjs-app-support/ssr";
+import React, { Fragment } from 'react';
+import { gql } from '@apollo/client';
+import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr';
+import { Badge, Button, Card, Flex, Text } from '@tremor/react';
 import {
-  Badge,
-  Card,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeaderCell,
-  TableRow,
-  Text,
-} from "@tremor/react";
-import { UserGroupIcon } from "@heroicons/react/24/outline";
-import Pagination from "@app/components/pagination";
+   EllipsisVerticalIcon,
+   BanknotesIcon,
+} from '@heroicons/react/24/outline';
+import Pagination from '@app/components/pagination';
+import { Menu, Transition } from '@headlessui/react';
 
 const gruposQuery = gql`
-  query Cobros($skip: Int) {
-    cobros(skip: $skip) {
-      id
-      monto
-      descripcion
-      fecha
-      pagosCount
-    }
-    cobrosCount
-  }
+   query Cobros($skip: Int) {
+      cobros(skip: $skip) {
+         id
+         monto
+         descripcion
+         fecha
+         pagosCount
+      }
+      cobrosCount
+   }
 `;
 
 function Result({ source, data }: { source: string; data: unknown }) {
-  return (
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableHeaderCell>Descripcion</TableHeaderCell>
-          <TableHeaderCell>Fecha</TableHeaderCell>
-          <TableHeaderCell>Monto</TableHeaderCell>
-          <TableHeaderCell>Pagos</TableHeaderCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {Array.isArray(data) &&
-          data.map((cobro) => {
-            return (
-              <TableRow key={cobro.id}>
-                <TableCell>
-                  <Text>{cobro.descripcion}</Text>
-                </TableCell>
-                <TableCell>
-                  <Text>{cobro.fecha}</Text>
-                </TableCell>
-                <TableCell>
-                  <Text>{cobro.monto}</Text>
-                </TableCell>
-                <TableCell>
-                  <Badge icon={UserGroupIcon} color="orange">
-                    {cobro.pagosCount}
-                  </Badge>
-                </TableCell>
-                {/* <TableCell>
-                  <Text>{cobro.cuenta.nombre}</Text>
-                </TableCell> */}
-              </TableRow>
-            );
-          })}
-      </TableBody>
-    </Table>
-  );
+   return (
+      <>
+         <div>
+            {Array.isArray(data) &&
+               data.map((cobro) => {
+                  return (
+                     <Card
+                        key={cobro.id}
+                        className='mb-3'>
+                        <Flex
+                           justifyContent='between'
+                           alignItems='center'>
+                           <Flex
+                              className='basis-0 min-w-fit'
+                              flexDirection='col'
+                              alignItems='start'>
+                              <Text className='font-bold'>
+                                 {cobro.descripcion}
+                              </Text>
+                              <Text>Monto: {cobro.monto}</Text>
+                           </Flex>
+                           <Flex
+                              flexDirection='col'
+                              alignItems='center'>
+                              <Text>{cobro.fecha}</Text>
+                              <Badge
+                                 icon={BanknotesIcon}
+                                 color='orange'>
+                                 {cobro.pagosCount}
+                              </Badge>
+                           </Flex>
+                           <Menu
+                              as='div'
+                              className='relative inline-block text-left'>
+                              <div>
+                                 <Menu.Button className='basis-0'>
+                                    <EllipsisVerticalIcon className='h-6 w-6 text-black hover:text-violet-100' />
+                                 </Menu.Button>
+                              </div>
+                              <Transition
+                                 as={Fragment}
+                                 enter='transition ease-out duration-100'
+                                 enterFrom='transform opacity-0 scale-95'
+                                 enterTo='transform opacity-100 scale-100'
+                                 leave='transition ease-in duration-75'
+                                 leaveFrom='transform opacity-100 scale-100'
+                                 leaveTo='transform opacity-0 scale-95'>
+                                 <Menu.Items
+                                    className={
+                                       'absolute right-0 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                    }>
+                                    <div className='px-1 py-1 '>
+                                       <Menu.Item>
+                                          {({ active }) => (
+                                             <button>Editar</button>
+                                          )}
+                                       </Menu.Item>
+                                    </div>
+                                 </Menu.Items>
+                              </Transition>
+                           </Menu>
+                        </Flex>
+                     </Card>
+                  );
+               })}
+         </div>
+      </>
+   );
 }
 
 export default function AllCobros() {
-  const [page, setPage] = React.useState(0);
-  const { data, loading, fetchMore } = useQuery(gruposQuery, {
-    fetchPolicy: "cache-first",
-    variables: {
-      skip: page * 10,
-    },
-  });
-
-  const handleChangePage = async (
-    event: React.MouseEvent<HTMLButtonElement> | null,
-    newPage: number
-  ) => {
-    setPage(newPage);
-    await fetchMore({
+   const [page, setPage] = React.useState(0);
+   const { data, loading, fetchMore } = useQuery(gruposQuery, {
+      fetchPolicy: 'cache-first',
       variables: {
-        skip: page * 10,
+         skip: page * 10,
       },
-    });
-  };
+   });
 
-  if (loading) return <div>Cargando</div>;
+   const handleChangePage = async (
+      event: React.MouseEvent<HTMLButtonElement> | null,
+      newPage: number
+   ) => {
+      setPage(newPage);
+      await fetchMore({
+         variables: {
+            skip: page * 10,
+         },
+      });
+   };
 
-  return (
-    <Card className="mt-6">
-      <Result source="useSuspenseQuery(userQuery)" data={data.cobros} />
-      <Pagination
-        count={data.cobrosCount}
-        page={page}
-        handleChangePage={handleChangePage}
-      />
-    </Card>
-  );
+   if (loading) return <div>Cargando</div>;
+
+   return (
+      <div className='mt-6'>
+         <Result
+            source='useSuspenseQuery(userQuery)'
+            data={data.cobros}
+         />
+         <Pagination
+            count={data.cobrosCount}
+            page={page}
+            handleChangePage={handleChangePage}
+         />
+      </div>
+   );
 }
