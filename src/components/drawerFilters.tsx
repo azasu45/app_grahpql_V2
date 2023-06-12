@@ -45,7 +45,7 @@ function DrawerFilters({ open, handleOpen, children }: Props) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Grupos
+                    Grupos .p
                   </Dialog.Title>
 
                   <span>aqui</span>
