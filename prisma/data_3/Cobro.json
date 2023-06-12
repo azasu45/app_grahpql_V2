@@ -1,0 +1,58 @@
+[
+  {
+    "id": "clit1a3cx000mvozknc6fkyzl",
+    "descripcion": "Inscripción",
+    "fecha": "1/2/2023 00:00:00",
+    "monto": 20.0,
+    "perfilId": "clit0xphd0000vokwklsaecps"
+  },
+  {
+    "id": "clit1a3dl000ovozk8guw8djz",
+    "descripcion": "Mes febrero",
+    "fecha": "1/2/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clit0xphd0000vokwklsaecps"
+  },
+  {
+    "id": "clit1a3e2000qvozk9uou2mc8",
+    "descripcion": "Mes marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clit0xphd0000vokwklsaecps"
+  },
+  {
+    "id": "clit1a3eh000svozkn6xvxk9b",
+    "descripcion": "Mes abril",
+    "fecha": "1/5/2023 00:00:00",
+    "monto": 30.0,
+    "perfilId": "clit0xphd0000vokwklsaecps"
+  },
+  {
+    "id": "clit1a3f2000uvozkrjf8mvsa",
+    "descripcion": "Inscripción",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 10.0,
+    "perfilId": "clit0xpht0002vokw9h6b4o5k"
+  },
+  {
+    "id": "clit1a3fk000wvozk95kbl36s",
+    "descripcion": "Mes de marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clit0xpht0002vokw9h6b4o5k"
+  },
+  {
+    "id": "clit1a3g1000yvozkps9ldk3m",
+    "descripcion": "Mes de abril",
+    "fecha": "1/4/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clit0xpht0002vokw9h6b4o5k"
+  },
+  {
+    "id": "clit1a3gh0010vozker7hev1c",
+    "descripcion": "Mes de mayo",
+    "fecha": "1/5/2023 00:00:00",
+    "monto": 15.0,
+    "perfilId": "clit0xpht0002vokw9h6b4o5k"
+  }
+]
