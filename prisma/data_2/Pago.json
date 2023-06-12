@@ -1,1402 +1,1402 @@
 [
-  {
-    "id": "clipaeye90001tto4a4ynpfxo",
-    "referencia": 9749,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954e40000ttt88bw9jn9a",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyen0003tto4rdb30439",
-    "referencia": 1258,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954ek0002ttt8p8wlboqz",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyey0005tto4fq1hrvlu",
-    "referencia": 1904,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954ek0002ttt8p8wlboqz",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyf90007tto4kdqx1xsi",
-    "referencia": 7491,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954eu0004ttt87h5fe1se",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeyfl0009tto4qnu2ehf6",
-    "referencia": 4690,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954f40006ttt835txgqt3",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyfw000btto4ew69w3ua",
-    "referencia": 7350,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954fd0008ttt8gmkw7noj",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeyg6000dtto4y5rzi7fl",
-    "referencia": 4167,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954fd0008ttt8gmkw7noj",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeygk000ftto45q9u29tr",
-    "referencia": 2304,
-    "captureImg": "/images/capture-2",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954fd0008ttt8gmkw7noj",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeygx000htto4dks48q46",
-    "referencia": 5185,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954fd0008ttt8gmkw7noj",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeyh8000jtto42c70s4pf",
-    "referencia": 4328,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954fd0008ttt8gmkw7noj",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeyhi000ltto4caaetx15",
-    "referencia": 7496,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954fm000attt8zf1yswgu",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeyht000ntto4b7e826j2",
-    "referencia": 9350,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeyi3000ptto4lrqdj2xk",
-    "referencia": 6109,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyid000rtto4yyb6e8rd",
-    "referencia": 8025,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeyin000ttto4x71zjrma",
-    "referencia": 8128,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyix000vtto46cz5m3z8",
-    "referencia": 8754,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaeyj7000xtto4cvpogh2b",
-    "referencia": 8850,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954g9000ettt8t3g71c9n",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyjh000ztto4mkeqdwxq",
-    "referencia": 2965,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954gj000gttt8pm2lte0n",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyjr0011tto47tpl61qf",
-    "referencia": 8664,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954gw000ittt8pv4uiz97",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyk10013tto45d6e0u5c",
-    "referencia": 1177,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954h6000kttt8u8e46jdk",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyka0015tto4n1baos1f",
-    "referencia": 4389,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954hg000mttt8fiw8b1j9",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeykm0017tto47sxg7t06",
-    "referencia": 1777,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954hg000mttt8fiw8b1j9",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeykx0019tto4m8fd5pkl",
-    "referencia": 7986,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954hg000mttt8fiw8b1j9",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeyl7001btto41zl9sbyv",
-    "referencia": 6828,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954hg000mttt8fiw8b1j9",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeylh001dtto4d46un86j",
-    "referencia": 9587,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954hq000ottt8ca99fj6h",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeylq001ftto43o1k4yte",
-    "referencia": 3575,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954i0000qttt8hxhdi2yt",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeym1001htto4zx2afvzp",
-    "referencia": 6907,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954i0000qttt8hxhdi2yt",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeypq001jtto4muwj667v",
-    "referencia": 2470,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954i0000qttt8hxhdi2yt",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeyq6001ltto4s57f9ssi",
-    "referencia": 7649,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeyqj001ntto4u6rzudw3",
-    "referencia": 4276,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeyqt001ptto4kbb0fkhj",
-    "referencia": 3761,
-    "captureImg": "/images/capture-4",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeyr8001rtto40azo0ymn",
-    "referencia": 5633,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyrj001ttto4p82awqt0",
-    "referencia": 6875,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaeyru001vtto4nqp0z5s1",
-    "referencia": 8214,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954i9000sttt84nb1uq9j",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeys6001xtto41a7cfg5z",
-    "referencia": 3718,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954ii000uttt8o995uw48",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeysh001ztto4g55x65hr",
-    "referencia": 5820,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ii000uttt8o995uw48",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeysu0021tto46kdue5z8",
-    "referencia": 6953,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954ii000uttt8o995uw48",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaeyt50023tto4dvlbooun",
-    "referencia": 7814,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954lq000wttt8pmzjpv7k",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeyth0025tto4qj899ssv",
-    "referencia": 3191,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954lq000wttt8pmzjpv7k",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeytr0027tto4q3juqxwk",
-    "referencia": 7963,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954lq000wttt8pmzjpv7k",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyu20029tto4matoe7t0",
-    "referencia": 3372,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954lq000wttt8pmzjpv7k",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaeyue002btto4hb0a60f8",
-    "referencia": 5630,
-    "captureImg": "/images/capture-2",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954mj000yttt898wvb4df",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyup002dtto45ad5s62c",
-    "referencia": 2980,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954mj000yttt898wvb4df",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeyuz002ftto4zk2lok2t",
-    "referencia": 8206,
-    "captureImg": "/images/capture-3",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954mj000yttt898wvb4df",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeyvc002htto4wje1iqtu",
-    "referencia": 1480,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954mj000yttt898wvb4df",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyvo002jtto497z4lf6p",
-    "referencia": 6568,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954mj000yttt898wvb4df",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyw0002ltto4n83vmpyx",
-    "referencia": 6187,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954ms0010ttt8j4ylg5si",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeywc002ntto4ji35zeqm",
-    "referencia": 1462,
-    "captureImg": "/images/capture-3",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ms0010ttt8j4ylg5si",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeywn002ptto4tkxu9mbu",
-    "referencia": 2705,
-    "captureImg": "/images/capture-2",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954ms0010ttt8j4ylg5si",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeywx002rtto41fkinr2g",
-    "referencia": 6873,
-    "captureImg": "/images/capture-2",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954n10012ttt87g8k3aww",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaeyx9002ttto432j4wiq5",
-    "referencia": 8685,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954n10012ttt87g8k3aww",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyxm002vtto44ml6vrq9",
-    "referencia": 1541,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954n10012ttt87g8k3aww",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeyxw002xtto4dqx77zzm",
-    "referencia": 5192,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954na0014ttt839w6mine",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaeyy7002ztto49gvaztxr",
-    "referencia": 7336,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeyyj0031tto488v0yp3g",
-    "referencia": 5908,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaeyyv0033tto498bzqzhp",
-    "referencia": 3356,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaeyz80035tto49qfosshn",
-    "referencia": 9874,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaeyzj0037tto4vxzcipx8",
-    "referencia": 9492,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeyzv0039tto48pqv9udt",
-    "referencia": 1184,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954nk0016ttt8kmld67fq",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaez05003btto4pggigmyp",
-    "referencia": 6370,
-    "captureImg": "/images/capture-4",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez0h003dtto4k2boxwdk",
-    "referencia": 5904,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaez0r003ftto493o1gkdx",
-    "referencia": 7990,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez12003htto4lj7ezo95",
-    "referencia": 5338,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaez1e003jtto43otk6wpt",
-    "referencia": 8916,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez1o003ltto4biscdqsr",
-    "referencia": 6156,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954nt0018ttt8nf9f3ow8",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez20003ntto4qc5q2s3q",
-    "referencia": 7163,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaez2c003ptto41bzxu3lm",
-    "referencia": 2416,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez2n003rtto4n4zndnmj",
-    "referencia": 7579,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez2y003ttto4k6mbczqd",
-    "referencia": 4330,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaez3c003vtto4tvyh7c2o",
-    "referencia": 9499,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez3p003xtto4opwqa7pz",
-    "referencia": 1132,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954o2001attt8r8jgqi3k",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaez44003ztto435nhmwc8",
-    "referencia": 2959,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954oa001cttt88pj1ycag",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez4j0041tto4z9bqot2e",
-    "referencia": 7897,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954oa001cttt88pj1ycag",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez4t0043tto49fccepow",
-    "referencia": 6676,
-    "captureImg": "/images/capture-3",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954oa001cttt88pj1ycag",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaez560045tto4x4lmafeb",
-    "referencia": 3302,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954oa001cttt88pj1ycag",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez5h0047tto4d1aifxz0",
-    "referencia": 3975,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez5t0049tto4yv7xprjc",
-    "referencia": 2526,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez65004btto4cn97z97r",
-    "referencia": 8925,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaez6h004dtto4wywrfrrl",
-    "referencia": 5504,
-    "captureImg": "/images/capture-4",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez6s004ftto4r3htk1lt",
-    "referencia": 9160,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez72004htto42r31dhea",
-    "referencia": 8472,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954ok001ettt8mhvwdrb0",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaez7f004jtto48kjwfmh2",
-    "referencia": 6853,
-    "captureImg": "/images/capture-3",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954ou001gttt8oyb6mmda",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez7r004ltto4otbs54a5",
-    "referencia": 1573,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954ou001gttt8oyb6mmda",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez82004ntto47auixy8b",
-    "referencia": 5532,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954ou001gttt8oyb6mmda",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez8d004ptto4sxalnust",
-    "referencia": 4358,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954ou001gttt8oyb6mmda",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaez8n004rtto4cmnirdfk",
-    "referencia": 1601,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954p2001ittt85zn6bvzb",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaez8y004ttto49lfa5vvc",
-    "referencia": 2144,
-    "captureImg": "/images/capture-4",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954p2001ittt85zn6bvzb",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaez99004vtto4b7dmvhgh",
-    "referencia": 6220,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954p2001ittt85zn6bvzb",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaez9l004xtto4bsk9e5om",
-    "referencia": 7075,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954pb001kttt8vpzn9270",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaez9u004ztto4kr9d3niy",
-    "referencia": 3006,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954pb001kttt8vpzn9270",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaeza60051tto4vvzstduo",
-    "referencia": 2672,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954pb001kttt8vpzn9270",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezaj0053tto4faj376zj",
-    "referencia": 6234,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954pb001kttt8vpzn9270",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezav0055tto4kikolxr5",
-    "referencia": 2769,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954pj001mttt8gk8c5u30",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezb50057tto4k5svqj4i",
-    "referencia": 1617,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954pj001mttt8gk8c5u30",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaezbe0059tto48ao2v7z8",
-    "referencia": 4561,
-    "captureImg": "/images/capture-2",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954pj001mttt8gk8c5u30",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaezbo005btto4bmy7rxll",
-    "referencia": 1545,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954pj001mttt8gk8c5u30",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezc0005dtto42tzvavja",
-    "referencia": 2410,
-    "captureImg": "/images/capture-1",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ps001ottt8q5cmb9t6",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaezca005ftto4ag5y7nnx",
-    "referencia": 8130,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954ps001ottt8q5cmb9t6",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaezcj005htto4gekcxozx",
-    "referencia": 6321,
-    "captureImg": "/images/capture-3",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954ps001ottt8q5cmb9t6",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaezcs005jtto45xbigv0p",
-    "referencia": 5423,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954ps001ottt8q5cmb9t6",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezd2005ltto4hgxpvvgh",
-    "referencia": 8620,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954q1001qttt8obsnyxdq",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezdb005ntto4mnhgobxu",
-    "referencia": 1288,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954q1001qttt8obsnyxdq",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezdl005ptto4qxpd27sy",
-    "referencia": 8000,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954q1001qttt8obsnyxdq",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezdv005rtto4wdkozafz",
-    "referencia": 9568,
-    "captureImg": "/images/capture-1",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954q1001qttt8obsnyxdq",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaeze5005ttto4lhixegrw",
-    "referencia": 9026,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954qd001sttt8qzr6j75l",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezee005vtto4r8sjc7ht",
-    "referencia": 3378,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954qd001sttt8qzr6j75l",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezen005xtto491evquij",
-    "referencia": 9818,
-    "captureImg": "/images/capture-1",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954qd001sttt8qzr6j75l",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaezew005ztto4rfy4h17i",
-    "referencia": 8099,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954qm001uttt8v7u1jcoq",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezf60061tto4qgdb9bi7",
-    "referencia": 9408,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954qm001uttt8v7u1jcoq",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezfg0063tto4kbk9jp8e",
-    "referencia": 1298,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954qm001uttt8v7u1jcoq",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezfp0065tto4aqo5km62",
-    "referencia": 6811,
-    "captureImg": "/images/capture-2",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954r8001wttt8ysuzawre",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaezfz0067tto4bynbnbtv",
-    "referencia": 5941,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/4/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954r8001wttt8ysuzawre",
-    "cobroId": "clip9jvf2000dtt60xj2xnzmn"
-  },
-  {
-    "id": "clipaezg90069tto4zfh0qezo",
-    "referencia": 5707,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954r8001wttt8ysuzawre",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezgi006btto4mirii0sz",
-    "referencia": 5481,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954ru001yttt8bvle3j3i",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezgt006dtto4n9o5rroq",
-    "referencia": 5356,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ru001yttt8bvle3j3i",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezh2006ftto4q92g1bwx",
-    "referencia": 8745,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954s30020ttt8f07wyd9l",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezhc006htto4eyq6z0co",
-    "referencia": 9782,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954s30020ttt8f07wyd9l",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezhl006jtto4tcaaaidn",
-    "referencia": 6632,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954s30020ttt8f07wyd9l",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezhv006ltto4hhfgkt4y",
-    "referencia": 5205,
-    "captureImg": "/images/capture-4",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954s30020ttt8f07wyd9l",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezi5006ntto4am12pih3",
-    "referencia": 6410,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954sb0022ttt8iprh0hks",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezif006ptto4n0duggms",
-    "referencia": 2116,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954sb0022ttt8iprh0hks",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezio006rtto472cwdmar",
-    "referencia": 4858,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954sb0022ttt8iprh0hks",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaeziy006ttto4x83xmpcw",
-    "referencia": 6112,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0820003ttyghhsndgtz",
-    "perfilId": "clip954sb0022ttt8iprh0hks",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezj8006vtto4cgj6xlpo",
-    "referencia": 7630,
-    "captureImg": "/images/capture-4",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954sk0024ttt8lbwewna2",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezjh006xtto482uabgn5",
-    "referencia": 8497,
-    "captureImg": "/images/capture-2",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09v000httygvy67u9qm",
-    "perfilId": "clip954sk0024ttt8lbwewna2",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezjq006ztto4whz1w6n6",
-    "referencia": 5523,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954sk0024ttt8lbwewna2",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezjz0071tto4bplxyhba",
-    "referencia": 7580,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d094000bttygpi2qn9z2",
-    "perfilId": "clip954st0026ttt8u3kv6r2f",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezk90073tto4zjltno6g",
-    "referencia": 5290,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954st0026ttt8u3kv6r2f",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezkj0075tto4fqa53mw5",
-    "referencia": 4674,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954t20028ttt8jaoqk5ek",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezkt0077tto4xvu5v7xh",
-    "referencia": 6524,
-    "captureImg": "/images/capture-4",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08c0005ttygmimgcve4",
-    "perfilId": "clip954ta002attt8uool2syq",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaezl30079tto4gvfljl2v",
-    "referencia": 8576,
-    "captureImg": "/images/capture-1",
-    "monto": 10.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d08l0007ttyghzjw5ubz",
-    "perfilId": "clip954tz002gttt8c3kj4ms5",
-    "cobroId": "clip9jvei0009tt60tu106r85"
-  },
-  {
-    "id": "clipaezlc007btto4vjk9ml3r",
-    "referencia": 8869,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d09d000dttygz69q0kmp",
-    "perfilId": "clip954u7002ittt8h05ti9o7",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  },
-  {
-    "id": "clipaezll007dtto4caud45dv",
-    "referencia": 4412,
-    "captureImg": "/images/capture-4",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954u7002ittt8h05ti9o7",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaezlv007ftto40ljxym3i",
-    "referencia": 3885,
-    "captureImg": "/images/capture-3",
-    "monto": 30.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d09m000fttygdicaz2pi",
-    "perfilId": "clip954u7002ittt8h05ti9o7",
-    "cobroId": "clip9jvdx0005tt60jto3mmxq"
-  },
-  {
-    "id": "clipaezm4007htto4k944a80c",
-    "referencia": 7041,
-    "captureImg": "/images/capture-3",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954ug002kttt8sdtm24v7",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezme007jtto4kce8kkjx",
-    "referencia": 6067,
-    "captureImg": "/images/capture-2",
-    "monto": 15.0,
-    "fecha": "1/3/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954up002mttt8mhybqgq4",
-    "cobroId": "clip9jves000btt60gs9ucacf"
-  },
-  {
-    "id": "clipaezmq007ltto4t1qm0c68",
-    "referencia": 1358,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d0a4000jttyg9a94r1be",
-    "perfilId": "clip954ux002ottt8oep602za",
-    "cobroId": "clip9jvdn0003tt601sry8t1d"
-  },
-  {
-    "id": "clipaezmz007ntto44ozidkh3",
-    "referencia": 7544,
-    "captureImg": "/images/capture-2",
-    "monto": 20.0,
-    "fecha": "1/2/2023 04:00:00",
-    "grupoId": "clip9d08v0009ttygj8s6v0dh",
-    "perfilId": "clip954ux002ottt8oep602za",
-    "cobroId": "clip9jvd80001tt60gg9ljx10"
-  },
-  {
-    "id": "clipaezn8007ptto46hmkawjy",
-    "referencia": 7380,
-    "captureImg": "/images/capture-1",
-    "monto": 15.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d07o0001ttyg17t9jgya",
-    "perfilId": "clip954v6002qttt8img88b89",
-    "cobroId": "clip9jvfb000ftt60v5g7sxy3"
-  },
-  {
-    "id": "clipaezni007rtto4zjvk4u0i",
-    "referencia": 4895,
-    "captureImg": "/images/capture-1",
-    "monto": 30.0,
-    "fecha": "1/5/2023 04:00:00",
-    "grupoId": "clip9d0ad000lttygdge7himu",
-    "perfilId": "clip954v6002qttt8img88b89",
-    "cobroId": "clip9jve80007tt600t2a1hf8"
-  }
+   {
+      "id": "clipaeye90001tto4a4ynpfxo",
+      "referencia": 9749,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954e40000ttt88bw9jn9a",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyen0003tto4rdb30439",
+      "referencia": 1258,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954ek0002ttt8p8wlboqz",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyey0005tto4fq1hrvlu",
+      "referencia": 1904,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954ek0002ttt8p8wlboqz",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyf90007tto4kdqx1xsi",
+      "referencia": 7491,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954eu0004ttt87h5fe1se",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeyfl0009tto4qnu2ehf6",
+      "referencia": 4690,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954f40006ttt835txgqt3",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyfw000btto4ew69w3ua",
+      "referencia": 7350,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954fd0008ttt8gmkw7noj",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeyg6000dtto4y5rzi7fl",
+      "referencia": 4167,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954fd0008ttt8gmkw7noj",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeygk000ftto45q9u29tr",
+      "referencia": 2304,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954fd0008ttt8gmkw7noj",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeygx000htto4dks48q46",
+      "referencia": 5185,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954fd0008ttt8gmkw7noj",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeyh8000jtto42c70s4pf",
+      "referencia": 4328,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954fd0008ttt8gmkw7noj",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeyhi000ltto4caaetx15",
+      "referencia": 7496,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954fm000attt8zf1yswgu",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeyht000ntto4b7e826j2",
+      "referencia": 9350,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeyi3000ptto4lrqdj2xk",
+      "referencia": 6109,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyid000rtto4yyb6e8rd",
+      "referencia": 8025,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeyin000ttto4x71zjrma",
+      "referencia": 8128,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyix000vtto46cz5m3z8",
+      "referencia": 8754,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaeyj7000xtto4cvpogh2b",
+      "referencia": 8850,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954g9000ettt8t3g71c9n",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyjh000ztto4mkeqdwxq",
+      "referencia": 2965,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954gj000gttt8pm2lte0n",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyjr0011tto47tpl61qf",
+      "referencia": 8664,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954gw000ittt8pv4uiz97",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyk10013tto45d6e0u5c",
+      "referencia": 1177,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954h6000kttt8u8e46jdk",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyka0015tto4n1baos1f",
+      "referencia": 4389,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954hg000mttt8fiw8b1j9",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeykm0017tto47sxg7t06",
+      "referencia": 1777,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954hg000mttt8fiw8b1j9",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeykx0019tto4m8fd5pkl",
+      "referencia": 7986,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954hg000mttt8fiw8b1j9",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeyl7001btto41zl9sbyv",
+      "referencia": 6828,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954hg000mttt8fiw8b1j9",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeylh001dtto4d46un86j",
+      "referencia": 9587,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954hq000ottt8ca99fj6h",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeylq001ftto43o1k4yte",
+      "referencia": 3575,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954i0000qttt8hxhdi2yt",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeym1001htto4zx2afvzp",
+      "referencia": 6907,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954i0000qttt8hxhdi2yt",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeypq001jtto4muwj667v",
+      "referencia": 2470,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954i0000qttt8hxhdi2yt",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeyq6001ltto4s57f9ssi",
+      "referencia": 7649,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeyqj001ntto4u6rzudw3",
+      "referencia": 4276,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeyqt001ptto4kbb0fkhj",
+      "referencia": 3761,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeyr8001rtto40azo0ymn",
+      "referencia": 5633,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyrj001ttto4p82awqt0",
+      "referencia": 6875,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaeyru001vtto4nqp0z5s1",
+      "referencia": 8214,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954i9000sttt84nb1uq9j",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeys6001xtto41a7cfg5z",
+      "referencia": 3718,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954ii000uttt8o995uw48",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeysh001ztto4g55x65hr",
+      "referencia": 5820,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ii000uttt8o995uw48",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeysu0021tto46kdue5z8",
+      "referencia": 6953,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954ii000uttt8o995uw48",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaeyt50023tto4dvlbooun",
+      "referencia": 7814,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954lq000wttt8pmzjpv7k",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeyth0025tto4qj899ssv",
+      "referencia": 3191,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954lq000wttt8pmzjpv7k",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeytr0027tto4q3juqxwk",
+      "referencia": 7963,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954lq000wttt8pmzjpv7k",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyu20029tto4matoe7t0",
+      "referencia": 3372,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954lq000wttt8pmzjpv7k",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaeyue002btto4hb0a60f8",
+      "referencia": 5630,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954mj000yttt898wvb4df",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyup002dtto45ad5s62c",
+      "referencia": 2980,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954mj000yttt898wvb4df",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeyuz002ftto4zk2lok2t",
+      "referencia": 8206,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954mj000yttt898wvb4df",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeyvc002htto4wje1iqtu",
+      "referencia": 1480,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954mj000yttt898wvb4df",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyvo002jtto497z4lf6p",
+      "referencia": 6568,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954mj000yttt898wvb4df",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyw0002ltto4n83vmpyx",
+      "referencia": 6187,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954ms0010ttt8j4ylg5si",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeywc002ntto4ji35zeqm",
+      "referencia": 1462,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ms0010ttt8j4ylg5si",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeywn002ptto4tkxu9mbu",
+      "referencia": 2705,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954ms0010ttt8j4ylg5si",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeywx002rtto41fkinr2g",
+      "referencia": 6873,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954n10012ttt87g8k3aww",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaeyx9002ttto432j4wiq5",
+      "referencia": 8685,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954n10012ttt87g8k3aww",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyxm002vtto44ml6vrq9",
+      "referencia": 1541,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954n10012ttt87g8k3aww",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeyxw002xtto4dqx77zzm",
+      "referencia": 5192,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954na0014ttt839w6mine",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaeyy7002ztto49gvaztxr",
+      "referencia": 7336,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeyyj0031tto488v0yp3g",
+      "referencia": 5908,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaeyyv0033tto498bzqzhp",
+      "referencia": 3356,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaeyz80035tto49qfosshn",
+      "referencia": 9874,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaeyzj0037tto4vxzcipx8",
+      "referencia": 9492,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeyzv0039tto48pqv9udt",
+      "referencia": 1184,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954nk0016ttt8kmld67fq",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaez05003btto4pggigmyp",
+      "referencia": 6370,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez0h003dtto4k2boxwdk",
+      "referencia": 5904,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaez0r003ftto493o1gkdx",
+      "referencia": 7990,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez12003htto4lj7ezo95",
+      "referencia": 5338,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaez1e003jtto43otk6wpt",
+      "referencia": 8916,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez1o003ltto4biscdqsr",
+      "referencia": 6156,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954nt0018ttt8nf9f3ow8",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez20003ntto4qc5q2s3q",
+      "referencia": 7163,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaez2c003ptto41bzxu3lm",
+      "referencia": 2416,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez2n003rtto4n4zndnmj",
+      "referencia": 7579,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez2y003ttto4k6mbczqd",
+      "referencia": 4330,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaez3c003vtto4tvyh7c2o",
+      "referencia": 9499,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez3p003xtto4opwqa7pz",
+      "referencia": 1132,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954o2001attt8r8jgqi3k",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaez44003ztto435nhmwc8",
+      "referencia": 2959,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954oa001cttt88pj1ycag",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez4j0041tto4z9bqot2e",
+      "referencia": 7897,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954oa001cttt88pj1ycag",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez4t0043tto49fccepow",
+      "referencia": 6676,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954oa001cttt88pj1ycag",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaez560045tto4x4lmafeb",
+      "referencia": 3302,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954oa001cttt88pj1ycag",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez5h0047tto4d1aifxz0",
+      "referencia": 3975,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez5t0049tto4yv7xprjc",
+      "referencia": 2526,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez65004btto4cn97z97r",
+      "referencia": 8925,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaez6h004dtto4wywrfrrl",
+      "referencia": 5504,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez6s004ftto4r3htk1lt",
+      "referencia": 9160,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez72004htto42r31dhea",
+      "referencia": 8472,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954ok001ettt8mhvwdrb0",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaez7f004jtto48kjwfmh2",
+      "referencia": 6853,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954ou001gttt8oyb6mmda",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez7r004ltto4otbs54a5",
+      "referencia": 1573,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954ou001gttt8oyb6mmda",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez82004ntto47auixy8b",
+      "referencia": 5532,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954ou001gttt8oyb6mmda",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez8d004ptto4sxalnust",
+      "referencia": 4358,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954ou001gttt8oyb6mmda",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaez8n004rtto4cmnirdfk",
+      "referencia": 1601,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954p2001ittt85zn6bvzb",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaez8y004ttto49lfa5vvc",
+      "referencia": 2144,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954p2001ittt85zn6bvzb",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaez99004vtto4b7dmvhgh",
+      "referencia": 6220,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954p2001ittt85zn6bvzb",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaez9l004xtto4bsk9e5om",
+      "referencia": 7075,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954pb001kttt8vpzn9270",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaez9u004ztto4kr9d3niy",
+      "referencia": 3006,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954pb001kttt8vpzn9270",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaeza60051tto4vvzstduo",
+      "referencia": 2672,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954pb001kttt8vpzn9270",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezaj0053tto4faj376zj",
+      "referencia": 6234,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954pb001kttt8vpzn9270",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezav0055tto4kikolxr5",
+      "referencia": 2769,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954pj001mttt8gk8c5u30",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezb50057tto4k5svqj4i",
+      "referencia": 1617,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954pj001mttt8gk8c5u30",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaezbe0059tto48ao2v7z8",
+      "referencia": 4561,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954pj001mttt8gk8c5u30",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaezbo005btto4bmy7rxll",
+      "referencia": 1545,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954pj001mttt8gk8c5u30",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezc0005dtto42tzvavja",
+      "referencia": 2410,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ps001ottt8q5cmb9t6",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaezca005ftto4ag5y7nnx",
+      "referencia": 8130,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954ps001ottt8q5cmb9t6",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaezcj005htto4gekcxozx",
+      "referencia": 6321,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954ps001ottt8q5cmb9t6",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaezcs005jtto45xbigv0p",
+      "referencia": 5423,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954ps001ottt8q5cmb9t6",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezd2005ltto4hgxpvvgh",
+      "referencia": 8620,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954q1001qttt8obsnyxdq",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezdb005ntto4mnhgobxu",
+      "referencia": 1288,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954q1001qttt8obsnyxdq",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezdl005ptto4qxpd27sy",
+      "referencia": 8000,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954q1001qttt8obsnyxdq",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezdv005rtto4wdkozafz",
+      "referencia": 9568,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954q1001qttt8obsnyxdq",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaeze5005ttto4lhixegrw",
+      "referencia": 9026,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954qd001sttt8qzr6j75l",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezee005vtto4r8sjc7ht",
+      "referencia": 3378,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954qd001sttt8qzr6j75l",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezen005xtto491evquij",
+      "referencia": 9818,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954qd001sttt8qzr6j75l",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaezew005ztto4rfy4h17i",
+      "referencia": 8099,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954qm001uttt8v7u1jcoq",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezf60061tto4qgdb9bi7",
+      "referencia": 9408,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954qm001uttt8v7u1jcoq",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezfg0063tto4kbk9jp8e",
+      "referencia": 1298,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954qm001uttt8v7u1jcoq",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezfp0065tto4aqo5km62",
+      "referencia": 6811,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954r8001wttt8ysuzawre",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaezfz0067tto4bynbnbtv",
+      "referencia": 5941,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/4/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954r8001wttt8ysuzawre",
+      "cobroId": "clip9jvf2000dtt60xj2xnzmn"
+   },
+   {
+      "id": "clipaezg90069tto4zfh0qezo",
+      "referencia": 5707,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954r8001wttt8ysuzawre",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezgi006btto4mirii0sz",
+      "referencia": 5481,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954ru001yttt8bvle3j3i",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezgt006dtto4n9o5rroq",
+      "referencia": 5356,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ru001yttt8bvle3j3i",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezh2006ftto4q92g1bwx",
+      "referencia": 8745,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954s30020ttt8f07wyd9l",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezhc006htto4eyq6z0co",
+      "referencia": 9782,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954s30020ttt8f07wyd9l",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezhl006jtto4tcaaaidn",
+      "referencia": 6632,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954s30020ttt8f07wyd9l",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezhv006ltto4hhfgkt4y",
+      "referencia": 5205,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954s30020ttt8f07wyd9l",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezi5006ntto4am12pih3",
+      "referencia": 6410,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954sb0022ttt8iprh0hks",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezif006ptto4n0duggms",
+      "referencia": 2116,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954sb0022ttt8iprh0hks",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezio006rtto472cwdmar",
+      "referencia": 4858,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954sb0022ttt8iprh0hks",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaeziy006ttto4x83xmpcw",
+      "referencia": 6112,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0820003ttyghhsndgtz",
+      "perfilId": "clip954sb0022ttt8iprh0hks",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezj8006vtto4cgj6xlpo",
+      "referencia": 7630,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954sk0024ttt8lbwewna2",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezjh006xtto482uabgn5",
+      "referencia": 8497,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09v000httygvy67u9qm",
+      "perfilId": "clip954sk0024ttt8lbwewna2",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezjq006ztto4whz1w6n6",
+      "referencia": 5523,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954sk0024ttt8lbwewna2",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezjz0071tto4bplxyhba",
+      "referencia": 7580,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d094000bttygpi2qn9z2",
+      "perfilId": "clip954st0026ttt8u3kv6r2f",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezk90073tto4zjltno6g",
+      "referencia": 5290,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954st0026ttt8u3kv6r2f",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezkj0075tto4fqa53mw5",
+      "referencia": 4674,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954t20028ttt8jaoqk5ek",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezkt0077tto4xvu5v7xh",
+      "referencia": 6524,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08c0005ttygmimgcve4",
+      "perfilId": "clip954ta002attt8uool2syq",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaezl30079tto4gvfljl2v",
+      "referencia": 8576,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 10.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d08l0007ttyghzjw5ubz",
+      "perfilId": "clip954tz002gttt8c3kj4ms5",
+      "cobroId": "clip9jvei0009tt60tu106r85"
+   },
+   {
+      "id": "clipaezlc007btto4vjk9ml3r",
+      "referencia": 8869,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d09d000dttygz69q0kmp",
+      "perfilId": "clip954u7002ittt8h05ti9o7",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   },
+   {
+      "id": "clipaezll007dtto4caud45dv",
+      "referencia": 4412,
+      "captureImg": "/images/capture-4.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954u7002ittt8h05ti9o7",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaezlv007ftto40ljxym3i",
+      "referencia": 3885,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 30.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d09m000fttygdicaz2pi",
+      "perfilId": "clip954u7002ittt8h05ti9o7",
+      "cobroId": "clip9jvdx0005tt60jto3mmxq"
+   },
+   {
+      "id": "clipaezm4007htto4k944a80c",
+      "referencia": 7041,
+      "captureImg": "/images/capture-3.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954ug002kttt8sdtm24v7",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezme007jtto4kce8kkjx",
+      "referencia": 6067,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 15.0,
+      "fecha": "1/3/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954up002mttt8mhybqgq4",
+      "cobroId": "clip9jves000btt60gs9ucacf"
+   },
+   {
+      "id": "clipaezmq007ltto4t1qm0c68",
+      "referencia": 1358,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d0a4000jttyg9a94r1be",
+      "perfilId": "clip954ux002ottt8oep602za",
+      "cobroId": "clip9jvdn0003tt601sry8t1d"
+   },
+   {
+      "id": "clipaezmz007ntto44ozidkh3",
+      "referencia": 7544,
+      "captureImg": "/images/capture-2.jpg",
+      "monto": 20.0,
+      "fecha": "1/2/2023 04:00:00",
+      "grupoId": "clip9d08v0009ttygj8s6v0dh",
+      "perfilId": "clip954ux002ottt8oep602za",
+      "cobroId": "clip9jvd80001tt60gg9ljx10"
+   },
+   {
+      "id": "clipaezn8007ptto46hmkawjy",
+      "referencia": 7380,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 15.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d07o0001ttyg17t9jgya",
+      "perfilId": "clip954v6002qttt8img88b89",
+      "cobroId": "clip9jvfb000ftt60v5g7sxy3"
+   },
+   {
+      "id": "clipaezni007rtto4zjvk4u0i",
+      "referencia": 4895,
+      "captureImg": "/images/capture-1.jpg",
+      "monto": 30.0,
+      "fecha": "1/5/2023 04:00:00",
+      "grupoId": "clip9d0ad000lttygdge7himu",
+      "perfilId": "clip954v6002qttt8img88b89",
+      "cobroId": "clip9jve80007tt600t2a1hf8"
+   }
 ]

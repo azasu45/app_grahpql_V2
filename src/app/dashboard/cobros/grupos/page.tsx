@@ -1,5 +1,5 @@
 import React from 'react';
-import AllGrupos from './allGrupos';
+import AllGrupos from '../list/allGrupos';
 import Filtros from './filtros';
 
 function Page() {
