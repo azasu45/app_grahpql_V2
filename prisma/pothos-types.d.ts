@@ -163,14 +163,14 @@ export default interface PrismaTypes {
         Where: Prisma.PagoWhereInput;
         Create: Prisma.PagoCreateInput;
         Update: Prisma.PagoUpdateInput;
-        RelationName: "perfil" | "suscrito" | "grupo" | "cobro";
+        RelationName: "perfilPago" | "perfilSuscrito" | "grupo" | "cobro";
         ListRelations: never;
         Relations: {
-            perfil: {
+            perfilPago: {
                 Shape: Perfil;
                 Name: "Perfil";
             };
-            suscrito: {
+            perfilSuscrito: {
                 Shape: Perfil;
                 Name: "Perfil";
             };
