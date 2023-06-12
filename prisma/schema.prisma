@@ -69,9 +69,10 @@ model Perfil {
 
   userId String? @unique
 
-  Grupo Grupo[]
-  Cobro Cobro[]
-  Pago  Pago[]
+  Grupo    Grupo[]
+  Cobro    Cobro[]
+  Pago     Pago[]
+  Suscrito Pago[]  @relation(name: "Suscrito")
 
   @@index([userId])
 }
@@ -101,10 +102,12 @@ model Pago {
   captureImg String
   monto      Float
   fecha      DateTime @default(now())
-  grupoId    String
   perfilId   String
-  cobroId    String
-  grupo      Grupo    @relation(fields: [grupoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  perfil     Perfil   @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  cobro      Cobro    @relation(fields: [cobroId], references: [id], onDelete: Cascade)
+  suscritoId String
+  cobroId    String?
+  grupoId    String?
+  perfil   Perfil @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  suscrito Perfil @relation(name: "Suscrito", fields: [suscritoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  grupo    Grupo?  @relation(fields: [grupoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  cobro    Cobro?  @relation(fields: [cobroId], references: [id], onDelete: Cascade)
 }

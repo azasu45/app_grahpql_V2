@@ -9,7 +9,7 @@ import ButtonBar from './pagosRecibidos/ButtonBar';
 const navigation = [
    { name: 'General', href: '/paymonitor/cobros' },
    { name: 'Pagos Recibidos', href: '/paymonitor/cobros/pagosRecibidos' },
-   { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
+   // { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
 ];
 
 export default async function Layout({

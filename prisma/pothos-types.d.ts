@@ -86,8 +86,8 @@ export default interface PrismaTypes {
         Where: Prisma.PerfilWhereInput;
         Create: Prisma.PerfilCreateInput;
         Update: Prisma.PerfilUpdateInput;
-        RelationName: "Grupo" | "Cobro" | "Pago";
-        ListRelations: "Grupo" | "Cobro" | "Pago";
+        RelationName: "Grupo" | "Cobro" | "Pago" | "Suscrito";
+        ListRelations: "Grupo" | "Cobro" | "Pago" | "Suscrito";
         Relations: {
             Grupo: {
                 Shape: Grupo[];
@@ -98,6 +98,10 @@ export default interface PrismaTypes {
                 Name: "Cobro";
             };
             Pago: {
+                Shape: Pago[];
+                Name: "Pago";
+            };
+            Suscrito: {
                 Shape: Pago[];
                 Name: "Pago";
             };
@@ -159,19 +163,23 @@ export default interface PrismaTypes {
         Where: Prisma.PagoWhereInput;
         Create: Prisma.PagoCreateInput;
         Update: Prisma.PagoUpdateInput;
-        RelationName: "grupo" | "perfil" | "cobro";
+        RelationName: "perfil" | "suscrito" | "grupo" | "cobro";
         ListRelations: never;
         Relations: {
-            grupo: {
-                Shape: Grupo;
-                Name: "Grupo";
-            };
             perfil: {
                 Shape: Perfil;
                 Name: "Perfil";
             };
+            suscrito: {
+                Shape: Perfil;
+                Name: "Perfil";
+            };
+            grupo: {
+                Shape: Grupo | null;
+                Name: "Grupo";
+            };
             cobro: {
-                Shape: Cobro;
+                Shape: Cobro | null;
                 Name: "Cobro";
             };
         };
