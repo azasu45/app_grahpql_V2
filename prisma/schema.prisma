@@ -72,7 +72,7 @@ model Perfil {
   Grupo    Grupo[]
   Cobro    Cobro[]
   Pago     Pago[]
-  Suscrito Pago[]  @relation(name: "Suscrito")
+  Suscrito Pago[]  @relation(name: "PerfilSuscrito")
 
   @@index([userId])
 }
@@ -97,17 +97,17 @@ model Cobro {
 }
 
 model Pago {
-  id         String   @id @default(cuid())
-  referencia Int      @default(autoincrement())
-  captureImg String
-  monto      Float
-  fecha      DateTime @default(now())
-  perfilId   String
-  suscritoId String
-  cobroId    String?
-  grupoId    String?
-  perfil   Perfil @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  suscrito Perfil @relation(name: "Suscrito", fields: [suscritoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  grupo    Grupo?  @relation(fields: [grupoId], references: [id], onUpdate: Cascade, onDelete: Cascade)
-  cobro    Cobro?  @relation(fields: [cobroId], references: [id], onDelete: Cascade)
+  id             String   @id @default(cuid())
+  referencia     Int      @default(autoincrement())
+  captureImg     String
+  monto          Float
+  fecha          DateTime @default(now())
+  perfilId       String
+  suscritoId     String
+  cobroId        String?
+  grupoId        String?
+  perfilPago     Perfil   @relation(fields: [perfilId], references: [id])
+  perfilSuscrito Perfil   @relation(name: "PerfilSuscrito", fields: [suscritoId], references: [id])
+  grupo          Grupo?   @relation(fields: [grupoId], references: [id], onDelete: SetNull)
+  cobro          Cobro?   @relation(fields: [cobroId], references: [id], onDelete: SetNull)
 }

@@ -60,8 +60,8 @@ function Result({ data }: { data: unknown }) {
                       className="h-6 w-6 text-black hover:text-violet-100"
                     />
                     <Menu as="div" className="relative inline-block text-left">
-                      <div>
-                        <Menu.Button className="basis-0">
+                      <div className="basis-0">
+                        <Menu.Button>
                           <EllipsisVerticalIcon className="h-6 w-6 text-black hover:text-violet-100" />
                         </Menu.Button>
                       </div>
