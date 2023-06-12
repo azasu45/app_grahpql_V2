@@ -1,14 +1,14 @@
 import React from 'react';
-import AllCobros from './allCobros';
-import Filtros from './filtros';
+import Filtros from './list/filtros';
+import AllCobros from './list/allCobros';
 
-function Page() {
+const Page = () => {
    return (
       <>
          <Filtros />
          <AllCobros />
       </>
    );
-}
+};
 
 export default Page;

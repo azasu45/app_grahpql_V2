@@ -11,9 +11,9 @@ import Image from 'next/image';
 import { User } from 'next-auth/core/types';
 
 const navigation = [
-   { name: 'Dashboard', href: '/dashboard' },
-   { name: 'Cobros', href: '/dashboard/cobros' },
-   { name: 'Pagos', href: '/dashboard/pagos' },
+   { name: 'Dashboard', href: '/paymonitor' },
+   { name: 'Cobros', href: '/paymonitor/cobros' },
+   { name: 'Pagos', href: '/paymonitor/pagos' },
 ];
 
 function classNames(...classes: string[]) {
