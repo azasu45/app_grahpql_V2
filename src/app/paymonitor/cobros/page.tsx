@@ -1,13 +1,11 @@
 import React from 'react';
-import Filtros from './list/filtros';
-import AllCobros from './list/allCobros';
+import AllPagos from './pagosRecibidos/allPagos';
 
 const Page = () => {
    return (
       <>
-         <Filtros />
-         <AllCobros />
-      </>
+         <AllPagos/>
+      </>   
    );
 };
 

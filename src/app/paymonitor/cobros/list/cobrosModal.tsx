@@ -1,14 +1,14 @@
 'use client';
 import { Dialog, Transition } from '@headlessui/react';
 import React from 'react';
-import AllGrupos from './allGrupos';
 import { Button, Icon } from '@tremor/react';
 import {
    
-   UserGroupIcon,
+   CreditCardIcon,
 } from '@heroicons/react/24/outline';
+import AllCobros from './allCobros';
 
-function GruposModal({
+function CobrosModal({
    open,
    handleOpen,
 }: {
@@ -19,10 +19,10 @@ function GruposModal({
       <>
          <div className='flex items-center'>
             <Button
-               icon={UserGroupIcon}
+               icon={CreditCardIcon}
                size='sm'
                onClick={() => handleOpen()}>
-               Grupos
+               Cobros
             </Button>
             <Transition
                appear
@@ -56,15 +56,15 @@ function GruposModal({
                               <Dialog.Title
                                  as='h3'
                                  className='text-lg font-medium leading-6 text-gray-900'>
-                                 Grupos
+                                 Cobros
                               </Dialog.Title>
-                              <AllGrupos />
+                              <AllCobros />
                               <div className='mt-4'>
                                  <button
                                     type='button'
                                     className='inline-flex justify-center rounded-md border border-transparent bg-red-100 px-4 py-2 text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2'
                                     onClick={() => handleOpen(false)}>
-                                    !Cerrar
+                                    Cerrar
                                  </button>
                               </div>
                            </Dialog.Panel>
@@ -78,4 +78,4 @@ function GruposModal({
    );
 }
 
-export default GruposModal;
+export default CobrosModal;
