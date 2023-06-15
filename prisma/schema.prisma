@@ -105,10 +105,10 @@ model Pago {
   fecha          DateTime @default(now())
   monto          Decimal  @db.Money
   referencia     String   @db.VarChar(20)
-  refAdmin       String   @db.VarChar(20)
+  refAdmin       String?  @db.VarChar(20)
   estado         Int      @db.SmallInt
   captureImg     String
-  Observacion    String   @db.VarChar(100)
+  Observacion    String?  @db.VarChar(100)
   perfilPago     Perfil   @relation(fields: [perfilId], references: [id])
   perfilSuscrito Perfil   @relation(name: "PerfilSuscrito", fields: [suscritoId], references: [id])
   grupo          Grupo?   @relation(fields: [grupoId], references: [id], onDelete: SetNull)
