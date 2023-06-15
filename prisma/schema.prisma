@@ -63,9 +63,9 @@ model VerificationToken {
 }
 
 model Perfil {
-  id      String @id @default(cuid())
-  subName String
-  cedula  String @unique @db.Text
+  id     String @id @default(cuid())
+  nombre String @db.VarChar(20)
+  cedula String @unique @db.Text
 
   userId String? @unique
 
@@ -81,7 +81,7 @@ model Grupo {
   id       String @id @default(cuid())
   perfilId String
   orden    Int
-  nombre   String
+  nombre   String @db.VarChar(100)
   perfil   Perfil @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
   Pago     Pago[]
 }
@@ -90,7 +90,7 @@ model Cobro {
   id          String   @id @default(cuid())
   descripcion String   @db.VarChar(150)
   fecha       DateTime @default(now())
-  monto       Float
+  monto       Decimal  @db.Money
   perfilId    String
   perfil      Perfil   @relation(fields: [perfilId], references: [id], onUpdate: Cascade, onDelete: Cascade)
   pagos       Pago[]
@@ -98,14 +98,17 @@ model Cobro {
 
 model Pago {
   id             String   @id @default(cuid())
-  referencia     Int      @default(autoincrement())
-  captureImg     String
-  monto          Float
-  fecha          DateTime @default(now())
   perfilId       String
   suscritoId     String
   cobroId        String?
   grupoId        String?
+  fecha          DateTime @default(now())
+  monto          Decimal  @db.Money
+  referencia     String   @db.VarChar(20)
+  refAdmin       String   @db.VarChar(20)
+  estado         Int      @db.SmallInt
+  captureImg     String
+  Observacion    String   @db.VarChar(100)
   perfilPago     Perfil   @relation(fields: [perfilId], references: [id])
   perfilSuscrito Perfil   @relation(name: "PerfilSuscrito", fields: [suscritoId], references: [id])
   grupo          Grupo?   @relation(fields: [grupoId], references: [id], onDelete: SetNull)

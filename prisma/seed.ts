@@ -17,8 +17,15 @@ async function createPerfiles() {
   await prisma.perfil.deleteMany();
 
   for (let data of perfilJSON) {
+
+    const {cedula,id,subName,userId} = data
+    
     await prisma.perfil.create({
-      data,
+      data:{
+        cedula,
+        nombre:subName,
+        id
+      },
     });
   }
 }
@@ -52,13 +59,25 @@ async function createPayments() {
   await prisma.pago.deleteMany();
   for (let data of pagoJSON) {
 
+    const {captureImg,cobroId,grupoId,id,monto,perfilId,suscritoId,referencia} = data
+
     const fecha = new Date(data.fecha);
     
     await prisma.pago.create({
-      data: {        
-       ...data,
-        fecha,
-      },
+       data: {
+          captureImg,
+          estado: 1,
+          refAdmin: '',
+          Observacion: '123',
+          cobroId,
+          perfilId,
+          suscritoId,
+          referencia:referencia.toString(),
+          monto,
+          fecha,
+          grupoId,
+          id
+       },
     });
   }
 }
