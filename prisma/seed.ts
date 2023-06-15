@@ -9,7 +9,7 @@ const prisma = new PrismaClient();
 async function main() {
   await createPerfiles();
   await createGroups();
-   await createCharge();
+  await createCharge();
   await createPayments();
 }
 
@@ -17,14 +17,14 @@ async function createPerfiles() {
   await prisma.perfil.deleteMany();
 
   for (let data of perfilJSON) {
+    const { cedula, id, subName, userId } = data;
 
-    const {cedula,id,subName,userId} = data
-    
     await prisma.perfil.create({
-      data:{
+      data: {
+        id,
         cedula,
-        nombre:subName,
-        id
+        nombre: subName,
+        userId,
       },
     });
   }
@@ -32,11 +32,10 @@ async function createPerfiles() {
 
 async function createGroups() {
   await prisma.grupo.deleteMany();
-  
+
   for (let data of grupoJSON) {
-   
     await prisma.grupo.create({
-    data,
+      data,
     });
   }
 }
@@ -44,12 +43,12 @@ async function createGroups() {
 async function createCharge() {
   await prisma.cobro.deleteMany();
   for (let data of cobroJSON) {
-  
     const fecha = new Date(data.fecha);
 
     await prisma.cobro.create({
-      data:{
-        ...data,fecha, 
+      data: {
+        ...data,
+        fecha,
       },
     });
   }
@@ -58,26 +57,34 @@ async function createCharge() {
 async function createPayments() {
   await prisma.pago.deleteMany();
   for (let data of pagoJSON) {
-
-    const {captureImg,cobroId,grupoId,id,monto,perfilId,suscritoId,referencia} = data
+    const {
+      captureImg,
+      cobroId,
+      grupoId,
+      id,
+      monto,
+      perfilId,
+      suscritoId,
+      referencia,
+    } = data;
 
     const fecha = new Date(data.fecha);
-    
+
     await prisma.pago.create({
-       data: {
-          captureImg,
-          estado: 1,
-          refAdmin: '',
-          Observacion: '123',
-          cobroId,
-          perfilId,
-          suscritoId,
-          referencia:referencia.toString(),
-          monto,
-          fecha,
-          grupoId,
-          id
-       },
+      data: {
+        captureImg,
+        estado: 1,
+        refAdmin: "",
+        Observacion: "123",
+        cobroId,
+        perfilId,
+        suscritoId,
+        referencia: referencia.toString(),
+        monto,
+        fecha,
+        grupoId,
+        id,
+      },
     });
   }
 }

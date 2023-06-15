@@ -1,46 +1,33 @@
-'use client';
+"use client";
 
-import { Menu } from '@headlessui/react';
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import {
-   InformationCircleIcon,
-   MagnifyingGlassIcon,
-   PlusCircleIcon,
-} from '@heroicons/react/24/outline';
-import {
-   Flex,
-   Icon,
-   TextInput,
-   Subtitle,
-   Button,
-   DateRangePicker,
-   DateRangePickerValue,
-} from '@tremor/react';
-
-import React from 'react';
-import GruposModal from './gruposModal';
-
-function classNames(...classes: string[]) {
-   return classes.filter(Boolean).join(' ');
-}
+  Flex,
+  TextInput,
+  DateRangePicker,
+  DateRangePickerValue,
+} from "@tremor/react";
+import {} from "react-hook-form";
+import React from "react";
 
 function Filtros() {
-   const [value, setValue] = React.useState<DateRangePickerValue>({
-      from: new Date(2023, 1, 1),
-      to: new Date(),
-   });
+  const [value, setValue] = React.useState<DateRangePickerValue>({
+    from: new Date(2023, 1, 1),
+    to: new Date(),
+  });
 
-   return (
-      <>
-         <Flex className='mt-1 gap-1 flex-wrap md:flex-nowrap'>
-            <TextInput
-               className='w-full'
-               placeholder='Buscar por nombre'
-               icon={MagnifyingGlassIcon}
-            />
-            <DateRangePicker className='mx-auto w-full' />
-         </Flex>
-      </>
-   );
+  return (
+    <>
+      <Flex className="mt-1 gap-1 flex-wrap md:flex-nowrap">
+        <TextInput
+          className="w-full"
+          placeholder="Buscar por nombre"
+          icon={MagnifyingGlassIcon}
+        />
+        <DateRangePicker className="mx-auto w-full" />
+      </Flex>
+    </>
+  );
 }
 
 export default Filtros;

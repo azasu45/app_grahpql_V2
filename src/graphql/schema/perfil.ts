@@ -5,7 +5,7 @@ builder.prismaNode("Perfil", {
   id: { field: "id" },
   fields: (t) => ({
     userId: t.expose("userId", { type: "ID", nullable: true }),
-    subName: t.exposeString("subName"),
+    nombre: t.exposeString("nombre"),
     cedula: t.exposeString("cedula"),
   }),
 });
@@ -42,12 +42,12 @@ builder.mutationField("crearOActualizarPerfil", (t) =>
         },
         create: {
           userId: user.id,
-          subName: input.nombre,
+          nombre: input.nombre,
           cedula: input.cedula,
         },
         update: {
           userId: user.id,
-          subName: input.nombre,
+          nombre: input.nombre,
           cedula: input.cedula,
         },
       });

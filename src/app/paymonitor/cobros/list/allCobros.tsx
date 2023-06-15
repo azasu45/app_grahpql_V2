@@ -13,10 +13,11 @@ import {
 } from "@heroicons/react/24/outline";
 import Pagination from "@app/components/pagination";
 import { Menu, Transition } from "@headlessui/react";
+import { useForm } from "react-hook-form";
 
 const gruposQuery = gql`
-  query Cobros($skip: Int) {
-    cobros(skip: $skip) {
+  query Cobros($skip: Int, $filtros: InputFiltrosCobros) {
+    cobros(skip: $skip, filtros: $filtros) {
       id
       monto
       descripcion
@@ -124,8 +125,26 @@ function Result({ data }: { data: unknown }) {
   );
 }
 
+type filtros = {
+  descripcion: string;
+};
+
 export default function AllCobros() {
   const [page, setPage] = React.useState(0);
+
+  const { register, handleSubmit } = useForm<filtros>();
+
+  const onSubmit = handleSubmit(async (data) => {
+    await fetchMore({
+      variables: {
+        skip: page * 10,
+        filtros: {
+          descripcion: data.descripcion,
+        },
+      },
+    });
+  });
+
   const { data, loading, fetchMore } = useQuery(gruposQuery, {
     fetchPolicy: "cache-first",
     variables: {
