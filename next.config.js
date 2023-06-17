@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental:{
-        typedRoutes:true
+    experimental: {
+        typedRoutes: true
     },
-    images:{
-        domains:[
+    images: {
+        domains: [
             "tailwindui.com",
             "images.unsplash.com",
             "lh3.googleusercontent.com"

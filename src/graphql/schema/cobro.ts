@@ -57,6 +57,54 @@ builder.queryFields((t) => ({
       }),
   }),
 
+  cobrosAdmin: t.prismaField({
+    type: ["Cobro"],
+    args: {
+      skip: t.arg.int(),
+      take: t.arg.int(),
+      filtros: t.arg({ type: InputFiltrosCobros, required: false }),
+    },
+    resolve: async (query, _, args, ctx) =>
+      await prismaYoga.cobro.findMany({
+        ...query,
+        take: args.take ?? DEFAULT_PAGE_SIZE,
+        skip: args.skip ?? 0,
+        where: {
+          descripcion: {
+            contains: args.filtros?.descripcion ?? undefined,
+            mode: "insensitive",
+          },
+        },
+        include: {
+          _count: {
+            select: {
+              pagos: true,
+            },
+          },
+        },
+      }),
+  }),
+
+  count: t.field({
+    type: "Int",
+    args: {
+      skip: t.arg.int(),
+      take: t.arg.int(),
+      filtros: t.arg({ type: InputFiltrosCobros, required: false }),
+    },
+    resolve: async (_, args, ctx) =>
+      await prismaYoga.cobro.count({
+        take: args.take ?? DEFAULT_PAGE_SIZE,
+        skip: args.skip ?? 0,
+        where: {
+          descripcion: {
+            contains: args.filtros?.descripcion ?? undefined,
+            mode: "insensitive",
+          },
+        },
+      }),
+  }),
+
   cobrosCount: t.field({
     type: "Int",
     resolve: async (root, args, ctx) =>
