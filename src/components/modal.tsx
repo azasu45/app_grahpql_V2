@@ -1,23 +1,32 @@
 "use client";
 
-import React from "react";
-
+import React, { ElementType } from "react";
 import { Button } from "@tremor/react";
 import { Dialog, Transition } from "@headlessui/react";
-import { CreditCardIcon } from "@heroicons/react/24/outline";
+
+interface ModalProps extends React.PropsWithChildren {
+  icon?: ElementType;
+  buttonTitle?: string;
+  title?: string;
+}
 
 export function Modal({
-  open,
-  handleOpen,
-}: {
-  open: boolean;
-  handleOpen: (force?: boolean) => void;
-}) {
+  icon,
+  buttonTitle = "Button",
+  children,
+  title = "Title",
+}: ModalProps) {
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  const handleOpen = (force?: boolean) => {
+    setOpen(force ? force : !open);
+  };
+
   return (
     <>
       <div className="flex items-center">
-        <Button icon={CreditCardIcon} size="sm" onClick={() => handleOpen()}>
-          Cobros
+        <Button icon={icon} size="sm" onClick={() => handleOpen()}>
+          {buttonTitle}
         </Button>
         <Transition appear show={open} as={React.Fragment}>
           <Dialog
@@ -36,6 +45,7 @@ export function Modal({
             >
               <div className="fixed inset-0 bg-black bg-opacity-25" />
             </Transition.Child>
+
             <div className="fixed inset-0 overflow-y-auto">
               <div className="flex min-h-full items-center justify-center p-4 text-center">
                 <Transition.Child
@@ -47,22 +57,14 @@ export function Modal({
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full h-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-gray-900"
                     >
-                      Cobros
+                      {title}
                     </Dialog.Title>
-
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quod consectetur voluptatem aperiam esse, sint
-                      dignissimos. Officiis molestiae a explicabo alias quo
-                      dolor rem, error quidem tempora eveniet atque quibusdam
-                      voluptatem.
-                    </div>
-
+                    <>{children}</>
                     <div className="mt-4">
                       <button
                         type="button"
