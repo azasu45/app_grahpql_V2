@@ -20,8 +20,8 @@ export default function Pagination({
    ) => void;
 }) {
    return (
-      <div className='flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6'>
-         <div className='flex flex-1 justify-between sm:hidden'>
+      <>
+         <div className='flex flex-1 justify-between sm:hidden w-full'>
             <button
                onClick={(e) => handleChangePage(e, page - 1)}
                className='relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50'>
@@ -57,7 +57,7 @@ export default function Pagination({
                         aria-hidden='true'
                      />
                   </button>
-                  <a
+                  <p
                      aria-current='page'
                      className=' relative z-10 inline-flex items-center px-4 py-2 text-sm font-semibold text-black focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
                      {count >= 10 ? (
@@ -69,7 +69,7 @@ export default function Pagination({
                            {count} of {count}
                         </span>
                      )}
-                  </a>
+                  </p>
                   <button
                      onClick={(e) => handleChangePage(e, page + 1)}
                      className={classNames(
@@ -87,6 +87,6 @@ export default function Pagination({
                </nav>
             </div>
          </div>
-      </div>
+      </>
    );
 }

@@ -3,31 +3,13 @@
 export const dynamic = 'force-dynamic';
 
 import React, { Fragment } from 'react';
-import { gql } from '@apollo/client';
-import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { Badge, Card, Flex, Icon, Text } from '@tremor/react';
 import {
    EllipsisVerticalIcon,
    BanknotesIcon,
    DocumentTextIcon,
 } from '@heroicons/react/24/outline';
-import Pagination from '@app/components/pagination';
 import { Menu, Transition } from '@headlessui/react';
-import { useForm, useFormContext } from 'react-hook-form';
-import Filtros from './filtros';
-
-const gruposQuery = gql`
-   query Cobros($skip: Int, $filtros: InputFiltrosCobros) {
-      cobros(skip: $skip, filtros: $filtros) {
-         id
-         monto
-         descripcion
-         fecha
-         pagosCount
-      }
-      cobrosCount
-   }
-`;
 
 function classNames(...classes: string[]) {
    return classes.filter(Boolean).join(' ');
@@ -130,61 +112,5 @@ function Result({ data }: { data: unknown }) {
                })}
          </div>
       </>
-   );
-}
-
-type filtros = {
-   descripcion: string;
-};
-
-export default function AllCobros() {
-   const [page, setPage] = React.useState(0);
-
-   const { handleSubmit } = useFormContext<filtros>();
-
-   const onSubmit = handleSubmit(async (data) => {
-      await fetchMore({
-         variables: {
-            skip: page * 10,
-            filtros: {
-               descripcion: data.descripcion,
-            },
-         },
-      });
-   });
-
-   const { data, loading, fetchMore } = useQuery(gruposQuery, {
-      fetchPolicy: 'cache-first',
-      variables: {
-         skip: page * 10,
-      },
-   });
-
-   const handleChangePage = async (
-      event: React.MouseEvent<HTMLButtonElement> | null,
-      newPage: number
-   ) => {
-      setPage(newPage);
-      await fetchMore({
-         variables: {
-            skip: page * 10,
-         },
-      });
-   };
-
-   if (loading) return <div>Cargando</div>;
-
-   return (
-      <form
-         className='mt-6'
-         onSubmit={onSubmit}>
-         <Filtros />
-         <Result data={data.cobros} />
-         <Pagination
-            count={data.cobrosCount}
-            page={page}
-            handleChangePage={handleChangePage}
-         />
-      </form>
    );
 }
