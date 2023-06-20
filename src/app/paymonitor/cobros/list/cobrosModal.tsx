@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ModalCSP from '@app/components/modal';
-import Filtros from './filtros';
+import Filtros from '../filtros';
 import { FormProvider, useForm } from 'react-hook-form';
 import {
    Bold,
@@ -38,7 +38,6 @@ export type TypeFiltrosCobros = {
 
 function CobrosModal() {
    const [open, setOpen] = React.useState<boolean>(false);
-
    const handleOpen = (force?: boolean) => {
       fetchMore({
          variables: {
@@ -92,11 +91,7 @@ function CobrosModal() {
                   onSubmit={onSubmit}
                   className='min-h-[480px] flex flex-col'>
                   <div className='flex gap-2'>
-                     <CobrosAgregarModal
-                        callback={() => {
-                           handleOpen();
-                        }}
-                     />
+                     <CobrosAgregarModal />
                      <Filtros />
                   </div>
 

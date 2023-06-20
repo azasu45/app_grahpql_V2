@@ -3,11 +3,13 @@
 import { Text, Title } from '@tremor/react';
 import React from 'react';
 import SubNavbar from './subNavbar';
-import ButtonBar from './pagosRecibidos/ButtonBar';
+import ButtonBar from './ButtonBar';
+import { FormProvider, useForm } from 'react-hook-form';
 
 const navigation = [
-{ name: 'Pagos Recibidos', href: '/paymonitor/cobros' },
-    { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
+   { name: 'Todos', href: '/paymonitor/cobros' },
+   { name: 'Pagos Recibidos', href: '/paymonitor/cobros/pagosR' },
+   { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
 ];
 
 export default async function Layout({
@@ -15,6 +17,8 @@ export default async function Layout({
 }: {
    children: React.ReactNode;
 }) {
+   const methods = useForm();
+
    return (
       <>
          <div className='flex justify-between items-center'>
@@ -25,8 +29,10 @@ export default async function Layout({
             eligendi voluptatibus.
          </Text>
          <SubNavbar navlinks={navigation} />
-         <ButtonBar />
-         {children}
+         <FormProvider {...methods}>
+            <ButtonBar />
+            {children}
+         </FormProvider>
       </>
    );
 }

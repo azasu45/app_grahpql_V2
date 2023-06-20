@@ -3,7 +3,7 @@
 import { InformationCircleIcon } from '@heroicons/react/24/outline';
 import { Flex, Icon, Subtitle } from '@tremor/react';
 import React from 'react';
-import CobrosModal from '../list/cobrosModal';
+import CobrosModal from './list/cobrosModal';
 
 function ButtonBar() {
    return (
@@ -21,11 +21,7 @@ function ButtonBar() {
                tooltip='descripción'
             />
          </Flex>
-         <div className='flex gap-1 flex-row flex-nowrap'>
-            {/* <GruposModal open={isOpen} handleOpen={handleOpen} /> */}
-            <CobrosModal />
-            {/* Drawer */}
-         </div>
+         <div className='flex gap-1 flex-row flex-nowrap'></div>
       </Flex>
    );
 }

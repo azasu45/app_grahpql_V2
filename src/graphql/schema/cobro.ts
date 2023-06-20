@@ -37,9 +37,6 @@ builder.queryFields((t) => ({
          filtros: t.arg({ type: InputFiltrosCobros, required: false }),
       },
       resolve: async (query, _, args, ctx) => {
-         console.log(args.filtros?.fechaDesde);
-         console.log(new Date(args.filtros?.fechaDesde));
-
          return await prismaYoga.cobro.findMany({
             ...query,
             take: args.take ?? DEFAULT_PAGE_SIZE,

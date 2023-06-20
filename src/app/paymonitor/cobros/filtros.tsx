@@ -3,8 +3,8 @@
 import React from 'react';
 import { FunnelIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 import { Flex, TextInput, DateRangePicker, Button, Icon } from '@tremor/react';
-import { useFormContext, Controller } from 'react-hook-form';
-import { TypeFiltrosCobros } from './cobrosModal';
+import { useFormContext, Controller, Form } from 'react-hook-form';
+import { TypeFiltrosCobros } from './list/cobrosModal';
 import { Transition } from '@headlessui/react';
 
 /*
@@ -43,7 +43,6 @@ function Filtros() {
                      placeholder='Buscar por nombre'
                      icon={MagnifyingGlassIcon}
                   />
-
                   <Controller
                      name='date'
                      control={control}
