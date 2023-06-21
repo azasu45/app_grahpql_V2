@@ -1,0 +1,10 @@
+query Cobros($skip: Int, $filtros: InputFiltrosCobros) {
+   cobros(skip: $skip, filtros: $filtros) {
+      id
+      monto
+      descripcion
+      fecha
+      pagosCount
+   }
+   cobrosCount
+}

@@ -1,5 +1,3 @@
-import React, { Suspense } from 'react';
-
 import Navbar from './navbar';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../api/auth/[...nextauth]/route';
@@ -14,7 +12,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
    return (
       <main>
          <Navbar user={user} />
-         <div className='p-4 md:p-6 mx-auto max-w-7xl'>{children}</div>
+         <div className='p-4 md:p-6 mx-auto max-w-7xl min-h-[calc(100vh-64px)]'>{children}</div>
       </main>
    );
 }

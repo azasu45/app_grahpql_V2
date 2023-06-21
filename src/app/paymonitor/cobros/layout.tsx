@@ -1,7 +1,6 @@
 'use client';
 
 import { DateRangePickerValue, Text, Title } from '@tremor/react';
-import React from 'react';
 import SubNavbar from './subNavbar';
 import { FormProvider, useForm } from 'react-hook-form';
 

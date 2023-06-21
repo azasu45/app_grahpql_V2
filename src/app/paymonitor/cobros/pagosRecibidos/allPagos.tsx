@@ -2,7 +2,6 @@
 
 export const dynamic = 'force-dynamic';
 
-import React from 'react';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import {
@@ -19,6 +18,7 @@ import {
 } from '@tremor/react';
 import Image from 'next/image';
 import Pagination from '@app/components/pagination';
+import { useState } from 'react';
 
 const gruposQuery = gql`
    query Pagos($skip: Int!) {
@@ -39,12 +39,7 @@ const gruposQuery = gql`
 
 function Result({ source, data }: { source: string; data: unknown }) {
    return (
-      <Grid
-         numItems={1}
-         numItemsSm={2}
-         numItemsMd={3}
-         numItemsLg={4}
-         className='gap-2'>
+      <Grid numItems={1} numItemsSm={2} numItemsMd={3} numItemsLg={4} className='gap-2'>
          <Card>
             <div className='h-44' />
          </Card>
@@ -53,7 +48,7 @@ function Result({ source, data }: { source: string; data: unknown }) {
 }
 
 export default function AllPagos() {
-   const [page, setPage] = React.useState(0);
+   const [page, setPage] = useState(0);
    const { data, loading, fetchMore } = useQuery(gruposQuery, {
       fetchPolicy: 'cache-first',
       variables: {
@@ -63,7 +58,7 @@ export default function AllPagos() {
 
    const handleChangePage = async (
       event: React.MouseEvent<HTMLButtonElement> | null,
-      newPage: number
+      newPage: number,
    ) => {
       setPage(newPage);
       await fetchMore({
@@ -76,15 +71,8 @@ export default function AllPagos() {
 
    return (
       <Card className='mt-6'>
-         <Result
-            source='useSuspenseQuery(userQuery)'
-            data={data.pagos}
-         />
-         <Pagination
-            count={data.pagosCount}
-            page={page}
-            handleChangePage={handleChangePage}
-         />
+         <Result source='useSuspenseQuery(userQuery)' data={data.pagos} />
+         <Pagination count={data.pagosCount} page={page} handleChangePage={handleChangePage} />
       </Card>
    );
 }

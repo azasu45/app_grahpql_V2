@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 function classNames(...classes: string[]) {
    return classes.filter(Boolean).join(' ');
@@ -30,9 +29,10 @@ const SubNavbar = ({ navlinks }: { navlinks: typeNavLikns[] }) => {
                         pathname === item.href
                            ? 'border-blue-500 text-blue-500'
                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
-                        'inline-flex items-center px-1 border-b-2 font-medium h-12 text-xs md:text-sm'
+                        'inline-flex items-center px-1 border-b-2 font-medium h-12 text-xs md:text-sm',
                      )}
-                     aria-current={pathname === item.href ? 'page' : undefined}>
+                     aria-current={pathname === item.href ? 'page' : undefined}
+                  >
                      {item.name}
                   </Link>
                ))}

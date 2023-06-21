@@ -1,4 +1,3 @@
-import React from 'react';
 import AllPagos from './allPagos';
 
 function Page() {

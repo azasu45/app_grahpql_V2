@@ -2,18 +2,9 @@
 
 import React from 'react';
 import ModalCSP from '@app/components/modal';
-import Filtros from '../filtros';
+import Filtros from '../../app/paymonitor/cobros/filtros';
 import { FormProvider, useForm } from 'react-hook-form';
-import {
-   Bold,
-   Button,
-   Card,
-   DateRangePickerValue,
-   Flex,
-   Metric,
-   Text,
-   Title,
-} from '@tremor/react';
+import { Bold, Button, Card, DateRangePickerValue, Flex, Metric, Text, Title } from '@tremor/react';
 import { useQuery, gql } from '@apollo/client';
 import Pagination from '@app/components/pagination';
 import CobrosAgregarModal from './cobrosAgregarModal';
@@ -58,7 +49,7 @@ function CobrosModal() {
 
    const handleChangePage = (
       event: React.MouseEvent<HTMLButtonElement> | null,
-      newPage: number
+      newPage: number,
    ) => {
       setPage(newPage);
       refetch();
@@ -82,14 +73,9 @@ function CobrosModal() {
 
    return (
       <>
-         <ModalCSP
-            title='Cobros'
-            open={open}
-            handleOpen={handleOpen}>
+         <ModalCSP title='Cobros' open={open} handleOpen={handleOpen}>
             <FormProvider {...methods}>
-               <form
-                  onSubmit={onSubmit}
-                  className='min-h-[480px] flex flex-col'>
+               <form onSubmit={onSubmit} className='min-h-[480px] flex flex-col'>
                   <div className='flex gap-2'>
                      <CobrosAgregarModal />
                      <Filtros />
@@ -109,21 +95,15 @@ function CobrosModal() {
                                     fecha: Date;
                                     pagosCount: number;
                                  }) => (
-                                    <Card
-                                       key={cobro.id}
-                                       className='py-1 px-2'>
+                                    <Card key={cobro.id} className='py-1 px-2'>
                                        <Title>{cobro.descripcion}</Title>
-                                       <Flex
-                                          className='gap-4 mt-2'
-                                          alignItems='start'>
+                                       <Flex className='gap-4 mt-2' alignItems='start'>
                                           <Metric className='mt-2 basis-0 whitespace-nowrap'>
                                              {cobro.monto} $
                                           </Metric>
                                           <div className='grow'>
                                              <Bold>Fecha</Bold>
-                                             <Text>
-                                                {cobro.fecha.toLocaleString()}
-                                             </Text>
+                                             <Text>{cobro.fecha.toLocaleString()}</Text>
                                           </div>
                                           <div className='basis-0'>
                                              <Bold>Pagos</Bold>
@@ -131,7 +111,7 @@ function CobrosModal() {
                                           </div>
                                        </Flex>
                                     </Card>
-                                 )
+                                 ),
                               )}
                            </div>
                         </div>
@@ -139,7 +119,8 @@ function CobrosModal() {
                            <Button
                               className='hidden sm:block'
                               color='red'
-                              onClick={() => handleOpen()}>
+                              onClick={() => handleOpen()}
+                           >
                               Cerrar
                            </Button>
 

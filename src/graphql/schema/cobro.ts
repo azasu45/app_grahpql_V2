@@ -1,6 +1,6 @@
-import { addDays } from '@app/libs/function';
+import { addDays } from '../../libs/function';
 import { builder } from '../builder';
-import { prismaYoga } from '../db';
+import { prisma } from '../db';
 
 builder.prismaNode('Cobro', {
    id: { field: 'id' },
@@ -37,7 +37,8 @@ builder.queryFields((t) => ({
          filtros: t.arg({ type: InputFiltrosCobros, required: false }),
       },
       resolve: async (query, _, args, ctx) => {
-         return await prismaYoga.cobro.findMany({
+         const { user } = ctx.session;
+         return await prisma.cobro.findMany({
             ...query,
             take: args.take ?? DEFAULT_PAGE_SIZE,
             skip: args.skip ?? 0,
@@ -47,12 +48,10 @@ builder.queryFields((t) => ({
                   mode: 'insensitive',
                },
                perfil: {
-                  userId: ctx.session.user.id,
+                  userId: user.id,
                },
                fecha: {
-                  gte: args.filtros?.fechaDesde
-                     ? new Date(args.filtros?.fechaDesde)
-                     : undefined,
+                  gte: args.filtros?.fechaDesde ? new Date(args.filtros?.fechaDesde) : undefined,
                },
                AND: [
                   {
@@ -92,7 +91,7 @@ builder.queryFields((t) => ({
          filtros: t.arg({ type: InputFiltrosCobros, required: false }),
       },
       resolve: async (query, _, args, ctx) =>
-         await prismaYoga.cobro.findMany({
+         await prisma.cobro.findMany({
             ...query,
             take: args.take ?? DEFAULT_PAGE_SIZE,
             skip: args.skip ?? 0,
@@ -103,12 +102,8 @@ builder.queryFields((t) => ({
                },
                AND: {
                   fecha: {
-                     gte: args.filtros?.fechaDesde
-                        ? new Date(args.filtros?.fechaDesde)
-                        : undefined,
-                     lte: args.filtros?.fechaHasta
-                        ? new Date(args.filtros?.fechaHasta)
-                        : undefined,
+                     gte: args.filtros?.fechaDesde ? new Date(args.filtros?.fechaDesde) : undefined,
+                     lte: args.filtros?.fechaHasta ? new Date(args.filtros?.fechaHasta) : undefined,
                   },
                },
             },
@@ -130,7 +125,7 @@ builder.queryFields((t) => ({
          filtros: t.arg({ type: InputFiltrosCobros, required: false }),
       },
       resolve: async (_, args, ctx) =>
-         await prismaYoga.cobro.count({
+         await prisma.cobro.count({
             take: args.take ?? DEFAULT_PAGE_SIZE,
             skip: args.skip ?? 0,
             where: {
@@ -144,13 +139,46 @@ builder.queryFields((t) => ({
 
    cobrosCount: t.field({
       type: 'Int',
-      resolve: async (root, args, ctx) =>
-         await prismaYoga.cobro.count({
+      resolve: async (root, args, ctx) => {
+         const { user } = ctx.session;
+
+         return await prisma.cobro.count({
             where: {
                perfil: {
-                  userId: ctx.session.user.id,
+                  userId: user.id,
                },
             },
-         }),
+         });
+      },
+   }),
+}));
+
+const crearCobroPorUsuario = builder.inputType('crearCobroPorUsuario', {
+   fields: (t) => ({
+      descripcion: t.string({ required: true }),
+      monto: t.float({ required: true }),
+   }),
+});
+
+builder.mutationFields((t) => ({
+   agregarCobro: t.prismaField({
+      type: 'Cobro',
+      args: { input: t.arg({ type: crearCobroPorUsuario, required: true }) },
+      resolve: async (query, _, args, ctx) => {
+         const { user } = ctx.session;
+
+         return await prisma.cobro.create({
+            ...query,
+            data: {
+               descripcion: args.input.descripcion,
+               monto: args.input.monto,
+               perfil: {
+                  connect: {
+                     userId: user.id,
+                  },
+               },
+            },
+         });
+      },
    }),
 }));

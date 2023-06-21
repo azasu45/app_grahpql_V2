@@ -6,9 +6,9 @@ generator client {
 }
 
 generator pothos {
+  clientOutput = "@prisma/client"
   provider     = "prisma-pothos-types"
   prismaUtils  = true
-  clientOutput = "@prisma/client"
   output       = "./pothos-types.d.ts"
 }
 
@@ -108,7 +108,7 @@ model Pago {
   refAdmin       String?  @db.VarChar(20)
   estado         Int      @db.SmallInt
   captureImg     String
-  Observacion    String?  @db.VarChar(100)
+  observacion    String?  @db.VarChar(100)
   perfilPago     Perfil   @relation(fields: [perfilId], references: [id])
   perfilSuscrito Perfil   @relation(name: "PerfilSuscrito", fields: [suscritoId], references: [id])
   grupo          Grupo?   @relation(fields: [grupoId], references: [id], onDelete: SetNull)

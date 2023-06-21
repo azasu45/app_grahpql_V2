@@ -1,11 +1,11 @@
+import type PrismaTypes from '../../prisma/pothos-types';
 import { Prisma } from '@prisma/client';
 import SchemaBuilder from '@pothos/core';
-import type PrismaTypes from '../../prisma/pothos-types';
 import PrismaPlugin from '@pothos/plugin-prisma';
 import RelayPlugin from '@pothos/plugin-relay';
 import PrismaUtils from '@pothos/plugin-prisma-utils';
 import { DateResolver, GraphQLPositiveFloat } from 'graphql-scalars';
-import { prismaYoga } from './db';
+import { prisma } from './db';
 import { Session } from 'next-auth';
 
 export const builder = new SchemaBuilder<{
@@ -24,7 +24,7 @@ export const builder = new SchemaBuilder<{
 }>({
    plugins: [RelayPlugin, PrismaPlugin, PrismaUtils],
    prisma: {
-      client: prismaYoga,
+      client: prisma,
 
       filterConnectionTotalCount: true,
    },

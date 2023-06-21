@@ -1,8 +1,8 @@
-import { builder } from "@app/graphql/builder";
-import "./grupo";
-import "./perfil";
-import "./cobro";
-import "./pago";
+import { builder } from '../builder';
+import './grupo';
+import './perfil';
+import './cobro';
+import './pago';
 
 builder.mutationType();
 builder.queryType();
