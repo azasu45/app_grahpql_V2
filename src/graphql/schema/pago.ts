@@ -8,9 +8,9 @@ builder.prismaNode('Pago', {
    fields: (t) => ({
       referencia: t.exposeString('referencia'),
       captureImg: t.exposeString('captureImg'),
-      refAdmin: t.exposeString('refAdmin'),
+      refAdmin: t.exposeString('refAdmin', { nullable: true }),
       estado: t.exposeInt('estado'),
-      observacion: t.exposeString('observacion'),
+      observacion: t.exposeString('observacion', { nullable: true }),
       monto: t.field({
          type: 'Decimal',
          resolve: (pago) => pago.monto,

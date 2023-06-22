@@ -2,7 +2,8 @@
 import React from 'react';
 import ModalCSP from '@app/components/modal';
 import { useForm } from 'react-hook-form';
-import { Button, Text, TextInput } from '@tremor/react';
+import { Button, Text } from '@tremor/react';
+import TextInput from '../TextInput';
 
 type inputCobroAdd = {
    description: string;
@@ -22,13 +23,8 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
    };
 
    return (
-      <ModalCSP
-         title='Agregar Cobro'
-         open={open}
-         handleOpen={handleOpen}>
-         <form
-            onSubmit={onSubmit}
-            className='mx-auto'>
+      <ModalCSP title='Agregar Cobro' open={open} handleOpen={handleOpen}>
+         <form onSubmit={onSubmit} className='mx-auto'>
             <div className='mt-1'>
                <Text>Descripción</Text>
                <TextInput
@@ -51,9 +47,7 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
                   placeholder='155555$'
                />
             </div>
-            <Button
-               className='mt-1'
-               type='submit'>
+            <Button className='mt-1' type='submit'>
                Guardar
             </Button>
          </form>

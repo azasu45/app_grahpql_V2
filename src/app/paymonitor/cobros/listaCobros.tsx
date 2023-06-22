@@ -40,8 +40,8 @@ function ListaCobros() {
       await refetch({
          filtros: {
             descripcion: data.descripcion,
-            fechaDesde: data?.date?.from ?? undefined,
-            fechaHasta: data?.date?.to ?? undefined,
+            fechaDesde: data?.date?.from?.toString() ?? undefined,
+            fechaHasta: data?.date?.to?.toString() ?? undefined,
          },
       });
    });
