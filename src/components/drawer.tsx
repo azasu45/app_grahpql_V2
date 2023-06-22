@@ -27,11 +27,11 @@ function Drawer({ title = 'Title', open, handleOpen, children }: Props) {
             <Transition.Child
                as={React.Fragment}
                enter='transition ease-linear duration-500 transform'
-               enterFrom='opacity-0 translate-y-full'
-               enterTo='opacity-100 translate-y-0'
+               enterFrom='opacity-0 -translate-x-full'
+               enterTo='opacity-100 translate-x-0'
                leave='transition ease-linear duration-500 transform'
-               leaveFrom='opacity-100 translate-y-0'
-               leaveTo='opacity-0 translate-y-full'
+               leaveFrom='opacity-100 translate-x-0'
+               leaveTo='opacity-0 -translate-x-full'
             >
                <Dialog.Panel className=' fixed bottom-0 top-0 left-0 h-screen w-2/5 transform overflow-hidden bg-tremor-background dark:bg-dark-tremor-background p-6 text-left align-middle shadow-tremor-card dark:shadow-dark-tremor-card shadow-tremor-background dark:shadow-dark-tremor-background'>
                   <Dialog.Title as='h3' className='text-lg font-medium leading-6 text-gray-900'>
