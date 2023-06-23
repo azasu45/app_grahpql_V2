@@ -49,14 +49,12 @@ function ListaCobros() {
    return (
       <>
          <CobroBar onSubmit={onSubmit} />
-         <div className='mt-2 h-[70%]'>
-            <Cobros
-               cobros={(data as any).cobros}
-               cobrosCount={data.cobrosCount}
-               page={page}
-               handleChangePage={handleChangePage}
-            />
-         </div>
+         <Cobros
+            cobros={(data as any).cobros}
+            cobrosCount={data.cobrosCount}
+            page={page}
+            handleChangePage={handleChangePage}
+         />
       </>
    );
 }

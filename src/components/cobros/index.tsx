@@ -3,6 +3,7 @@
 import { Bold, Card, Flex, Grid, Metric, Text, Title } from '@tremor/react';
 import React, { useState } from 'react';
 import Pagination from '../pagination';
+import CobroCard from './cobroCard';
 
 export const Cobros = ({
    cobros,
@@ -29,25 +30,13 @@ export const Cobros = ({
 }) => {
    return (
       <>
-         <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
-            {cobros.map((cobro) => (
-               <Card key={cobro.id} className='py-1 px-2'>
-                  <Title>{cobro.descripcion}</Title>
-                  <Flex className='gap-4 mt-2' alignItems='start'>
-                     <Metric className='mt-2 basis-0 whitespace-nowrap'>{cobro.monto} $</Metric>
-                     <div className='grow'>
-                        <Bold>Fecha</Bold>
-                        <Text>{cobro.fecha.toLocaleString()}</Text>
-                     </div>
-                     <div className='basis-0'>
-                        <Bold>Pagos</Bold>
-                        <Text>{cobro.pagosCount}</Text>
-                     </div>
-                  </Flex>
-               </Card>
-            ))}
-         </Grid>
-
+         <div className='mt-2 grow overflow-auto'>
+            <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
+               {cobros.map((cobro) => (
+                  <CobroCard key={cobro.id} id={cobro.id} />
+               ))}
+            </Grid>
+         </div>
          <Pagination count={cobrosCount} page={page} handleChangePage={handleChangePage} />
       </>
    );
