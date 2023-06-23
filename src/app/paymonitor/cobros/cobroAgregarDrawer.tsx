@@ -6,6 +6,7 @@ import Drawer from '@app/components/drawer';
 import { Button, TextInput } from '@tremor/react';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
 import { useForm } from 'react-hook-form';
+import NumberInput from '@app/components/NumberInput';
 
 interface InputAddCobro {
    descripcion: string;
@@ -49,15 +50,12 @@ function CobroAgregarDrawer() {
                   error={errors.descripcion !== undefined}
                />
 
-               <TextInput
+               <NumberInput
                   className='mt-1'
                   type='text'
                   placeholder='Ingrese una descripcion'
                   {...register('monto', {
-                     pattern: {
-                        value: /^[0-9,!A-Z,!a-z]/,
-                        message: 'Tiene que contener solo numeros',
-                     },
+                     valueAsNumber: true,
                      required: {
                         value: true,
                         message: 'El monto es requerido',

@@ -7,5 +7,9 @@ export default async function Nav() {
    const session = await getServerSession(authOptions);
    const user = session?.user;
 
-   return <Navbar user={user} />;
+   return (
+      <header>
+         <Navbar user={user} />
+      </header>
+   );
 }

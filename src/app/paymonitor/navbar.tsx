@@ -9,6 +9,7 @@ import { signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 import { User } from 'next-auth/core/types';
 import { Fragment } from 'react';
+import Link from 'next/link';
 
 const navigation = [
    { name: 'Dashboard', href: '/paymonitor' },
@@ -44,9 +45,11 @@ const Navbar = ({ user }: { user: User | undefined }) => {
                      <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                         <div className='hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8'>
                            {navigation.map((item) => (
-                              <a
+                              <Link
                                  key={item.name}
-                                 href={item.href}
+                                 href={{
+                                    pathname: item.href,
+                                 }}
                                  className={classNames(
                                     pathname === item.href
                                        ? 'border-gray-500 text-gray-900'
@@ -56,7 +59,7 @@ const Navbar = ({ user }: { user: User | undefined }) => {
                                  aria-current={pathname === item.href ? 'page' : undefined}
                               >
                                  {item.name}
-                              </a>
+                              </Link>
                            ))}
                         </div>
                      </div>

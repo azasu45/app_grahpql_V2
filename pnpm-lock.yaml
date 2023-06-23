@@ -91,6 +91,9 @@ dependencies:
   react-hook-form:
     specifier: ^7.45.0
     version: 7.45.0(react@18.2.0)
+  tailwind-merge:
+    specifier: ^1.13.2
+    version: 1.13.2
   typescript:
     specifier: 5.0.4
     version: 5.0.4
