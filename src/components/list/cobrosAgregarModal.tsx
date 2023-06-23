@@ -3,7 +3,6 @@ import React from 'react';
 import ModalCSP from '@app/components/modal';
 import { useForm } from 'react-hook-form';
 import { Button, Text } from '@tremor/react';
-import TextInput from '../TextInput';
 
 type inputCobroAdd = {
    description: string;
