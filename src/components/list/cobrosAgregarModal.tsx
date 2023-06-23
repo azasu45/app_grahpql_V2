@@ -2,7 +2,8 @@
 import React from 'react';
 import ModalCSP from '@app/components/modal';
 import { useForm } from 'react-hook-form';
-import { Button, Text } from '@tremor/react';
+import { Button, Text, TextInput } from '@tremor/react';
+import NumberInput from '../NumberInput';
 
 type inputCobroAdd = {
    description: string;
@@ -33,7 +34,7 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
             </div>
             <div className='mt-1'>
                <Text>Monto</Text>
-               <TextInput
+               <NumberInput
                   type='number'
                   {...register('monto', {
                      valueAsNumber: true,
