@@ -26,8 +26,7 @@ export function ApolloWrapper({
    delay: delayProp,
    token: tokenProp,
    csrf: csrfProp,
-   uri,
-}: React.PropsWithChildren<{ delay: number; token: string; csrf: string; uri: string }>) {
+}: React.PropsWithChildren<{ delay: number; token: string; csrf: string }>) {
    return (
       <ApolloNextAppProvider makeClient={makeClient} makeSuspenseCache={makeSuspenseCache}>
          {children}
@@ -36,7 +35,7 @@ export function ApolloWrapper({
 
    function makeClient() {
       const httpLink = new HttpLink({
-         uri,
+         uri: `${process.env.URI ?? 'http://localhost:3000/api/graphql'}`,
          fetchOptions: { cache: 'no-store' },
       });
 
