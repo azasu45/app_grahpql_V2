@@ -7,10 +7,12 @@ import { Button, TextInput } from '@tremor/react';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
 import { useForm } from 'react-hook-form';
 import NumberInput from '@app/components/NumberInput';
+import { AgregarCobroDocument } from '@app/components/documents.generated';
+import { useMutation } from '@apollo/client';
 
 interface InputAddCobro {
-   descripcion: string;
-   monto: Prisma.Decimal;
+   description: string;
+   monto: number;
 }
 
 function CobroAgregarDrawer() {
@@ -22,12 +24,22 @@ function CobroAgregarDrawer() {
       formState: { errors },
    } = useForm<InputAddCobro>();
 
+   const [mutate, { data, loading }] = useMutation(AgregarCobroDocument);
+
    const handleOpen = (force?: boolean) => {
       setOpen(force ?? !open);
    };
 
-   const onSubmit = handleSubmit((data) => {
-      console.log(data);
+   const onSubmit = handleSubmit(async (data) => {
+      await mutate({
+         variables: {
+            input: {
+               descripcion: data.description,
+               monto: data.monto,
+            },
+         },
+         refetchQueries: ['Cobros'],
+      });
    });
 
    return (
@@ -40,19 +52,19 @@ function CobroAgregarDrawer() {
                <TextInput
                   className='mt-1'
                   placeholder='Ingrese una descripcion'
-                  {...register('descripcion', {
+                  {...register('description', {
                      required: {
                         value: true,
                         message: 'La descripcion es requerida',
                      },
                   })}
-                  errorMessage={errors.descripcion?.message}
-                  error={errors.descripcion !== undefined}
+                  errorMessage={errors.description?.message}
+                  error={errors.description !== undefined}
                />
 
                <NumberInput
                   className='mt-1'
-                  type='text'
+                  type='number'
                   placeholder='Ingrese una descripcion'
                   {...register('monto', {
                      valueAsNumber: true,
