@@ -467,7 +467,27 @@ const NumberInput = forwardRef<HTMLInputElement, TextInputProps>((props, ref) =>
    return (
       <>
          <div
-            className={tremorTwMerge()}
+            className={tremorTwMerge(
+               makeTextInputClassName('root'),
+               // common
+               'relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default',
+               // light
+               'shadow-tremor-input',
+               // dark
+               'dark:shadow-dark-tremor-input',
+               getSelectButtonColors(hasSelection, disabled, error),
+               isFocused &&
+                  tremorTwMerge(
+                     // common
+                     'ring-2 transition duration-100',
+                     // light
+                     'border-tremor-brand-subtle ring-tremor-brand-muted',
+                     // light
+                     'dark:border-dark-tremor-brand-subtle dark:ring-dark-tremor-brand-muted',
+                  ),
+               border.sm.all,
+               className,
+            )}
             onClick={() => {
                if (!disabled) {
                   handleFocusChange(true);
