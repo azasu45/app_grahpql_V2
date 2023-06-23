@@ -10,6 +10,7 @@ import {
 import clientCookies from 'js-cookie';
 import { loadErrorMessages, loadDevMessages } from '@apollo/client/dev';
 import { setVerbosity } from 'ts-invariant';
+import { env } from '@app/env.mjs';
 
 if (process.env.NODE_ENV === 'development') {
    setVerbosity('debug');
@@ -35,7 +36,7 @@ export function ApolloWrapper({
 
    function makeClient() {
       const httpLink = new HttpLink({
-         uri: `${process.env.URI ?? 'http://localhost:3000/api/graphql'}`,
+         uri: `${env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
          fetchOptions: { cache: 'no-store' },
       });
 

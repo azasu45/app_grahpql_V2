@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form';
 import NumberInput from '@app/components/NumberInput';
 import { AgregarCobroDocument } from '@app/components/documents.generated';
 import { useMutation } from '@apollo/client';
+import Loading from '../../(main)/loading';
 
 interface InputAddCobro {
    description: string;
@@ -50,6 +51,7 @@ function CobroAgregarDrawer() {
          <Drawer open={open} handleOpen={handleOpen}>
             <form onSubmit={onSubmit}>
                <TextInput
+                  disabled={loading}
                   className='mt-1'
                   placeholder='Ingrese una descripcion'
                   {...register('description', {
@@ -63,6 +65,7 @@ function CobroAgregarDrawer() {
                />
 
                <NumberInput
+                  disabled={loading}
                   className='mt-1'
                   type='number'
                   placeholder='Ingrese una descripcion'
