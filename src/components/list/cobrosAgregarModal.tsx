@@ -4,10 +4,12 @@ import ModalCSP from '@app/components/modal';
 import { useForm } from 'react-hook-form';
 import { Button, Text, TextInput } from '@tremor/react';
 import NumberInput from '../NumberInput';
+import { gql, useMutation } from '@apollo/client';
+import { AgregarCobroDocument } from '../documents.generated';
 
 type inputCobroAdd = {
    description: string;
-   monto: string;
+   monto: number;
 };
 
 function CobrosAgregarModal({ callback }: { callback?: () => void }) {
@@ -15,7 +17,19 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
 
    const { handleSubmit, register } = useForm<inputCobroAdd>();
 
-   const onSubmit = handleSubmit((data) => {});
+   const [mutate, { data, loading }] = useMutation(AgregarCobroDocument);
+
+   const onSubmit = handleSubmit(async (data) => {
+      await mutate({
+         variables: {
+            input: {
+               descripcion: data.description,
+               monto: data.monto,
+            },
+         },
+         refetchQueries: ['Cobros'],
+      });
+   });
 
    const handleOpen = (force?: boolean) => {
       if (callback) callback();
@@ -28,6 +42,7 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
             <div className='mt-1'>
                <Text>Descripción</Text>
                <TextInput
+                  disabled={loading}
                   {...register('description', { required: true })}
                   placeholder='Cobro del mes'
                />
@@ -35,13 +50,18 @@ function CobrosAgregarModal({ callback }: { callback?: () => void }) {
             <div className='mt-1'>
                <Text>Monto</Text>
                <NumberInput
+                  disabled={loading}
                   type='number'
                   {...register('monto', {
                      valueAsNumber: true,
                      required: true,
                      min: {
                         value: 0,
-                        message: 'El valor ingresado por puede ser menor que 0',
+                        message: 'El valor ingresado por puede ser menor a 0',
+                     },
+                     max: {
+                        value: 100000,
+                        message: 'El valor ingresado por puede ser mayor a 100000',
                      },
                   })}
                   placeholder='155555$'

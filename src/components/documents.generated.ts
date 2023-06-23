@@ -19,6 +19,15 @@ export type CobrosQuery = {
    }>;
 };
 
+export type AgregarCobroMutationVariables = Types.Exact<{
+   input: Types.CrearCobroPorUsuario;
+}>;
+
+export type AgregarCobroMutation = {
+   __typename?: 'Mutation';
+   agregarCobro: { __typename?: 'Cobro'; id: string; descripcion: string; fecha: any; monto: any };
+};
+
 export const CobrosDocument = {
    kind: 'Document',
    definitions: [
@@ -73,3 +82,51 @@ export const CobrosDocument = {
       },
    ],
 } as unknown as DocumentNode<CobrosQuery, CobrosQueryVariables>;
+export const AgregarCobroDocument = {
+   kind: 'Document',
+   definitions: [
+      {
+         kind: 'OperationDefinition',
+         operation: 'mutation',
+         name: { kind: 'Name', value: 'AgregarCobro' },
+         variableDefinitions: [
+            {
+               kind: 'VariableDefinition',
+               variable: { kind: 'Variable', name: { kind: 'Name', value: 'input' } },
+               type: {
+                  kind: 'NonNullType',
+                  type: {
+                     kind: 'NamedType',
+                     name: { kind: 'Name', value: 'crearCobroPorUsuario' },
+                  },
+               },
+            },
+         ],
+         selectionSet: {
+            kind: 'SelectionSet',
+            selections: [
+               {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'agregarCobro' },
+                  arguments: [
+                     {
+                        kind: 'Argument',
+                        name: { kind: 'Name', value: 'input' },
+                        value: { kind: 'Variable', name: { kind: 'Name', value: 'input' } },
+                     },
+                  ],
+                  selectionSet: {
+                     kind: 'SelectionSet',
+                     selections: [
+                        { kind: 'Field', name: { kind: 'Name', value: 'id' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'descripcion' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'fecha' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'monto' } },
+                     ],
+                  },
+               },
+            ],
+         },
+      },
+   ],
+} as unknown as DocumentNode<AgregarCobroMutation, AgregarCobroMutationVariables>;

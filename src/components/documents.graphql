@@ -8,3 +8,12 @@ query Cobros($skip: Int, $filtros: InputFiltrosCobros) {
    }
    cobrosCount
 }
+
+mutation AgregarCobro($input: crearCobroPorUsuario!) {
+   agregarCobro(input: $input) {
+      id
+      descripcion
+      fecha
+      monto
+   }
+}

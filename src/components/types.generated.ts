@@ -69,10 +69,10 @@ export type Pago = Node & {
   grupo: Grupo;
   id: Scalars['ID']['output'];
   monto: Scalars['Decimal']['output'];
-  observacion: Scalars['String']['output'];
+  observacion?: Maybe<Scalars['String']['output']>;
   perfilPago: Perfil;
   perfilSuscrito: Perfil;
-  refAdmin: Scalars['String']['output'];
+  refAdmin?: Maybe<Scalars['String']['output']>;
   referencia: Scalars['String']['output'];
 };
 

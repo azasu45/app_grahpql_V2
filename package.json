@@ -12,7 +12,7 @@
       "start": "next start",
       "lint": "next lint",
       "postinstall": "prisma generate",
-      "codegen": "graphql-codegen --config codegen.ts"
+      "codegen": "graphql-codegen -r dotenv/config --config codegen.ts"
    },
    "dependencies": {
       "@apollo/client": "^3.8.0-beta.2",
