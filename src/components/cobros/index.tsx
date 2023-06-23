@@ -30,12 +30,13 @@ export const Cobros = ({
 }) => {
    return (
       <>
-         <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
-            {cobros.map((cobro) => (
-               <CobroCard key={cobro.id} id={cobro.id} />
-            ))}
-         </Grid>
-
+         <div className='mt-2 grow overflow-auto'>
+            <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
+               {cobros.map((cobro) => (
+                  <CobroCard key={cobro.id} id={cobro.id} />
+               ))}
+            </Grid>
+         </div>
          <Pagination count={cobrosCount} page={page} handleChangePage={handleChangePage} />
       </>
    );
