@@ -36,7 +36,7 @@ export function ApolloWrapper({
 
    function makeClient() {
       const httpLink = new HttpLink({
-         uri: `${env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
+         uri: `${process.env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
          fetchOptions: { cache: 'no-store' },
       });
 
