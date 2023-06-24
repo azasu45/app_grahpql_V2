@@ -1,8 +1,9 @@
 'use client';
 
-import { ApolloClient, ApolloLink, HttpLink, SuspenseCache } from '@apollo/client';
+import { ApolloLink, HttpLink, SuspenseCache } from '@apollo/client';
 
 import {
+   NextSSRApolloClient,
    ApolloNextAppProvider,
    NextSSRInMemoryCache,
    SSRMultipartLink,
@@ -68,7 +69,7 @@ export function ApolloWrapper({
          return forward(operation);
       });
 
-      return new ApolloClient({
+      return new NextSSRApolloClient({
          cache: new NextSSRInMemoryCache(),
          link:
             typeof window === 'undefined'

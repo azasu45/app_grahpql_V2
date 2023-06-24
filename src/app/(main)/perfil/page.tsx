@@ -20,21 +20,18 @@ type Input = {
    cedula: string;
 };
 
-function PerfilUpdate() {
+function Page() {
    const {
       register,
       handleSubmit,
       formState: { errors },
    } = useForm<Input>();
 
-   const [mutation, { data, loading, error }] = useMutation(
-      updatePerfilMutation,
-      {
-         onCompleted: (data) => {
-            console.log(data);
-         },
-      }
-   );
+   const [mutation, { data, loading, error }] = useMutation(updatePerfilMutation, {
+      onCompleted: (data) => {
+         console.log(data);
+      },
+   });
 
    const onSubmit = handleSubmit((data) => {
       mutation({
@@ -47,9 +44,7 @@ function PerfilUpdate() {
 
    return (
       <Card className='m-auto'>
-         <form
-            onSubmit={onSubmit}
-            className='flex flex-col gap-2'>
+         <form onSubmit={onSubmit} className='flex flex-col gap-2'>
             <div className='w-100'>
                <Text>Nombre</Text>
                <TextInput
@@ -95,11 +90,12 @@ function PerfilUpdate() {
                disabled={loading}
                size='sm'
                type='submit'
-               className='mx-auto'>
+               className='mx-auto'
+            >
                Actualizar Perfil
             </Button>
          </form>
       </Card>
    );
 }
-export default PerfilUpdate;
+export default Page;

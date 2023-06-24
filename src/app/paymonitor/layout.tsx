@@ -8,13 +8,17 @@ export default async function Layout({ children }: { children: React.ReactNode }
    const user = session?.user;
 
    if (!session) redirect('/api/auth/signin');
+   if (!session.user.complete) redirect('/perfil');
 
    return (
-      <main>
-         <Navbar user={user} />
-         <div className='p-4 md:p-6 mx-auto max-w-7xl max-h-[calc(100vh-64px)] flex flex-col'>
+      <>
+         <header>
+            <Navbar user={user} />
+         </header>
+
+         <main className='p-4 md:p-6 mx-auto max-w-7xl min-h-[calc(100vh-64px)] flex flex-col'>
             {children}
-         </div>
-      </main>
+         </main>
+      </>
    );
 }

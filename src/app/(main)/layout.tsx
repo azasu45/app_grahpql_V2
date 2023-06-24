@@ -1,14 +1,19 @@
-import React, { Suspense } from 'react';
-import Nav from './nav';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '../api/auth/[...nextauth]/route';
+import Navbar from './navbar';
 
-export default function Template({ children }: { children: React.ReactNode }) {
+export default async function Template({ children }: { children: React.ReactNode }) {
+   const session = await getServerSession(authOptions);
+
    return (
-      <main>
-         <Suspense fallback='...'>
-            {/* @ts-expect-error Server Component */}
-            <Nav />
-         </Suspense>
-         {children}
-      </main>
+      <>
+         <header>
+            <Navbar user={session?.user} />
+         </header>
+
+         <main className='mx-auto max-w-7xl min-h-[calc(100vh-64px)] flex flex-col'>
+            {children}
+         </main>
+      </>
    );
 }

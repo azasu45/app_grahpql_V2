@@ -1,7 +1,6 @@
-import { Philosopher, Roboto } from 'next/font/google';
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Philosopher, Roboto } from 'next/font/google';
 
 const philosopher = Philosopher({
    subsets: ['latin'],
@@ -18,18 +17,21 @@ const roboto = Roboto({
 export default async function Home() {
    return (
       <section
-         className='pt-24 pb-8 h-screen relative'
+         className='h-screen relative'
          style={{
             background: "url('/hero-bg.png') center bottom no-repeat",
             backgroundSize: '100%',
-         }}>
+         }}
+      >
          <div className='absolute inset-0 flex justify-center items-center flex-col text-center -mt-3'>
             <h1
-               className={`${philosopher.className} text-3xl leading-9 font-bold mb-3 text-[#055B66] md:text-6xl md:leading-[56px]`}>
+               className={`${philosopher.className} text-3xl leading-9 font-bold mb-3 text-[#055B66] md:text-6xl md:leading-[56px]`}
+            >
                Bienvenido a PayMonitor
             </h1>
             <h2
-               className={`text-tremor-content text-lg leading-6 mb-8 md:text-xl ${roboto.className}`}>
+               className={`text-tremor-content text-lg leading-6 mb-8 md:text-xl ${roboto.className}`}
+            >
                Notificación de los pagos que recibes<br></br>
                ... pero organizadamente.
             </h2>
@@ -45,7 +47,8 @@ export default async function Home() {
                href={{
                   pathname: 'paymonitor',
                }}
-               replace>
+               replace
+            >
                COMENZAR
             </Link>
          </div>
