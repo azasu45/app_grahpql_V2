@@ -9,8 +9,8 @@ export const { getClient } = registerApolloClient(() => {
    const cookieNextAuth = `${env.NODE_ENV === 'production' ? '__Secure-next-auth' : 'next-auth'}`;
    const cookieCsrfToken = `${env.NODE_ENV === 'production' ? '__Host-next-auth' : 'next-auth'}`;
 
-   const authToken = String(cookieStore.get('next-auth.session-token')?.value ?? '');
-   const csrfToken = String(cookieStore.get('next-auth.csrf-token')?.value ?? '');
+   const authToken = String(cookieStore.get(`${cookieNextAuth}.session-token`)?.value ?? '');
+   const csrfToken = String(cookieStore.get(`${cookieCsrfToken}.csrf-token`)?.value ?? '');
 
    const httpLink = new HttpLink({
       uri: `${env.NEXT_PUBLIC_URI}`,
