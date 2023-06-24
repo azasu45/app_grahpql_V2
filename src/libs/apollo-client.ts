@@ -1,6 +1,7 @@
 import { ApolloClient, ApolloLink, HttpLink, InMemoryCache } from '@apollo/client';
 import { registerApolloClient } from '@apollo/experimental-nextjs-app-support/rsc';
 import { cookies } from 'next/headers';
+import { env } from '@app/env.mjs';
 
 export const { getClient } = registerApolloClient(() => {
    const cookieStore = cookies();
@@ -8,8 +9,10 @@ export const { getClient } = registerApolloClient(() => {
    const csrfToken = String(cookieStore.get('next-auth.csrf-token')?.value ?? '');
 
    const httpLink = new HttpLink({
-      uri: `${process.env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
+      uri: `${env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
    });
+
+   console.info(env.NEXT_PUBLIC_URI);
 
    const CookieLink = new ApolloLink((operation, forward) => {
       operation.setContext(({ headers = {} }) => {
