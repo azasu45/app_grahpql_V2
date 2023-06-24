@@ -5,6 +5,10 @@ import { env } from '@app/env.mjs';
 
 export const { getClient } = registerApolloClient(() => {
    const cookieStore = cookies();
+
+   const cookieNextAuth = `${env.NODE_ENV === 'production' ? '__Secure-next-auth' : 'next-auth'}`;
+   const cookieCsrfToken = `${env.NODE_ENV === 'production' ? '__Host-next-auth' : 'next-auth'}`;
+
    const authToken = String(cookieStore.get('next-auth.session-token')?.value ?? '');
    const csrfToken = String(cookieStore.get('next-auth.csrf-token')?.value ?? '');
 
@@ -18,7 +22,7 @@ export const { getClient } = registerApolloClient(() => {
             headers: {
                ...headers,
                'x-custom-delay': 1000,
-               cookie: `next-auth.csrf-token=${csrfToken} ; next-auth.session-token=${authToken}`,
+               cookie: `${cookieCsrfToken}.csrf-token=${csrfToken} ; ${cookieNextAuth}.session-token=${authToken}`,
             },
          };
       });
