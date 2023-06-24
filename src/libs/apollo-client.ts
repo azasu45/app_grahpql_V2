@@ -12,6 +12,8 @@ export const { getClient } = registerApolloClient(() => {
    const authToken = String(cookieStore.get(`${cookieNextAuth}.session-token`)?.value ?? '');
    const csrfToken = String(cookieStore.get(`${cookieCsrfToken}.csrf-token`)?.value ?? '');
 
+   console.log(authToken, csrfToken);
+
    const httpLink = new HttpLink({
       uri: `${env.NEXT_PUBLIC_URI}`,
    });
