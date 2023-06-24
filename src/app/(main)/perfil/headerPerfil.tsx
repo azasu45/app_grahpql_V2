@@ -10,7 +10,7 @@ export default function HeaderPerfil({ complete }: { complete?: boolean }) {
          className='mt-4 md:flex-row md:gap-2'
       >
          <Title className='text-2xl'>Perfil de usuario</Title>
-         {complete && (
+         {!complete && (
             <Callout title='Acción requerida' color='red' icon={ExclamationCircleIcon}>
                Por favor complete y guarde su perfil para seguir usando la aplicación.
             </Callout>

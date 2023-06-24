@@ -96,6 +96,7 @@ export type Query = {
   nodes: Array<Maybe<Node>>;
   pagos: Array<Pago>;
   pagosCount: Scalars['Int']['output'];
+  perfil?: Maybe<Perfil>;
   perfiles: Array<Perfil>;
 };
 

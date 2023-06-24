@@ -28,6 +28,33 @@ export type AgregarCobroMutation = {
    agregarCobro: { __typename?: 'Cobro'; id: string; descripcion: string; fecha: any; monto: any };
 };
 
+export type CrearOActualizarPerfilMutationVariables = Types.Exact<{
+   input: Types.CrearOActualizarPerfil;
+}>;
+
+export type CrearOActualizarPerfilMutation = {
+   __typename?: 'Mutation';
+   crearOActualizarPerfil?: {
+      __typename?: 'Perfil';
+      id: string;
+      cedula: string;
+      userId?: string | null;
+   } | null;
+};
+
+export type PerfilQueryVariables = Types.Exact<{ [key: string]: never }>;
+
+export type PerfilQuery = {
+   __typename?: 'Query';
+   perfil?: {
+      __typename?: 'Perfil';
+      cedula: string;
+      id: string;
+      nombre: string;
+      userId?: string | null;
+   } | null;
+};
+
 export const CobrosDocument = {
    kind: 'Document',
    definitions: [
@@ -130,3 +157,81 @@ export const AgregarCobroDocument = {
       },
    ],
 } as unknown as DocumentNode<AgregarCobroMutation, AgregarCobroMutationVariables>;
+export const CrearOActualizarPerfilDocument = {
+   kind: 'Document',
+   definitions: [
+      {
+         kind: 'OperationDefinition',
+         operation: 'mutation',
+         name: { kind: 'Name', value: 'CrearOActualizarPerfil' },
+         variableDefinitions: [
+            {
+               kind: 'VariableDefinition',
+               variable: { kind: 'Variable', name: { kind: 'Name', value: 'input' } },
+               type: {
+                  kind: 'NonNullType',
+                  type: {
+                     kind: 'NamedType',
+                     name: { kind: 'Name', value: 'crearOActualizarPerfil' },
+                  },
+               },
+            },
+         ],
+         selectionSet: {
+            kind: 'SelectionSet',
+            selections: [
+               {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'crearOActualizarPerfil' },
+                  arguments: [
+                     {
+                        kind: 'Argument',
+                        name: { kind: 'Name', value: 'input' },
+                        value: { kind: 'Variable', name: { kind: 'Name', value: 'input' } },
+                     },
+                  ],
+                  selectionSet: {
+                     kind: 'SelectionSet',
+                     selections: [
+                        { kind: 'Field', name: { kind: 'Name', value: 'id' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'cedula' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'userId' } },
+                     ],
+                  },
+               },
+            ],
+         },
+      },
+   ],
+} as unknown as DocumentNode<
+   CrearOActualizarPerfilMutation,
+   CrearOActualizarPerfilMutationVariables
+>;
+export const PerfilDocument = {
+   kind: 'Document',
+   definitions: [
+      {
+         kind: 'OperationDefinition',
+         operation: 'query',
+         name: { kind: 'Name', value: 'Perfil' },
+         selectionSet: {
+            kind: 'SelectionSet',
+            selections: [
+               {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'perfil' },
+                  selectionSet: {
+                     kind: 'SelectionSet',
+                     selections: [
+                        { kind: 'Field', name: { kind: 'Name', value: 'cedula' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'id' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'nombre' } },
+                        { kind: 'Field', name: { kind: 'Name', value: 'userId' } },
+                     ],
+                  },
+               },
+            ],
+         },
+      },
+   ],
+} as unknown as DocumentNode<PerfilQuery, PerfilQueryVariables>;

@@ -15,6 +15,20 @@ builder.queryFields((t) => ({
       type: ['Perfil'],
       resolve: async (query, _, { id }, ctx) => await prisma.perfil.findMany(),
    }),
+
+   perfil: t.prismaField({
+      type: 'Perfil',
+      nullable: true,
+      resolve: async (query, _, { id }, ctx) => {
+         const { user } = ctx?.session;
+
+         return await prisma.perfil.findUnique({
+            where: {
+               userId: user?.id ?? undefined,
+            },
+         });
+      },
+   }),
 }));
 
 const CreateCuenta = builder.inputType('crearOActualizarPerfil', {
@@ -32,12 +46,12 @@ builder.mutationField('crearOActualizarPerfil', (t) =>
          input: t.arg({ type: CreateCuenta, required: true }),
       },
       resolve: async (query, _, { input }, ctx) => {
-         const user = ctx.session.user;
+         const { user } = ctx.session;
 
-         return await prisma.perfil.upsert({
+         const perfil = await prisma.perfil.upsert({
             ...query,
             where: {
-               cedula: input.cedula,
+               userId: user ? user?.id : undefined,
             },
             create: {
                userId: user.id,
@@ -45,11 +59,21 @@ builder.mutationField('crearOActualizarPerfil', (t) =>
                cedula: input.cedula,
             },
             update: {
-               userId: user.id,
                nombre: input.nombre,
                cedula: input.cedula,
             },
          });
+
+         await prisma.user.update({
+            where: {
+               id: user.id,
+            },
+            data: {
+               complete: !!perfil ?? false,
+            },
+         });
+
+         return perfil;
       },
    }),
 );

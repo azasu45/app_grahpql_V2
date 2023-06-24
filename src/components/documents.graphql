@@ -17,3 +17,20 @@ mutation AgregarCobro($input: crearCobroPorUsuario!) {
       monto
    }
 }
+
+mutation CrearOActualizarPerfil($input: crearOActualizarPerfil!) {
+   crearOActualizarPerfil(input: $input) {
+      id
+      cedula
+      userId
+   }
+}
+
+query Perfil {
+   perfil {
+      cedula
+      id
+      nombre
+      userId
+   }
+}

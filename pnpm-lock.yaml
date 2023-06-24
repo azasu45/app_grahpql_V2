@@ -147,6 +147,9 @@ devDependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.24)
+  dotenv:
+    specifier: ^16.3.1
+    version: 16.3.1
   eslint-plugin-react:
     specifier: ^7.32.2
     version: 7.32.2(eslint@8.43.0)
