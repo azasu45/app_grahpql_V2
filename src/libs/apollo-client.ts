@@ -9,10 +9,8 @@ export const { getClient } = registerApolloClient(() => {
    const csrfToken = String(cookieStore.get('next-auth.csrf-token')?.value ?? '');
 
    const httpLink = new HttpLink({
-      uri: `${env.NEXT_PUBLIC_URI ?? 'http://localhost:3000/api/graphql'}`,
+      uri: `${env.NEXT_PUBLIC_URI}`,
    });
-
-   console.info(env.NEXT_PUBLIC_URI);
 
    const CookieLink = new ApolloLink((operation, forward) => {
       operation.setContext(({ headers = {} }) => {

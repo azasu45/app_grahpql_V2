@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { Callout, Col, Divider, Grid } from '@tremor/react';
 import PerfilDataForm from './perfilDataForm';
 import CardUsuarioPerfil from './cardUsuarioPerfil';
