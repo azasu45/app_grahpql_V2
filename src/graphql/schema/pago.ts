@@ -32,6 +32,31 @@ builder.prismaNode('Pago', {
 /* Fecha */
 
 builder.queryFields((t) => ({
+   misPagos: t.prismaField({
+      type: ['Pago'],
+      args: {
+         take: t.arg.int(),
+         skip: t.arg.int(),
+         orderByFecha: t.arg.boolean(),
+      },
+      resolve: async (query, _, args, ctx) => {
+         const { user } = ctx.session;
+         return await prisma.pago.findMany({
+            ...query,
+            where: {
+               perfilPago: {
+                  userId: user.id,
+               },
+            },
+            skip: args?.skip ?? 0,
+            take: args?.take ?? DEFAULT_PAGE_SIZE,
+            orderBy: {
+               fecha: args.orderByFecha ? 'desc' : 'asc',
+            },
+         });
+      },
+   }),
+
    pagos: t.prismaField({
       type: ['Pago'],
       args: {
