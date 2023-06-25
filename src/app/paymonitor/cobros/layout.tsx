@@ -6,7 +6,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 const navigation = [
    { name: 'Todos', href: '/paymonitor/cobros' },
-   { name: 'Pagos Recibidos', href: '/paymonitor/cobros/pagosR' },
+   { name: 'Pagos Recibidos', href: '/paymonitor/cobros/pagosRecibidos' },
    { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
 ];
 

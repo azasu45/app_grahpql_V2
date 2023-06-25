@@ -1,4 +1,4 @@
-import AllPagos from './allPagos';
+import AllPagos from './listaPagosRecibidos';
 
 function Page() {
    return (

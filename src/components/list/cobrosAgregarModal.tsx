@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
-import ModalCSP from '@app/components/modal';
+import ModalCSP from '@app/components/general/modal';
 import { useForm } from 'react-hook-form';
 import { Button, Text, TextInput } from '@tremor/react';
-import NumberInput from '../NumberInput';
+import NumberInput from '../general/NumberInput';
 import { gql, useMutation } from '@apollo/client';
-import { AgregarCobroDocument } from '../documents.generated';
+import { AgregarCobroDocument } from '../../graphql/codegenGenerate/documents.generated';
 
 type inputCobroAdd = {
    description: string;

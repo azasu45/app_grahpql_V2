@@ -100,3 +100,43 @@ builder.queryFields((t) => ({
          }),
    }),
 }));
+
+const createPagoInput = builder.inputType('createPagoInput', {
+   fields: (t) => ({
+      perfilId: t.string({ required: true }),
+      cobroId: t.string(),
+      grupoId: t.string(),
+      monto: t.field({
+         type: 'Decimal',
+         required: true,
+      }),
+      referencia: t.string({ required: true }),
+      captureImg: t.string({ required: true }),
+      observacion: t.string(),
+   }),
+});
+
+builder.mutationFields((t) => ({
+   crearPago: t.prismaField({
+      type: 'Pago',
+      nullable: true,
+      args: {
+         input: t.arg({ type: createPagoInput, required: true }),
+      },
+      resolve: async (query, _, args, ctx) => {
+         const { user } = ctx.session;
+
+         return await prisma.pago.create({
+            data: {
+               estado: 1,
+               monto: args.input.monto,
+               captureImg: args.input.captureImg,
+               referencia: args.input.referencia,
+               suscritoId: user.id,
+               observacion: args.input.observacion,
+               perfilId: args.input.perfilId,
+            },
+         });
+      },
+   }),
+}));

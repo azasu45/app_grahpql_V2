@@ -5,7 +5,7 @@ import { Form, useFormContext } from 'react-hook-form';
 import { useState } from 'react';
 import { type DateRangePickerValue } from '@tremor/react';
 
-import { CobrosDocument } from '@app/components/documents.generated';
+import { CobrosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useSession } from 'next-auth/react';
 //* Components */
 import CobroBar from './cobroBar';
@@ -18,23 +18,26 @@ export type TypeFiltrosCobros = {
 
 function ListaCobros() {
    const [page, setPage] = useState<number>(0);
-
-   const handleChangePage = (
-      event: React.MouseEvent<HTMLButtonElement> | null,
-      newPage: number,
-   ) => {
-      setPage(newPage);
-      refetch();
-   };
-
    const { handleSubmit, control } = useFormContext<TypeFiltrosCobros>();
-   const { data, refetch } = useSuspenseQuery(CobrosDocument, {
+   const { data, refetch, fetchMore } = useSuspenseQuery(CobrosDocument, {
       fetchPolicy: 'cache-first',
       variables: {
          skip: page * 10,
       },
       notifyOnNetworkStatusChange: true,
    });
+
+   const handleChangePage = (
+      event: React.MouseEvent<HTMLButtonElement> | null,
+      newPage: number,
+   ) => {
+      setPage(newPage);
+      fetchMore({
+         variables: {
+            skip: page * 10,
+         },
+      });
+   };
 
    const onSubmit = handleSubmit(async (data) => {
       await refetch({

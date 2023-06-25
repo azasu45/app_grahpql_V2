@@ -1,6 +1,6 @@
 'use client';
 
-import DrawerFilters from '@app/components/drawerFilters';
+import DrawerFilters from '@app/components/general/drawerFilters';
 import { NetworkStatus } from '@apollo/client';
 import { useEffect, useState } from 'react';
 

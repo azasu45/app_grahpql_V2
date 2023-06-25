@@ -3,7 +3,7 @@
 import { Button, Card, Grid, Text, TextInput } from '@tremor/react';
 import { useMutation, gql } from '@apollo/client';
 import { useForm } from 'react-hook-form';
-import { CrearOActualizarPerfilDocument } from '@app/components/documents.generated';
+import { CrearOActualizarPerfilDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useCallback } from 'react';
 
 type Input = {

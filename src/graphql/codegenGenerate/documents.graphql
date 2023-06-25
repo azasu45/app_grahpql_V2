@@ -34,3 +34,16 @@ query Perfil {
       userId
    }
 }
+
+query pagosRecibidos($skip: Int) {
+   misPagos(skip: $skip) {
+      id
+      captureImg
+      estado
+      monto
+      fecha
+      cobro {
+         id
+      }
+   }
+}

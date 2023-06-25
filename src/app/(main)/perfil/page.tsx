@@ -8,7 +8,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@app/app/api/auth/[...nextauth]/route';
 import { redirect } from 'next/navigation';
 import { getClient } from '@app/libs/apollo-client';
-import { PerfilDocument } from '@app/components/documents.generated';
+import { PerfilDocument } from '@app/graphql/codegenGenerate/documents.generated';
 
 async function Page() {
    const session = await getServerSession(authOptions);

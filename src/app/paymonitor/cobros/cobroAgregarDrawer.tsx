@@ -2,12 +2,12 @@
 
 import { Prisma } from '@prisma/client';
 import { useState } from 'react';
-import Drawer from '@app/components/drawer';
+import Drawer from '@app/components/general/drawer';
 import { Button, TextInput } from '@tremor/react';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
 import { useForm } from 'react-hook-form';
-import NumberInput from '@app/components/NumberInput';
-import { AgregarCobroDocument } from '@app/components/documents.generated';
+import NumberInput from '@app/components/general/NumberInput';
+import { AgregarCobroDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useMutation } from '@apollo/client';
 import Loading from '../../(main)/loading';
 

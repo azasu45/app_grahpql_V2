@@ -5,10 +5,10 @@ import { schema } from './src/graphql/schema';
 const config: CodegenConfig = {
    overwrite: true,
    schema: printSchema(schema),
-   documents: ['src/components/**/*.graphql'],
+   documents: ['src/graphql/codegenGenerate/**/*.graphql'],
    generates: {
-      'src/components/types.generated.ts': { plugins: ['typescript'] },
-      'components/': {
+      'src/graphql/codegenGenerate/types.generated.ts': { plugins: ['typescript'] },
+      'src/graphql/codegenGenerate': {
          preset: 'near-operation-file',
          presetConfig: {
             extension: '.generated.ts',

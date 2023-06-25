@@ -92,6 +92,7 @@ export type Query = {
   count: Scalars['Int']['output'];
   grupos: Array<Grupo>;
   gruposCount: Scalars['Int']['output'];
+  misPagos: Array<Pago>;
   node?: Maybe<Node>;
   nodes: Array<Maybe<Node>>;
   pagos: Array<Pago>;
@@ -123,6 +124,13 @@ export type QueryCountArgs = {
 
 
 export type QueryGruposArgs = {
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  take?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type QueryMisPagosArgs = {
+  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
 };

@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import ModalCSP from '@app/components/modal';
+import ModalCSP from '@app/components/general/modal';
 import Filtros from '../../app/paymonitor/cobros/filtros';
 import { FormProvider, useForm } from 'react-hook-form';
 import { Bold, Button, Card, DateRangePickerValue, Flex, Metric, Text, Title } from '@tremor/react';
 import { useQuery, gql } from '@apollo/client';
-import Pagination from '@app/components/pagination';
+import Pagination from '@app/components/general/pagination';
 import CobrosAgregarModal from './cobrosAgregarModal';
 
 const cobrosQuery = gql`

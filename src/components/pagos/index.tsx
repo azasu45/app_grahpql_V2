@@ -2,24 +2,20 @@
 
 import { Card, Grid } from '@tremor/react';
 import Pagination from '../general/pagination';
-import CobroCard from './cobroCard';
+import { PagoCard } from './pagoCard';
 
-export const Cobros = ({
-   cobros,
+export const Pagos = ({
+   pagos,
    loading,
    onClick,
    showResults,
-   cobrosCount,
+   pagosCount,
    page,
    handleChangePage,
 }: {
-   cobrosCount: number;
-   cobros: {
+   pagosCount: number;
+   pagos: {
       id: string;
-      descripcion: string;
-      monto: number;
-      fecha: Date;
-      pagosCount: number;
    }[];
    loading?: boolean;
    onClick?: (answerId: string) => Promise<void>;
@@ -31,17 +27,17 @@ export const Cobros = ({
       <>
          <div className='mt-2 grow overflow-auto'>
             <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
-               {cobros.map((cobro) => (
-                  <CobroCard key={cobro.id} id={cobro.id} />
+               {pagos.map((pago) => (
+                  <PagoCard key={pago.id} id={pago.id} />
                ))}
             </Grid>
          </div>
-         <Pagination count={cobrosCount} page={page} handleChangePage={handleChangePage} />
+         <Pagination count={pagosCount} page={page} handleChangePage={handleChangePage} />
       </>
    );
 };
 
-export const SkeletonCobros = () => {
+export const SkeletonPagos = () => {
    return (
       <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2 mt-2'>
          <Card className='py-2 px-2 animate-pulse'>
