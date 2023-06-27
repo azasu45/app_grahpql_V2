@@ -1,12 +1,13 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
-import { Form, useFormContext } from 'react-hook-form';
+import { useFormContext } from 'react-hook-form';
 import { useState } from 'react';
 import { type DateRangePickerValue } from '@tremor/react';
-
 import { CobrosDocument } from '@app/graphql/codegenGenerate/documents.generated';
-import { useSession } from 'next-auth/react';
+
 //* Components */
 import CobroBar from './cobroBar';
 import { Cobros } from '@app/components/cobros';
@@ -18,7 +19,8 @@ export type TypeFiltrosCobros = {
 
 function ListaCobros() {
    const [page, setPage] = useState<number>(0);
-   const { handleSubmit, control } = useFormContext<TypeFiltrosCobros>();
+   const { handleSubmit } = useFormContext<TypeFiltrosCobros>();
+
    const { data, refetch, fetchMore } = useSuspenseQuery(CobrosDocument, {
       fetchPolicy: 'cache-first',
       variables: {

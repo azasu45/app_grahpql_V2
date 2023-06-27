@@ -42,6 +42,7 @@ builder.queryFields((t) => ({
       },
       resolve: async (query, _, args, ctx) => {
          const { user } = ctx.session;
+
          return await prisma.pago.findMany({
             ...query,
             where: {

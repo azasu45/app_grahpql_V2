@@ -19,8 +19,8 @@ export default function BuscarUsuarioV2({
 
    return (
       <>
-         <Title>Buscar Usuario</Title>
-         <div className='flex space-x-1  max-w-md'>
+         <Title>Buscar Comercio</Title>
+         <div className='flex space-x-1 max-w-md '>
             <TextInput placeholder='Buscar usuario' onChange={(e) => setSearch(e.target.value)} />
             <Button type='button' size='xs' onClick={() => onChangePerfil(search)}>
                Buscar
@@ -34,14 +34,18 @@ export default function BuscarUsuarioV2({
                      <Text>Cedula</Text>
                   </Flex>
                </ListItem>
-
                {data.buscarPerfiles.map((perfil) => (
                   <ListItem
                      className={`${
-                        watch().perfilId === perfil.id ? 'bg-slate-500/25' : ''
+                        watch().perfil.id === perfil.id ? 'bg-slate-500/25' : ''
                      } cursor-pointer`}
                      key={perfil.id}
-                     onClick={() => setValue('perfilId', perfil.id)}
+                     onClick={() =>
+                        setValue('perfil', {
+                           id: perfil.id,
+                           nombre: perfil.nombre,
+                        })
+                     }
                   >
                      <Flex>
                         <Text>{perfil.nombre}</Text>

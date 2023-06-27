@@ -1,6 +1,5 @@
 'use client';
 
-import { Prisma } from '@prisma/client';
 import { useState } from 'react';
 import Drawer from '@app/components/general/drawer';
 import { Button, TextInput } from '@tremor/react';
@@ -9,8 +8,6 @@ import { useForm } from 'react-hook-form';
 import NumberInput from '@app/components/general/NumberInput';
 import { AgregarCobroDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useMutation } from '@apollo/client';
-import Loading from '../../(main)/loading';
-
 interface InputAddCobro {
    description: string;
    monto: number;
@@ -25,7 +22,7 @@ function CobroAgregarDrawer() {
       formState: { errors },
    } = useForm<InputAddCobro>();
 
-   const [mutate, { data, loading }] = useMutation(AgregarCobroDocument);
+   const [mutate, { loading }] = useMutation(AgregarCobroDocument);
 
    const handleOpen = (force?: boolean) => {
       setOpen(force ?? !open);

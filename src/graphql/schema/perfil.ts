@@ -46,6 +46,7 @@ builder.queryFields((t) => ({
                   {
                      nombre: {
                         contains: args.nombre,
+                        mode: 'insensitive',
                      },
                   },
                ],
