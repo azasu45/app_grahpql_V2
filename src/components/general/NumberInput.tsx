@@ -9,7 +9,7 @@ import {
    sizing,
    spacing,
    tremorTwMerge,
-} from './tremor/tremorall';
+} from './tremor/tremorAll';
 
 const ExclamationFilledIcon = ({ ...props }) => (
    <svg {...props} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'>
