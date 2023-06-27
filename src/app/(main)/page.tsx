@@ -33,7 +33,7 @@ export default async function Home() {
                className={`text-tremor-content text-lg leading-6 mb-8 md:text-xl ${roboto.className}`}
             >
                Notificación de los pagos que recibes<br></br>
-               ... pero organizadamente.
+               ... todo ordenadito.
             </h2>
             <Image
                src={'/hero-img.png'}
