@@ -10,6 +10,7 @@ import {
 } from '@app/graphql/codegenGenerate/documents.generated';
 import BuscarUsuarioV2 from './buscarUsuarioV2';
 import { useMutation } from '@apollo/client';
+import { Suspense } from 'react';
 
 export type CrearPagoType = {
    referencia: string;
@@ -20,7 +21,7 @@ export type CrearPagoType = {
 };
 
 export default function Pagar() {
-   const [mutation, { loading }] = useMutation(PagarDocument);
+   const [mutation] = useMutation(PagarDocument);
 
    const methods = useForm<CrearPagoType>({
       defaultValues: {
@@ -71,7 +72,9 @@ export default function Pagar() {
                <Subtitle>Paso 1: Buscar a quien se le va hacer el pago; Image Mockeado</Subtitle>
             </Card>
             <Card className='mt-2 max-w-md max-auto mx-auto'>
-               <BuscarUsuarioV2 onChangePerfil={onChangePerfil} queryRef={queryRef} />
+               <Suspense fallback={<h1>cargando usuarios...</h1>}>
+                  <BuscarUsuarioV2 onChangePerfil={onChangePerfil} queryRef={queryRef} />
+               </Suspense>
             </Card>
             <Card className='mt-2 max-w-md mx-auto'>
                <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
