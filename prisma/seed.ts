@@ -7,27 +7,29 @@ import data from './data_3/demo-data.json';
 const prisma = new PrismaClient();
 
 async function main() {
-   await prisma.pago.deleteMany();
-   await prisma.cobro.deleteMany();
-   await prisma.grupo.deleteMany();
-   await prisma.perfil.deleteMany();
+   // await prisma.pago.deleteMany();
+   // await prisma.cobro.deleteMany();
+   // await prisma.grupo.deleteMany();
 
    await createPerfiles();
-   await createGroups();
-   await createCharge();
-   await createPayments();
+   //  await createGroups();
+   //  await createCharge();
+   //  await createPayments();
 }
 
 async function createPerfiles() {
    for (let data of perfilJSON) {
       const { cedula, id, subName, userId } = data;
 
-      await prisma.perfil.create({
+      await prisma.perfil.update({
+         where: {
+            id,
+         },
          data: {
             id,
             cedula,
             nombre: subName,
-            userId,
+            userId: userId ?? cedula,
          },
       });
    }
@@ -56,16 +58,7 @@ async function createCharge() {
 
 async function createPayments() {
    for (let data of pagoJSON) {
-      const {
-         captureImg,
-         cobroId,
-         grupoId,
-         id,
-         monto,
-         perfilId,
-         suscritoId,
-         referencia,
-      } = data;
+      const { captureImg, cobroId, grupoId, id, monto, perfilId, suscritoId, referencia } = data;
 
       const fecha = new Date(data.fecha);
 

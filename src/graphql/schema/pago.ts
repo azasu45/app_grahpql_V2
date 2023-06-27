@@ -1,3 +1,4 @@
+import { decodeGlobalID } from '@pothos/plugin-relay';
 import { builder, orderBy } from '../builder';
 import { prisma } from '../db';
 
@@ -19,8 +20,8 @@ builder.prismaNode('Pago', {
          type: 'DateTime',
          resolve: (pago) => pago.fecha,
       }),
-      cobro: t.relation('cobro'),
-      grupo: t.relation('grupo'),
+      cobro: t.relation('cobro', { nullable: true }),
+      grupo: t.relation('grupo', { nullable: true }),
       perfilPago: t.relation('perfilPago'),
       perfilSuscrito: t.relation('perfilSuscrito'),
    }),
@@ -126,15 +127,23 @@ builder.mutationFields((t) => ({
       resolve: async (query, _, args, ctx) => {
          const { user } = ctx.session;
 
+         const perfil = await prisma.perfil.findUnique({
+            where: {
+               userId: user.id,
+            },
+         });
+
+         if (!perfil) return null;
+
          return await prisma.pago.create({
             data: {
                estado: 1,
-               monto: args.input.monto,
-               captureImg: args.input.captureImg,
                referencia: args.input.referencia,
-               suscritoId: user.id,
                observacion: args.input.observacion,
-               perfilId: args.input.perfilId,
+               monto: args.input.monto,
+               suscritoId: user.id,
+               perfilId: decodeGlobalID(perfil.id).id,
+               captureImg: args.input.captureImg,
             },
          });
       },

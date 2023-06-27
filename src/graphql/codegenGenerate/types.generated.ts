@@ -44,6 +44,7 @@ export type Mutation = {
   __typename?: 'Mutation';
   agregarCobro: Cobro;
   crearOActualizarPerfil?: Maybe<Perfil>;
+  crearPago?: Maybe<Pago>;
 };
 
 
@@ -56,6 +57,11 @@ export type MutationCrearOActualizarPerfilArgs = {
   input: CrearOActualizarPerfil;
 };
 
+
+export type MutationCrearPagoArgs = {
+  input: CreatePagoInput;
+};
+
 export type Node = {
   id: Scalars['ID']['output'];
 };
@@ -63,10 +69,10 @@ export type Node = {
 export type Pago = Node & {
   __typename?: 'Pago';
   captureImg: Scalars['String']['output'];
-  cobro: Cobro;
+  cobro?: Maybe<Cobro>;
   estado: Scalars['Int']['output'];
   fecha: Scalars['DateTime']['output'];
-  grupo: Grupo;
+  grupo?: Maybe<Grupo>;
   id: Scalars['ID']['output'];
   monto: Scalars['Decimal']['output'];
   observacion?: Maybe<Scalars['String']['output']>;
@@ -86,6 +92,7 @@ export type Perfil = Node & {
 
 export type Query = {
   __typename?: 'Query';
+  buscarPerfiles: Array<Perfil>;
   cobros: Array<Cobro>;
   cobrosAdmin: Array<Cobro>;
   cobrosCount: Scalars['Int']['output'];
@@ -99,6 +106,11 @@ export type Query = {
   pagosCount: Scalars['Int']['output'];
   perfil?: Maybe<Perfil>;
   perfiles: Array<Perfil>;
+};
+
+
+export type QueryBuscarPerfilesArgs = {
+  nombre: Scalars['String']['input'];
 };
 
 
@@ -160,6 +172,16 @@ export type CrearCobroPorUsuario = {
 export type CrearOActualizarPerfil = {
   cedula: Scalars['String']['input'];
   nombre: Scalars['String']['input'];
+};
+
+export type CreatePagoInput = {
+  captureImg: Scalars['String']['input'];
+  cobroId?: InputMaybe<Scalars['String']['input']>;
+  grupoId?: InputMaybe<Scalars['String']['input']>;
+  monto: Scalars['Decimal']['input'];
+  observacion?: InputMaybe<Scalars['String']['input']>;
+  perfilId: Scalars['String']['input'];
+  referencia: Scalars['String']['input'];
 };
 
 export enum OrderBy {

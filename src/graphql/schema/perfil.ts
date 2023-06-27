@@ -29,6 +29,33 @@ builder.queryFields((t) => ({
          });
       },
    }),
+
+   buscarPerfiles: t.prismaField({
+      type: ['Perfil'],
+      args: {
+         nombre: t.arg.string({ required: true }),
+      },
+      resolve: async (query, _, args, ctx) => {
+         const { user } = ctx.session;
+         return await prisma.perfil.findMany({
+            take: 10,
+            skip: 0,
+            where: {
+               NOT: [{ userId: user.id }],
+               AND: [
+                  {
+                     nombre: {
+                        contains: args.nombre,
+                     },
+                  },
+               ],
+            },
+            orderBy: {
+               nombre: 'desc',
+            },
+         });
+      },
+   }),
 }));
 
 const CreateCuenta = builder.inputType('crearOActualizarPerfil', {

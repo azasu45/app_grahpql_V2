@@ -6,8 +6,8 @@ import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 
 interface ModalProps extends React.PropsWithChildren {
-   icon?: ElementType;
    buttonTitle?: string;
+   icon?: ElementType;
    title?: string;
    handleOpen: (force?: boolean) => void;
    open: boolean;
@@ -24,21 +24,11 @@ const Modal = ({
    return (
       <>
          <div className='flex items-center'>
-            <Button
-               type='button'
-               icon={icon}
-               size='sm'
-               onClick={() => handleOpen()}>
+            <Button type='button' icon={icon} size='xs' onClick={() => handleOpen()}>
                {buttonTitle}
             </Button>
-            <Transition
-               appear
-               show={open}
-               as={React.Fragment}>
-               <Dialog
-                  as='div'
-                  className='relative z-10'
-                  onClose={() => handleOpen(false)}>
+            <Transition appear show={open} as={React.Fragment}>
+               <Dialog as='div' className='relative z-10' onClose={() => handleOpen(false)}>
                   <Transition.Child
                      as={React.Fragment}
                      enter='ease-out duration-300'
@@ -46,7 +36,8 @@ const Modal = ({
                      enterTo='opacity-100'
                      leave='ease-in duration-200'
                      leaveFrom='opacity-100'
-                     leaveTo='opacity-0'>
+                     leaveTo='opacity-0'
+                  >
                      <div className='fixed inset-0 bg-black bg-opacity-25' />
                   </Transition.Child>
                   <div className='fixed inset-0 overflow-y-auto'>
@@ -58,11 +49,13 @@ const Modal = ({
                            enterTo='opacity-100 scale-100'
                            leave='ease-in duration-200'
                            leaveFrom='opacity-100 scale-100'
-                           leaveTo='opacity-0 scale-95'>
+                           leaveTo='opacity-0 scale-95'
+                        >
                            <Dialog.Panel className='w-full h-full transform overflow-hidden rounded-2xl bg-tremor-background p-6 text-left align-middle shadow-xl transition-all dark:bg-dark-tremor-background'>
                               <Dialog.Title
                                  as='div'
-                                 className='flex justify-between items-center pb-4 mb-2 border-b sm:mb-3 dark:border-dark-tremor-background-emphasis'>
+                                 className='flex justify-between items-center pb-4 mb-2 border-b sm:mb-3 dark:border-dark-tremor-background-emphasis'
+                              >
                                  <Title>{title}</Title>
                                  <Icon
                                     onClick={() => handleOpen(false)}
