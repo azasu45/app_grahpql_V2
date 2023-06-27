@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Perfil" ADD COLUMN     "comercio" VARCHAR(50),
+ALTER COLUMN "nombre" SET DATA TYPE VARCHAR(50);

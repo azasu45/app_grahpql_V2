@@ -63,9 +63,10 @@ model VerificationToken {
 }
 
 model Perfil {
-  id     String @id @default(cuid())
-  nombre String @db.VarChar(20)
-  cedula String @unique @db.Text
+  id       String  @id @default(cuid())
+  nombre   String  @db.VarChar(50)
+  comercio String? @db.VarChar(50)
+  cedula   String  @unique @db.Text
 
   userId String? @unique
 
