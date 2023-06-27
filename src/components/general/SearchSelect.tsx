@@ -12,7 +12,7 @@ import {
    hasValue,
 } from './tremor/selectUtils';
 
-import { border, sizing, spacing, tremorTwMerge } from './tremor/tremorall';
+import { border, sizing, spacing, tremorTwMerge } from './tremor/tremorAll';
 
 const ArrowDownHeadIcon = ({ ...props }) => (
    <svg
