@@ -1,5 +1,5 @@
 import React from 'react';
-import { tremorTwMerge } from './tremorall';
+import { tremorTwMerge } from './tremorAll';
 
 export interface SelectItemProps {
    value: string;
