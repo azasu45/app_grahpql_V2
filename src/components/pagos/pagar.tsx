@@ -10,7 +10,7 @@ import {
 } from '@app/graphql/codegenGenerate/documents.generated';
 import BuscarUsuarioV2 from './buscarUsuarioV2';
 import { useMutation } from '@apollo/client';
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useCallback, useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 export type CrearPagoType = {
@@ -26,11 +26,14 @@ export type CrearPagoType = {
 
 export default function Pagar() {
    const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
-   const [mutation] = useMutation(PagarDocument);
+   const [mutation, { loading }] = useMutation(PagarDocument);
 
-   const handleAbrirBuscarUsuario = (force?: boolean) => {
-      setAbrirBuscarUsuario(force ?? !abrirBuscarUsuario);
-   };
+   const handleAbrirBuscarUsuario = useCallback(
+      (force?: boolean) => {
+         setAbrirBuscarUsuario(force ?? !abrirBuscarUsuario);
+      },
+      [abrirBuscarUsuario],
+   );
 
    const methods = useForm<CrearPagoType>({
       defaultValues: {
@@ -80,8 +83,8 @@ export default function Pagar() {
    });
 
    useEffect(() => {
-      handleAbrirBuscarUsuario(false);
-   }, [watch('perfil.nombre')]);
+      if (watch('perfil.nombre') !== '') handleAbrirBuscarUsuario(false);
+   }, [handleAbrirBuscarUsuario, watch]);
 
    return (
       <FormProvider {...methods}>
@@ -121,15 +124,24 @@ export default function Pagar() {
                   <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
                      <div>
                         <Text>Referencia</Text>
-                        <TextInput placeholder='00002M' {...methods.register('referencia')} />
+                        <TextInput
+                           disabled={loading}
+                           placeholder='00002M'
+                           {...methods.register('referencia')}
+                        />
                      </div>
                      <div>
                         <Text>Observacion</Text>
-                        <TextInput placeholder='00002M' {...methods.register('observacion')} />
+                        <TextInput
+                           disabled={loading}
+                           placeholder='00002M'
+                           {...methods.register('observacion')}
+                        />
                      </div>
                      <div>
                         <Text>Monto</Text>
                         <NumberInput
+                           disabled={loading}
                            placeholder='00002M'
                            type='number'
                            {...methods.register('monto')}
@@ -137,7 +149,9 @@ export default function Pagar() {
                      </div>
                   </Grid>
                   <Flex justifyContent='center' className='mt-2'>
-                     <Button type='submit'>Enviar Pago</Button>
+                     <Button loading={loading} type='submit'>
+                        Enviar Pago
+                     </Button>
                   </Flex>
                </Card>
             )}

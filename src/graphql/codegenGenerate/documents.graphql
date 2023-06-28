@@ -66,3 +66,20 @@ query SearchSelectPerfil($nombre: String!) {
       cedula
    }
 }
+
+fragment PagoCardFragment on Pago {
+   referencia
+   captureImg
+   refAdmin
+   estado
+   observacion
+   monto
+   fecha
+}
+
+fragment CobroCardFragment on Cobro {
+   descripcion
+   fecha
+   monto
+   pagosCount
+}

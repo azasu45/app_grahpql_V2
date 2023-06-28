@@ -142,8 +142,8 @@ builder.mutationFields((t) => ({
                referencia: args.input.referencia,
                observacion: args.input.observacion,
                monto: args.input.monto,
-               suscritoId: user.id,
-               perfilId: decodeGlobalID(perfil.id).id,
+               suscritoId: perfil.id,
+               perfilId: decodeGlobalID(args.input.perfilId).id,
                captureImg: args.input.captureImg,
             },
          });
