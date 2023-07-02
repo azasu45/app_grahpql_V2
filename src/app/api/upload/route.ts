@@ -18,17 +18,6 @@ export async function POST(request: NextRequest) {
    const uploadDir = join(process.cwd(), 'public', relativeUploadDir);
 
    try {
-      await stat(uploadDir);
-   } catch (e: any) {
-      if (e.code === 'ENOENT') {
-         await mkdir(uploadDir, { recursive: true });
-      } else {
-         console.error('Error while trying to create directory when uploading a file\n', e);
-         return NextResponse.json({ error: 'Something went wrong.' }, { status: 500 });
-      }
-   }
-
-   try {
       const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
       const filename = `capture-${uniqueSuffix}.${mime.getExtension(file.type)}`;
       await writeFile(`${uploadDir}/${filename}`, buffer);
