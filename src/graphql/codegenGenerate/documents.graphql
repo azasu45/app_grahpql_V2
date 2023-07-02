@@ -35,8 +35,21 @@ query Perfil {
    }
 }
 
-query pagosRecibidos($skip: Int) {
-   misPagos(skip: $skip) {
+query misPagosRecibidos($skip: Int) {
+   misPagosRecibidos(skip: $skip) {
+      id
+      captureImg
+      estado
+      monto
+      fecha
+      cobro {
+         id
+      }
+   }
+}
+
+query misPagosRealizados($skip: Int) {
+   misPagosRealizados(skip: $skip) {
       id
       captureImg
       estado

@@ -15,7 +15,7 @@ async function Page() {
 
    if (!session) redirect('/api/auth/signin');
 
-   const { data, error } = await getClient().query({
+   const { data } = await getClient().query({
       query: PerfilDocument,
    });
 
@@ -36,8 +36,6 @@ async function Page() {
                }}
             />
          </Col>
-
-         <Callout title='error'>{error?.message}</Callout>
       </Grid>
    );
 }

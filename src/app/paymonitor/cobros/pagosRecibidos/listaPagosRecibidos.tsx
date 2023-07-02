@@ -3,14 +3,14 @@
 export const dynamic = 'force-dynamic';
 
 import { useState } from 'react';
-import { PagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
+import { MisPagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { Pagos } from '@app/components/pagos';
 
 export default function ListaPagosRecibidos() {
    const [page, setPage] = useState(0);
 
-   const { data, fetchMore } = useSuspenseQuery(PagosRecibidosDocument, {
+   const { data, fetchMore } = useSuspenseQuery(MisPagosRecibidosDocument, {
       fetchPolicy: 'cache-first',
       variables: {
          skip: page * 10,
@@ -32,7 +32,12 @@ export default function ListaPagosRecibidos() {
 
    return (
       <>
-         <Pagos pagos={data.misPagos} page={0} pagosCount={1} handleChangePage={handleChangePage} />
+         <Pagos
+            pagos={data.misPagosRecibidos}
+            page={0}
+            pagosCount={1}
+            handleChangePage={handleChangePage}
+         />
       </>
    );
 }

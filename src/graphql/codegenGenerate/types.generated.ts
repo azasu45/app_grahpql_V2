@@ -99,10 +99,10 @@ export type Query = {
   count: Scalars['Int']['output'];
   grupos: Array<Grupo>;
   gruposCount: Scalars['Int']['output'];
-  misPagos: Array<Pago>;
+  misPagosRealizados: Array<Pago>;
+  misPagosRecibidos: Array<Pago>;
   node?: Maybe<Node>;
   nodes: Array<Maybe<Node>>;
-  pagos: Array<Pago>;
   pagosCount: Scalars['Int']['output'];
   perfil?: Maybe<Perfil>;
   perfiles: Array<Perfil>;
@@ -141,7 +141,14 @@ export type QueryGruposArgs = {
 };
 
 
-export type QueryMisPagosArgs = {
+export type QueryMisPagosRealizadosArgs = {
+  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  take?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type QueryMisPagosRecibidosArgs = {
   orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
@@ -155,13 +162,6 @@ export type QueryNodeArgs = {
 
 export type QueryNodesArgs = {
   ids: Array<Scalars['ID']['input']>;
-};
-
-
-export type QueryPagosArgs = {
-  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
-  skip?: InputMaybe<Scalars['Int']['input']>;
-  take?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type CrearCobroPorUsuario = {

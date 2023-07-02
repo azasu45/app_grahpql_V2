@@ -7,6 +7,18 @@ import PrismaUtils from '@pothos/plugin-prisma-utils';
 import { DateResolver, GraphQLPositiveFloat } from 'graphql-scalars';
 import { prisma } from './db';
 import { Session } from 'next-auth';
+import { GraphQLScalarType } from 'graphql';
+
+const FileScalar = new GraphQLScalarType({
+   name: 'File',
+   serialize(value) {
+      console.log(value);
+      if (value instanceof File) {
+         return File;
+      }
+      throw Error('GraphQL Date Scalar serializer expected a `File` object');
+   },
+});
 
 export const builder = new SchemaBuilder<{
    Context: { session: Session };
@@ -18,6 +30,10 @@ export const builder = new SchemaBuilder<{
       Decimal: {
          Input: Prisma.Decimal;
          Output: Prisma.Decimal;
+      };
+      File: {
+         Input: File;
+         Output: File;
       };
    };
    PrismaTypes: PrismaTypes;
@@ -45,3 +61,4 @@ builder.enumType(orderBy, {
 
 builder.addScalarType('Decimal', GraphQLPositiveFloat, {});
 builder.addScalarType('DateTime', DateResolver, {});
+builder.addScalarType('File', FileScalar, {});

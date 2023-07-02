@@ -2,6 +2,8 @@ import { addDays } from '../../libs/function';
 import { builder } from '../builder';
 import { prisma } from '../db';
 
+const DEFAULT_PAGE_SIZE = 10;
+
 builder.prismaNode('Cobro', {
    id: { field: 'id' },
    fields: (t) => ({
@@ -17,8 +19,6 @@ builder.prismaNode('Cobro', {
       pagosCount: t.relationCount('pagos'),
    }),
 });
-
-const DEFAULT_PAGE_SIZE = 10;
 
 const InputFiltrosCobros = builder.inputType('InputFiltrosCobros', {
    fields: (t) => ({

@@ -3,8 +3,12 @@
 import { Button, Card, Grid, Text, TextInput } from '@tremor/react';
 import { useMutation, gql } from '@apollo/client';
 import { useForm } from 'react-hook-form';
-import { CrearOActualizarPerfilDocument } from '@app/graphql/codegenGenerate/documents.generated';
+import {
+   CrearOActualizarPerfilDocument,
+   PerfilDocument,
+} from '@app/graphql/codegenGenerate/documents.generated';
 import { useCallback } from 'react';
+import Sweetalert from 'sweetalert2';
 
 type Input = {
    nombre: string;
@@ -20,9 +24,19 @@ export default function PerfilDataForm({ defaultValues }: { defaultValues: Input
       defaultValues,
    });
 
-   const [mutation, { data, loading, error }] = useMutation(CrearOActualizarPerfilDocument, {
+   const [mutation, { loading }] = useMutation(CrearOActualizarPerfilDocument, {
+      refetchQueries: [PerfilDocument],
       onCompleted: (data) => {
-         console.log(data);
+         if (data.crearOActualizarPerfil?.cedula) {
+            Sweetalert.fire(
+               'Good job!',
+               'You clicked the button! ' + data.crearOActualizarPerfil.cedula,
+               'success',
+            );
+         }
+      },
+      onError: (error) => {
+         Sweetalert.fire('Error', 'Message ' + error.message, 'error');
       },
    });
 

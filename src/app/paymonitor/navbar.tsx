@@ -12,9 +12,9 @@ import { Fragment } from 'react';
 import Link from 'next/link';
 
 const navigation = [
-   { name: 'Dashboard', href: '/paymonitor' },
-   { name: 'Pagos', href: '/paymonitor/pagos' },
-   { name: 'Cobros', href: '/paymonitor/cobros' },
+   { name: 'Inicio', href: '/paymonitor' },
+   { name: 'Mis Pagos', href: '/paymonitor/pagos' },
+   { name: 'Mis Cobros', href: '/paymonitor/cobros' },
 ];
 
 function classNames(...classes: string[]) {

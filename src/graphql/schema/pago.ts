@@ -1,7 +1,8 @@
 import { decodeGlobalID } from '@pothos/plugin-relay';
-import { builder, orderBy } from '../builder';
+import { builder } from '../builder';
 import { prisma } from '../db';
-
+import fs from 'fs';
+import path from 'path';
 const DEFAULT_PAGE_SIZE = 10;
 
 builder.prismaNode('Pago', {
@@ -27,13 +28,8 @@ builder.prismaNode('Pago', {
    }),
 });
 
-/* Pagos con grupos */
-/* Pagos con cobros */
-
-/* Fecha */
-
 builder.queryFields((t) => ({
-   misPagos: t.prismaField({
+   misPagosRecibidos: t.prismaField({
       type: ['Pago'],
       args: {
          take: t.arg.int(),
@@ -42,7 +38,6 @@ builder.queryFields((t) => ({
       },
       resolve: async (query, _, args, ctx) => {
          const { user } = ctx.session;
-
          return await prisma.pago.findMany({
             ...query,
             where: {
@@ -58,24 +53,21 @@ builder.queryFields((t) => ({
          });
       },
    }),
-
-   pagos: t.prismaField({
+   misPagosRealizados: t.prismaField({
       type: ['Pago'],
       args: {
          take: t.arg.int(),
          skip: t.arg.int(),
          orderByFecha: t.arg.boolean(),
       },
-      resolve: async (async, _, args, ctx) => {
+      resolve: async (query, _, args, ctx) => {
          const user = ctx.session.user;
          return await prisma.pago.findMany({
             take: args.take ?? DEFAULT_PAGE_SIZE,
             skip: args.skip ?? 0,
             where: {
-               cobro: {
-                  perfil: {
-                     userId: user.id,
-                  },
+               perfilSuscrito: {
+                  userId: user.id,
                },
             },
             include: {
@@ -147,6 +139,28 @@ builder.mutationFields((t) => ({
                captureImg: args.input.captureImg,
             },
          });
+      },
+   }),
+
+   uploadFile: t.field({
+      type: 'Boolean',
+      nullable: true,
+      args: {
+         file: t.arg({ type: 'File', required: true }),
+      },
+      resolve: async (_, args, ctx) => {
+         try {
+            console.log(args);
+            const fileArrayBuffer = await args.file.arrayBuffer();
+            await fs.promises.writeFile(
+               path.join(__dirname, args.file.name),
+               Buffer.from(fileArrayBuffer),
+            );
+         } catch (e) {
+            console.error(e);
+            return false;
+         }
+         return true;
       },
    }),
 }));

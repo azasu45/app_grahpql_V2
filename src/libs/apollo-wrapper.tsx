@@ -11,7 +11,6 @@ import {
 import clientCookies from 'js-cookie';
 import { loadErrorMessages, loadDevMessages } from '@apollo/client/dev';
 import { setVerbosity } from 'ts-invariant';
-import { env } from '@app/env.mjs';
 
 if (process.env.NODE_ENV === 'development') {
    setVerbosity('debug');

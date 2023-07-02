@@ -9,15 +9,24 @@ import {
    SearchSelectPerfilDocument,
 } from '@app/graphql/codegenGenerate/documents.generated';
 import BuscarUsuarioV2 from './buscarUsuarioV2';
-import { useMutation } from '@apollo/client';
+import { gql, useMutation } from '@apollo/client';
 import { Suspense, useCallback, useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import UploadFile from '../general/uploadFile';
+import { uploadFileAction } from '@app/app/actions/uploadFile';
+
+const uploadFile = gql`
+   mutation upload($file: File!) {
+      uploadFile(file: $file)
+   }
+`;
 
 export type CrearPagoType = {
    referencia: string;
    monto: number;
    observacion: string;
    urlImg: string;
+   file: FileList;
    perfil: {
       id: string;
       nombre: string;
@@ -68,18 +77,44 @@ export default function Pagar() {
       watchQueryOptions: {},
    } = queryRef;
 
-   const onSubmit = methods.handleSubmit((data) => {
-      mutation({
-         variables: {
-            input: {
-               captureImg: '/images/capture-1.jpg',
-               monto: data.monto,
-               perfilId: data.perfil.id,
-               observacion: data.observacion,
-               referencia: data.referencia,
+   const onSubmit = methods.handleSubmit(async (data) => {
+      const validFiles: File[] = [];
+      for (let i = 0; i < data.file.length; i++) {
+         const file = data.file[i];
+         if (file) {
+            if (!file.type.startsWith('image')) {
+               alert(`File with idx: ${i} is invalid`);
+               continue;
+            }
+            validFiles.push(file);
+         }
+      }
+      if (!validFiles.length) {
+         alert('No valid files were chosen');
+         return;
+      }
+      try {
+         const formData = new FormData();
+         validFiles.forEach((file) => formData.append('media', file));
+         const responseUpload = await fetch('/api/upload', {
+            method: 'POST',
+            body: formData,
+         });
+
+         const responseData = await responseUpload.json();
+
+         mutation({
+            variables: {
+               input: {
+                  captureImg: responseData.fileUrl,
+                  monto: data.monto,
+                  perfilId: data.perfil.id,
+                  observacion: data.observacion,
+                  referencia: data.referencia,
+               },
             },
-         },
-      });
+         });
+      } catch (e) {}
    });
 
    useEffect(() => {
@@ -88,7 +123,7 @@ export default function Pagar() {
 
    return (
       <FormProvider {...methods}>
-         <form onSubmit={onSubmit}>
+         <form onSubmit={onSubmit} action={uploadFileAction}>
             {!abrirBuscarUsuario && (
                <Card className='max-w-md mx-auto'>
                   <Flex>
@@ -122,6 +157,7 @@ export default function Pagar() {
             {!abrirBuscarUsuario && (
                <Card className='mt-2 max-w-md mx-auto'>
                   <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
+                     <UploadFile />
                      <div>
                         <Text>Referencia</Text>
                         <TextInput
