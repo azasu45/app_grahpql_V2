@@ -8,7 +8,8 @@ const nextConfig = {
         domains: [
             "tailwindui.com",
             "images.unsplash.com",
-            "lh3.googleusercontent.com"
+            "lh3.googleusercontent.com",
+            "uploadthing.com"
         ]
     }
 }

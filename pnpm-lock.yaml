@@ -46,6 +46,9 @@ dependencies:
   '@tremor/react':
     specifier: ^3.2.6
     version: 3.2.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+  '@uploadthing/react':
+    specifier: ^5.1.0
+    version: 5.1.0(react-dropzone@14.2.3)(react@18.2.0)(uploadthing@5.1.0)(zod@3.21.4)
   animejs:
     specifier: ^3.2.1
     version: 3.2.1
@@ -64,9 +67,6 @@ dependencies:
   eslint-config-next:
     specifier: 13.4.7
     version: 13.4.7(eslint@8.44.0)(typescript@5.1.6)
-  formidable:
-    specifier: ^3.5.0
-    version: 3.5.0
   graphql:
     specifier: ^16.7.1
     version: 16.7.1
@@ -94,6 +94,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-dropzone:
+    specifier: ^14.2.3
+    version: 14.2.3(react@18.2.0)
   react-hook-form:
     specifier: ^7.45.1
     version: 7.45.1(react@18.2.0)
@@ -106,6 +109,9 @@ dependencies:
   typescript:
     specifier: 5.1.6
     version: 5.1.6
+  uploadthing:
+    specifier: ^5.1.0
+    version: 5.1.0(zod@3.21.4)
   zod:
     specifier: ^3.21.4
     version: 3.21.4
@@ -1620,7 +1626,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 16.7.1
-      tslib: 2.4.1
+      tslib: 2.5.3
     dev: true
 
   /@graphql-tools/utils@9.2.1(graphql@16.7.1):
@@ -2261,6 +2267,39 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: false
 
+  /@uploadthing/mime-types@0.2.0:
+    resolution: {integrity: sha512-nRcdyM622+GYT9SdaJIVLknqoc8i7krItinfuBPtvmPc+UNGDJ+pMkr4AatYp88cEc4iYtPlN8flJvZ3dNtgrg==}
+    dev: false
+
+  /@uploadthing/react@5.1.0(react-dropzone@14.2.3)(react@18.2.0)(uploadthing@5.1.0)(zod@3.21.4):
+    resolution: {integrity: sha512-gBcw7A6I3/1APqSB2tRk81JNRYdopurt5cHrTdlrLQakH2XnCTs+1Ptl+Tx6MP/zVPajJHdW5B3JB8iQc4SHoQ==}
+    peerDependencies:
+      react: ^17.0.2 || ^18.0.0
+      react-dropzone: ^14.2.3
+      uploadthing: ^5.0.0
+    dependencies:
+      '@uploadthing/shared': 5.0.1(@uploadthing/mime-types@0.2.0)(zod@3.21.4)
+      react: 18.2.0
+      react-dropzone: 14.2.3(react@18.2.0)
+      uploadthing: 5.1.0(zod@3.21.4)
+    transitivePeerDependencies:
+      - '@uploadthing/mime-types'
+      - zod
+    dev: false
+
+  /@uploadthing/shared@5.0.1(@uploadthing/mime-types@0.2.0)(zod@3.21.4):
+    resolution: {integrity: sha512-SMIM9Dyxu/LuKZCM0w/yCXL/wrZedUHKiEK022y5LXhbG7uApVFBPChC2+CCY7ZRU3O9sCCNsDj6OjdygIOEQw==}
+    peerDependencies:
+      '@uploadthing/mime-types': ^0.2.0
+      zod: ^3.21.4
+    peerDependenciesMeta:
+      '@uploadthing/mime-types':
+        optional: true
+    dependencies:
+      '@uploadthing/mime-types': 0.2.0
+      zod: 3.21.4
+    dev: false
+
   /@whatwg-node/events@0.0.3:
     resolution: {integrity: sha512-IqnKIDWfXBJkvy/k6tzskWTc2NK3LcqHlb+KHGCrjOCH4jfQckRX0NAiIcC/vIqQkzLYw2r2CTSwAxcrtcD6lA==}
     dev: true
@@ -2478,6 +2517,7 @@ packages:
 
   /asap@2.0.6:
     resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
+    dev: true
 
   /asn1js@3.0.5:
     resolution: {integrity: sha512-FVnvrKJwpt9LP2lAMl8qZswRNm3T4q9CON+bxldk2iwk3FFpuwhx2FfinyitizWHsVYyaY+y5JzDR0rCMV5yTQ==}
@@ -2496,6 +2536,11 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
     dev: true
+
+  /attr-accept@2.2.2:
+    resolution: {integrity: sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==}
+    engines: {node: '>=4'}
+    dev: false
 
   /auto-bind@4.0.0:
     resolution: {integrity: sha512-Hdw8qdNiqdJ8LqT0iK0sVzkFbzg6fhnQqqfWhBDxcHZvU75+B+ayzTy8x+k5Ix0Y92XOhOUlx74ps+bA6BeYMQ==}
@@ -3098,13 +3143,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /dezalgo@1.0.4:
-    resolution: {integrity: sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig==}
-    dependencies:
-      asap: 2.0.6
-      wrappy: 1.0.2
-    dev: false
-
   /didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
 
@@ -3645,6 +3683,13 @@ packages:
     dependencies:
       flat-cache: 3.0.4
 
+  /file-selector@0.6.0:
+    resolution: {integrity: sha512-QlZ5yJC0VxHxQQsQhXvBaC7VRJ2uaxTf+Tfpu4Z/OcVQJVpZO+DGU0rkoVW5ce2SccxugvpBJoMvUs59iILYdw==}
+    engines: {node: '>= 12'}
+    dependencies:
+      tslib: 2.5.3
+    dev: false
+
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -3680,14 +3725,6 @@ packages:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
       is-callable: 1.2.7
-
-  /formidable@3.5.0:
-    resolution: {integrity: sha512-WwsMWvPmY+Kv37C3+KP3A+2Ym1aZoac4nz4ZEe5z0UPBoCg0O/wHay3eeYkZr4KJIbCzpSUeno+STMhde+KCfw==}
-    dependencies:
-      dezalgo: 1.0.4
-      hexoid: 1.0.0
-      once: 1.4.0
-    dev: false
 
   /fraction.js@4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
@@ -3983,11 +4020,6 @@ packages:
     dependencies:
       capital-case: 1.0.4
       tslib: 2.5.3
-
-  /hexoid@1.0.0:
-    resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
-    engines: {node: '>=8'}
-    dev: false
 
   /hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
@@ -5246,6 +5278,18 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-dropzone@14.2.3(react@18.2.0):
+    resolution: {integrity: sha512-O3om8I+PkFKbxCukfIR3QAGftYXDZfOE2N1mr/7qebQJHs7U+/RSL/9xomJNpRg9kM5h9soQSdf0Gc7OHF5Fug==}
+    engines: {node: '>= 10.13'}
+    peerDependencies:
+      react: '>= 16.8 || 18.0.0'
+    dependencies:
+      attr-accept: 2.2.2
+      file-selector: 0.6.0
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
   /react-hook-form@7.45.1(react@18.2.0):
     resolution: {integrity: sha512-6dWoFJwycbuFfw/iKMcl+RdAOAOHDiF11KWYhNDRN/OkUt+Di5qsZHwA0OwsVnu9y135gkHpTw9DJA+WzCeR9w==}
     engines: {node: '>=12.22.0'}
@@ -5980,6 +6024,15 @@ packages:
       browserslist: 4.21.9
       escalade: 3.1.1
       picocolors: 1.0.0
+
+  /uploadthing@5.1.0(zod@3.21.4):
+    resolution: {integrity: sha512-adWd3D0/r25EspS1s+p2RLvSpDPLOQC+AM+mH1JomsTdEDiderjxMeo6juZUWnq96O/Dsumh97SeFJXDLWI+Qw==}
+    dependencies:
+      '@uploadthing/mime-types': 0.2.0
+      '@uploadthing/shared': 5.0.1(@uploadthing/mime-types@0.2.0)(zod@3.21.4)
+    transitivePeerDependencies:
+      - zod
+    dev: false
 
   /upper-case-first@2.0.2:
     resolution: {integrity: sha512-514ppYHBaKwfJRK/pNC6c/OxfGa0obSnAl106u97Ed0I625Nin96KAjttZF6ZL3e1XLtphxnqrOi9iWgm+u+bg==}

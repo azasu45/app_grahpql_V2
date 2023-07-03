@@ -31,7 +31,7 @@ export default function PagosRealizados() {
          <Pagos
             pagos={data.misPagosRealizados}
             page={page}
-            pagosCount={1}
+            pagosCount={data.misPagosRealizadosCount}
             handleChangePage={handlePageChange}
          />
       </>

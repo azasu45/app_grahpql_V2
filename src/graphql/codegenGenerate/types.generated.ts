@@ -16,6 +16,7 @@ export type Scalars = {
   DateTime: { input: any; output: any; }
   /** Floats that will have a value greater than 0. */
   Decimal: { input: any; output: any; }
+  File: { input: any; output: any; }
 };
 
 export type Cobro = Node & {
@@ -45,6 +46,7 @@ export type Mutation = {
   agregarCobro: Cobro;
   crearOActualizarPerfil?: Maybe<Perfil>;
   crearPago?: Maybe<Pago>;
+  uploadFile?: Maybe<Scalars['Boolean']['output']>;
 };
 
 
@@ -60,6 +62,11 @@ export type MutationCrearOActualizarPerfilArgs = {
 
 export type MutationCrearPagoArgs = {
   input: CreatePagoInput;
+};
+
+
+export type MutationUploadFileArgs = {
+  file: Scalars['File']['input'];
 };
 
 export type Node = {
@@ -100,10 +107,11 @@ export type Query = {
   grupos: Array<Grupo>;
   gruposCount: Scalars['Int']['output'];
   misPagosRealizados: Array<Pago>;
+  misPagosRealizadosCount: Scalars['Int']['output'];
   misPagosRecibidos: Array<Pago>;
+  misPagosRecibidosCount: Scalars['Int']['output'];
   node?: Maybe<Node>;
   nodes: Array<Maybe<Node>>;
-  pagosCount: Scalars['Int']['output'];
   perfil?: Maybe<Perfil>;
   perfiles: Array<Perfil>;
 };
@@ -148,7 +156,21 @@ export type QueryMisPagosRealizadosArgs = {
 };
 
 
+export type QueryMisPagosRealizadosCountArgs = {
+  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  take?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
 export type QueryMisPagosRecibidosArgs = {
+  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  take?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type QueryMisPagosRecibidosCountArgs = {
   orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;

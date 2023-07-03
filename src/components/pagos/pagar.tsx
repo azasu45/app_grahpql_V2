@@ -1,6 +1,8 @@
 'use client';
 
-import { Button, Card, Flex, Grid, Text, TextInput, Title } from '@tremor/react';
+import '@uploadthing/react/styles.css';
+
+import { Button, Card, Col, Flex, Grid, Text, TextInput, Title } from '@tremor/react';
 import NumberInput from '../general/NumberInput';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useBackgroundQuery } from '@apollo/experimental-nextjs-app-support/ssr';
@@ -14,12 +16,7 @@ import { Suspense, useCallback, useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import UploadFile from '../general/uploadFile';
 import { uploadFileAction } from '@app/app/actions/uploadFile';
-
-const uploadFile = gql`
-   mutation upload($file: File!) {
-      uploadFile(file: $file)
-   }
-`;
+import { useUploadThing } from '@app/libs/uploadthingHelpers';
 
 export type CrearPagoType = {
    referencia: string;
@@ -34,6 +31,7 @@ export type CrearPagoType = {
 };
 
 export default function Pagar() {
+   const { startUpload } = useUploadThing('imageUploader');
    const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
    const [mutation, { loading }] = useMutation(PagarDocument);
 
@@ -94,19 +92,12 @@ export default function Pagar() {
          return;
       }
       try {
-         const formData = new FormData();
-         validFiles.forEach((file) => formData.append('media', file));
-         const responseUpload = await fetch('/api/upload', {
-            method: 'POST',
-            body: formData,
-         });
-
-         const responseData = await responseUpload.json();
-
+         const filesUrl = await startUpload(validFiles);
+         if (!filesUrl) return;
          mutation({
             variables: {
                input: {
-                  captureImg: responseData.fileUrl,
+                  captureImg: filesUrl[0].fileUrl,
                   monto: data.monto,
                   perfilId: data.perfil.id,
                   observacion: data.observacion,
@@ -119,7 +110,7 @@ export default function Pagar() {
 
    useEffect(() => {
       if (watch('perfil.nombre') !== '') handleAbrirBuscarUsuario(false);
-   }, [handleAbrirBuscarUsuario, watch]);
+   }, [handleAbrirBuscarUsuario, watch('perfil.nombre')]);
 
    return (
       <FormProvider {...methods}>
@@ -157,7 +148,10 @@ export default function Pagar() {
             {!abrirBuscarUsuario && (
                <Card className='mt-2 max-w-md mx-auto'>
                   <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
-                     <UploadFile />
+                     <Col numColSpanMd={2}>
+                        <UploadFile />
+                     </Col>
+
                      <div>
                         <Text>Referencia</Text>
                         <TextInput

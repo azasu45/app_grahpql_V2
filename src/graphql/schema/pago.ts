@@ -53,6 +53,32 @@ builder.queryFields((t) => ({
          });
       },
    }),
+
+   misPagosRecibidosCount: t.field({
+      type: 'Int',
+      args: {
+         take: t.arg.int(),
+         skip: t.arg.int(),
+         orderByFecha: t.arg.boolean(),
+      },
+      resolve: async (query, args, ctx) => {
+         const { user } = ctx.session;
+         return await prisma.pago.count({
+            ...query,
+            where: {
+               perfilPago: {
+                  userId: user.id,
+               },
+            },
+            skip: args?.skip ?? 0,
+            take: args?.take ?? DEFAULT_PAGE_SIZE,
+            orderBy: {
+               fecha: args.orderByFecha ? 'desc' : 'asc',
+            },
+         });
+      },
+   }),
+
    misPagosRealizados: t.prismaField({
       type: ['Pago'],
       args: {
@@ -80,18 +106,25 @@ builder.queryFields((t) => ({
       },
    }),
 
-   pagosCount: t.field({
+   misPagosRealizadosCount: t.field({
       type: 'Int',
-      resolve: async (root, args, ctx) =>
-         await prisma.pago.count({
+      args: {
+         take: t.arg.int(),
+         skip: t.arg.int(),
+         orderByFecha: t.arg.boolean(),
+      },
+      resolve: async (query, args, ctx) => {
+         const user = ctx.session.user;
+         return await prisma.pago.count({
+            take: args.take ?? DEFAULT_PAGE_SIZE,
+            skip: args.skip ?? 0,
             where: {
-               cobro: {
-                  perfil: {
-                     userId: ctx.session.user.id,
-                  },
+               perfilSuscrito: {
+                  userId: user.id,
                },
             },
-         }),
+         });
+      },
    }),
 }));
 

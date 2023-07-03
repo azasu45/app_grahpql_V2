@@ -46,6 +46,8 @@ query misPagosRecibidos($skip: Int) {
          id
       }
    }
+
+   misPagosRecibidosCount(skip: $skip)
 }
 
 query misPagosRealizados($skip: Int) {
@@ -59,6 +61,8 @@ query misPagosRealizados($skip: Int) {
          id
       }
    }
+
+   misPagosRealizadosCount(skip: $skip)
 }
 
 mutation Pagar($input: createPagoInput!) {
