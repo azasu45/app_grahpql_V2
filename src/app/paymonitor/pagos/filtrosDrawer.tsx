@@ -34,7 +34,7 @@ function Filtros({ loading }: React.PropsWithChildren<{ loading?: NetworkStatus 
             size='md'
          />
          <Drawer open={open} handleOpen={handleOpenFilters} title='Filtrar Pagos'>
-            <Flex className='flex gap-1 flex-wrap md:flex-nowrap mt-1'>
+            <Flex className='gap-1 mt-4 h-full' flexDirection='col'>
                <TextInput
                   //disabled={loading === NetworkStatus.refetch}
                   {...register('descripcion')}
@@ -59,12 +59,13 @@ function Filtros({ loading }: React.PropsWithChildren<{ loading?: NetworkStatus 
                      />
                   )}
                />
-               <div className='flex mt-auto space-x-1'>
+
+               <div className='flex mt-auto space-x-1 mb-6 mr-auto'>
                   <Button type='submit' size='xs'>
                      Buscar
                   </Button>
                   <Button color='red' size='xs' onClick={() => handleOpenFilters(false)}>
-                     Canceler
+                     Cancelar
                   </Button>
                </div>
             </Flex>

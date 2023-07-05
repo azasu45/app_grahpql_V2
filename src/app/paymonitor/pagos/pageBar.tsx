@@ -6,17 +6,12 @@ import Filtros from './filtrosDrawer';
 
 function PageBar() {
    return (
-      <Flex className='mt-4' alignItems='center'>
+      <Flex className='mt-2' alignItems='center'>
          <Flex className='space-x-0.5' justifyContent='start' alignItems='center'>
-            <Subtitle>Cobros</Subtitle>
+            <Subtitle>Pagos</Subtitle>
             <Icon icon={InformationCircleIcon} variant='simple' tooltip='descripción' />
          </Flex>
-         <Flex
-            flexDirection='row'
-            alignItems='center'
-            className='gap-1 flex-nowrap'
-            justifyContent='end'
-         >
+         <Flex flexDirection='row' alignItems='center' className='gap-1'>
             <Filtros />
          </Flex>
       </Flex>
