@@ -28,7 +28,7 @@ function Filtros({ loading }: React.PropsWithChildren<{ loading?: NetworkStatus 
    return (
       <>
          <Icon
-            className='cursor-pointer'
+            className='cursor-pointer ml-auto'
             icon={FunnelIcon}
             onClick={() => handleOpenFilters(true)}
             size='md'
