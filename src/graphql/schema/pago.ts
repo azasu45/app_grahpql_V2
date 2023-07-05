@@ -56,11 +56,6 @@ builder.queryFields((t) => ({
 
    misPagosRecibidosCount: t.field({
       type: 'Int',
-      args: {
-         take: t.arg.int(),
-         skip: t.arg.int(),
-         orderByFecha: t.arg.boolean(),
-      },
       resolve: async (query, args, ctx) => {
          const { user } = ctx.session;
          return await prisma.pago.count({
@@ -69,11 +64,6 @@ builder.queryFields((t) => ({
                perfilPago: {
                   userId: user.id,
                },
-            },
-            skip: args?.skip ?? 0,
-            take: args?.take ?? DEFAULT_PAGE_SIZE,
-            orderBy: {
-               fecha: args.orderByFecha ? 'desc' : 'asc',
             },
          });
       },
@@ -108,16 +98,9 @@ builder.queryFields((t) => ({
 
    misPagosRealizadosCount: t.field({
       type: 'Int',
-      args: {
-         take: t.arg.int(),
-         skip: t.arg.int(),
-         orderByFecha: t.arg.boolean(),
-      },
       resolve: async (query, args, ctx) => {
          const user = ctx.session.user;
          return await prisma.pago.count({
-            take: args.take ?? DEFAULT_PAGE_SIZE,
-            skip: args.skip ?? 0,
             where: {
                perfilSuscrito: {
                   userId: user.id,

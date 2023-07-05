@@ -1,11 +1,8 @@
 'use client';
 
+import { classNames } from '@app/libs/className';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-function classNames(...classes: string[]) {
-   return classes.filter(Boolean).join(' ');
-}
 
 type typeNavLikns = {
    name: string;
@@ -16,7 +13,7 @@ const PageNavbar = ({ navlinks }: { navlinks: typeNavLikns[] }) => {
    const pathname = usePathname();
 
    return (
-      <div className='mt-2 p-0 border-b border-gray-200'>
+      <div className='mt-1 p-0 border-b border-gray-200'>
          <div className='flex flex-1 items-stretch sm:justify-start'>
             <div className='-my-px flex space-x-1 md:space-x-2 justify-start mr-auto flex-wrap'>
                {navlinks.map((item) => (

@@ -15,12 +15,12 @@ export default function ModalPagar() {
 
    return (
       <>
-         <div className='fixed bottom-0 inset-x-0 flex'>
+         <div className='fixed bottom-6 right-6'>
             <Button
                size='md'
                color='sky'
                onClick={() => handleOpen(true)}
-               className='relative w-[52px] h-[52px] mx-auto'
+               className='relative w-[52px] h-[52px]'
             >
                <Icon
                   className='text-tremor-content-inverted dark:text-dark-tremor-content'

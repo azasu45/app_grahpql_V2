@@ -16,16 +16,17 @@ export function PagoCard({ id }: { id: string }) {
       <Card className='py-1 px-2'>
          <Title>{data?.referencia}</Title>
          <Flex className='gap-4 mt-2' alignItems='start'>
-            <div className='overflow-hidden'>
+            <div className='overflow-hidden w-24 h-28'>
                <Image
+                  className='object-contain'
                   src={data.captureImg ?? '/images/capture-1.jpg'}
-                  height={100}
-                  width={100}
+                  height={800}
+                  width={600}
                   alt='captureImage'
                />
-               <Metric className='mt-2 basis-0 whitespace-nowrap'>{data?.monto} $</Metric>
             </div>
             <div className='grow'>
+               <Metric className='mt-2 basis-0 whitespace-nowrap'>{data?.monto} $</Metric>
                <Bold>Fecha</Bold>
                <Text>{data?.fecha?.toLocaleString()}</Text>
             </div>

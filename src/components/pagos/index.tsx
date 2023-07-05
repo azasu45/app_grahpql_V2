@@ -1,5 +1,3 @@
-'use client';
-
 import { Card, Grid } from '@tremor/react';
 import Pagination from '../general/pagination';
 import { PagoCard } from './pagoCard';
@@ -25,14 +23,14 @@ export const Pagos = ({
 }) => {
    return (
       <>
-         <div className='mt-2 grow overflow-auto'>
+         <div className='mt-2 grow overflow-auto mb-1'>
             <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
                {pagos.map((pago) => (
                   <PagoCard key={pago.id} id={pago.id} />
                ))}
             </Grid>
          </div>
-         <Pagination count={pagosCount} page={page} handleChangePage={handleChangePage} />
+         <Pagination count={pagosCount} page={page} handleChangePage={handleChangePage} take={10} />
       </>
    );
 };

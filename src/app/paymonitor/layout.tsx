@@ -17,7 +17,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
             <Navbar user={user} />
          </header>
 
-         <main className='p-4 md:p-6 mx-auto max-w-7xl min-h-[calc(100vh-64px)] flex flex-col relative'>
+         <main className='p-4 md:p-6 mx-auto max-w-7xl h-[calc(100vh-64px)] flex flex-col relative'>
             {children}
             <ModalPagar />
          </main>

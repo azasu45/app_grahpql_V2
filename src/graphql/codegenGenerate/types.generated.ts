@@ -156,21 +156,7 @@ export type QueryMisPagosRealizadosArgs = {
 };
 
 
-export type QueryMisPagosRealizadosCountArgs = {
-  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
-  skip?: InputMaybe<Scalars['Int']['input']>;
-  take?: InputMaybe<Scalars['Int']['input']>;
-};
-
-
 export type QueryMisPagosRecibidosArgs = {
-  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
-  skip?: InputMaybe<Scalars['Int']['input']>;
-  take?: InputMaybe<Scalars['Int']['input']>;
-};
-
-
-export type QueryMisPagosRecibidosCountArgs = {
   orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;

@@ -33,7 +33,7 @@ function Drawer({ title = 'Title', open, handleOpen, children }: Props) {
                leaveFrom='opacity-100 translate-x-0'
                leaveTo='opacity-0 -translate-x-full'
             >
-               <Dialog.Panel className=' fixed bottom-0 top-0 left-0 h-screen w-96 transform overflow-hidden bg-tremor-background dark:bg-dark-tremor-background p-6 text-left align-middle shadow-tremor-card dark:shadow-dark-tremor-card shadow-tremor-background dark:shadow-dark-tremor-background'>
+               <Dialog.Panel className='w-full fixed bottom-0 top-0 left-0 h-screen md:w-96 transform overflow-hidden bg-tremor-background dark:bg-dark-tremor-background p-6 text-left align-middle shadow-tremor-card dark:shadow-dark-tremor-card shadow-tremor-background dark:shadow-dark-tremor-background'>
                   <Dialog.Title as='h3' className='text-lg font-medium leading-6 text-gray-900'>
                      {title}
                   </Dialog.Title>
