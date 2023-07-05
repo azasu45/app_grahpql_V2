@@ -2,11 +2,10 @@
 
 export const dynamic = 'force-dynamic';
 
-import { useState } from 'react';
-import { MisPagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { Pagos } from '@app/components/pagos';
 import { usePagination } from '@app/hooks/usePagination';
+import { MisPagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 
 export default function ListaPagosRecibidos() {
    const { page, handlePageChange } = usePagination({

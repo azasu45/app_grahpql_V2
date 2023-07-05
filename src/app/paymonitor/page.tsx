@@ -1,10 +1,5 @@
-import ModalPagar from './cobros/pagosRecibidos/modalPagar';
 const Page = () => {
-   return (
-      <div>
-         <ModalPagar />
-      </div>
-   );
+   return <div></div>;
 };
 
 export default Page;

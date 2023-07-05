@@ -15,7 +15,7 @@ import { gql, useMutation } from '@apollo/client';
 import { Suspense, useCallback, useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import UploadFile from '../general/uploadFile';
-import { uploadFileAction } from '@app/app/actions/uploadFile';
+
 import { useUploadThing } from '@app/libs/uploadthingHelpers';
 
 export type CrearPagoType = {
@@ -31,7 +31,7 @@ export type CrearPagoType = {
 };
 
 export default function Pagar() {
-   const { startUpload } = useUploadThing('imageUploader');
+   const { startUpload, isUploading } = useUploadThing('imageUploader');
    const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
    const [mutation, { loading }] = useMutation(PagarDocument);
 
@@ -55,7 +55,7 @@ export default function Pagar() {
       },
    });
 
-   const { watch } = methods;
+   const { watch, getValues } = methods;
 
    const [queryRef, { refetch }] = useBackgroundQuery(SearchSelectPerfilDocument, {
       canonizeResults: true,
@@ -109,12 +109,12 @@ export default function Pagar() {
    });
 
    useEffect(() => {
-      if (watch('perfil.nombre') !== '') handleAbrirBuscarUsuario(false);
-   }, [handleAbrirBuscarUsuario, watch('perfil.nombre')]);
+      if (getValues('perfil.nombre') !== '') handleAbrirBuscarUsuario(false);
+   }, [getValues, handleAbrirBuscarUsuario]);
 
    return (
       <FormProvider {...methods}>
-         <form onSubmit={onSubmit} action={uploadFileAction}>
+         <form onSubmit={onSubmit}>
             {!abrirBuscarUsuario && (
                <Card className='max-w-md mx-auto'>
                   <Flex>
@@ -155,7 +155,7 @@ export default function Pagar() {
                      <div>
                         <Text>Referencia</Text>
                         <TextInput
-                           disabled={loading}
+                           disabled={loading || isUploading}
                            placeholder='00002M'
                            {...methods.register('referencia')}
                         />
@@ -163,7 +163,7 @@ export default function Pagar() {
                      <div>
                         <Text>Observacion</Text>
                         <TextInput
-                           disabled={loading}
+                           disabled={loading || isUploading}
                            placeholder='00002M'
                            {...methods.register('observacion')}
                         />
@@ -171,7 +171,7 @@ export default function Pagar() {
                      <div>
                         <Text>Monto</Text>
                         <NumberInput
-                           disabled={loading}
+                           disabled={loading || isUploading}
                            placeholder='00002M'
                            type='number'
                            {...methods.register('monto')}
@@ -179,7 +179,7 @@ export default function Pagar() {
                      </div>
                   </Grid>
                   <Flex justifyContent='center' className='mt-2'>
-                     <Button loading={loading} type='submit'>
+                     <Button loading={loading || isUploading} type='submit'>
                         Enviar Pago
                      </Button>
                   </Flex>

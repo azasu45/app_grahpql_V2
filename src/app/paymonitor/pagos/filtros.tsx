@@ -11,21 +11,17 @@ import Drawer from '@app/components/general/drawer';
 
 function Filtros({ loading, children }: React.PropsWithChildren<{ loading?: NetworkStatus }>) {
    const [open, setOpen] = useState<boolean>(false);
-
    const handleOpenFilters = (force?: boolean) => {
       setOpen(force ?? !open);
    };
-
    useEffect(() => {
       if (loading === NetworkStatus.ready) setOpen(false);
    }, [loading]);
 
    return (
-      <>
-         <Drawer open={open} handleOpen={handleOpenFilters}>
-            {children}
-         </Drawer>
-      </>
+      <Drawer open={open} handleOpen={handleOpenFilters}>
+         {children}
+      </Drawer>
    );
 }
 

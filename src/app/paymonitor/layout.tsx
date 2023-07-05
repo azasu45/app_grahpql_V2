@@ -1,4 +1,5 @@
 import Navbar from './navbar';
+import ModalPagar from './modalPagar';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../api/auth/[...nextauth]/route';
 import { redirect } from 'next/navigation';
@@ -16,8 +17,9 @@ export default async function Layout({ children }: { children: React.ReactNode }
             <Navbar user={user} />
          </header>
 
-         <main className='p-4 md:p-6 mx-auto max-w-7xl min-h-[calc(100vh-64px)] flex flex-col'>
+         <main className='p-4 md:p-6 mx-auto max-w-7xl min-h-[calc(100vh-64px)] flex flex-col relative'>
             {children}
+            <ModalPagar />
          </main>
       </>
    );

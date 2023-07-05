@@ -43,7 +43,7 @@ function CobroAgregarDrawer() {
    return (
       <>
          <Button size='sm' iconPosition='right' icon={PlusCircleIcon} onClick={() => handleOpen()}>
-            <span className='hidden md:block'>Agregar Nuevo Cobro</span>
+            Agregar Nuevo Cobro
          </Button>
          <Drawer open={open} handleOpen={handleOpen}>
             <form onSubmit={onSubmit}>
