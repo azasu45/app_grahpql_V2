@@ -125,6 +125,7 @@ function CobrosModal() {
                            </Button>
 
                            <Pagination
+                              take={10}
                               count={data.cobrosCount}
                               page={page}
                               handleChangePage={handleChangePage}
