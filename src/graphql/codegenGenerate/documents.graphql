@@ -53,8 +53,11 @@ query misPagosRecibidos($skip: Int) {
 query misPagosRealizados($skip: Int) {
    misPagosRealizados(skip: $skip) {
       id
+      referencia
       captureImg
+      refAdmin
       estado
+      observacion
       monto
       fecha
       cobro {
@@ -85,6 +88,7 @@ query SearchSelectPerfil($nombre: String!) {
 }
 
 fragment PagoCardFragment on Pago {
+   id
    referencia
    captureImg
    refAdmin

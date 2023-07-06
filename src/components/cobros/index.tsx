@@ -36,7 +36,12 @@ export const Cobros = ({
                ))}
             </Grid>
          </div>
-         <Pagination count={cobrosCount} page={page} handleChangePage={handleChangePage} />
+         <Pagination
+            count={cobrosCount}
+            page={page}
+            handleChangePage={handleChangePage}
+            take={10}
+         />
       </>
    );
 };
