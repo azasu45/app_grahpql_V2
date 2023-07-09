@@ -38,12 +38,20 @@ query Perfil {
 query misPagosRecibidos($skip: Int) {
    misPagosRecibidos(skip: $skip) {
       id
-      captureImg
       estado
-      monto
       fecha
+      captureImg
+      monto
+      observacion
+      refAdmin
+      referencia
+      perfilSuscrito {
+         nombre
+         comercio
+      }
       cobro {
-         id
+         descripcion
+         monto
       }
    }
 
@@ -53,15 +61,20 @@ query misPagosRecibidos($skip: Int) {
 query misPagosRealizados($skip: Int) {
    misPagosRealizados(skip: $skip) {
       id
-      referencia
-      captureImg
-      refAdmin
       estado
-      observacion
-      monto
       fecha
+      captureImg
+      monto
+      observacion
+      refAdmin
+      referencia
+      perfilSuscrito {
+         nombre
+         comercio
+      }
       cobro {
-         id
+         descripcion
+         monto
       }
    }
 
@@ -88,14 +101,21 @@ query SearchSelectPerfil($nombre: String!) {
 }
 
 fragment PagoCardFragment on Pago {
-   id
-   referencia
-   captureImg
-   refAdmin
    estado
-   observacion
-   monto
    fecha
+   captureImg
+   monto
+   observacion
+   refAdmin
+   referencia
+   perfilSuscrito {
+      nombre
+      comercio
+   }
+   cobro {
+      descripcion
+      monto
+   }
 }
 
 fragment CobroCardFragment on Cobro {

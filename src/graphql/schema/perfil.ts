@@ -5,6 +5,7 @@ builder.prismaNode('Perfil', {
    id: { field: 'id' },
    fields: (t) => ({
       userId: t.expose('userId', { type: 'ID', nullable: true }),
+      comercio: t.exposeString('comercio', { nullable: true }),
       nombre: t.exposeString('nombre'),
       cedula: t.exposeString('cedula'),
    }),

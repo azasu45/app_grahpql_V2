@@ -24,7 +24,7 @@ export const Pagos = ({
    return (
       <>
          <div className='mt-2 grow overflow-auto mb-1'>
-            <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-2'>
+            <Grid numItems={1} numItemsMd={3} numItemsLg={4} className='gap-[0.75rem] p-1'>
                {pagos.map((pago) => (
                   <PagoCard key={pago.id} id={pago.id} />
                ))}

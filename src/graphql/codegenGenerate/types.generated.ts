@@ -92,6 +92,7 @@ export type Pago = Node & {
 export type Perfil = Node & {
   __typename?: 'Perfil';
   cedula: Scalars['String']['output'];
+  comercio?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   nombre: Scalars['String']['output'];
   userId?: Maybe<Scalars['ID']['output']>;

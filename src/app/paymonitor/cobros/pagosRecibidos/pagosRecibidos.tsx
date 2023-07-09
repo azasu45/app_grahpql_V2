@@ -6,8 +6,9 @@ import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { Pagos } from '@app/components/pagos';
 import { usePagination } from '@app/hooks/usePagination';
 import { MisPagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
+import PageBar from './pageBar';
 
-export default function ListaPagosRecibidos() {
+export default function PagosRecibidos() {
    const { page, handlePageChange } = usePagination({
       onPageChange: () => {
          fetchMore({
@@ -28,6 +29,7 @@ export default function ListaPagosRecibidos() {
 
    return (
       <>
+         <PageBar />
          <Pagos
             pagos={data.misPagosRecibidos}
             page={page}

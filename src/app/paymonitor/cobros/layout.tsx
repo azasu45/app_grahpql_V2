@@ -7,7 +7,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 const navigation = [
    { name: 'Todos', href: '/paymonitor/cobros' },
    { name: 'Pagos Recibidos', href: '/paymonitor/cobros/pagosRecibidos' },
-   { name: 'Estadisticas', href: '/paymonitor/cobros/es' },
+   { name: 'Estadisticas', href: '/paymonitor/cobros/estadisticas' },
 ];
 
 export type TypeFiltrosCobros = {
@@ -15,12 +15,12 @@ export type TypeFiltrosCobros = {
    date: DateRangePickerValue;
 };
 
-export default async function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
    const methods = useForm<TypeFiltrosCobros>();
 
    return (
       <>
-         <div className='flex justify-between items-center'>
+         <div className='flex items-center justify-between'>
             <Title>Cobros</Title>
          </div>
          <Text>

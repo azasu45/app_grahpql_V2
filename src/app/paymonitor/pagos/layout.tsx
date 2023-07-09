@@ -3,7 +3,7 @@ import PageNavbar from './pageNavbar';
 
 const navigation = [
    { name: 'Todos', href: '/paymonitor/pagos' },
-   { name: 'Estadisticas', href: '/paymonitor/pagos/es' },
+   { name: 'Estadisticas', href: '/paymonitor/pagos/estadisticas' },
 ];
 
 export default async function Layout({ children }: { children: React.ReactNode }) {
