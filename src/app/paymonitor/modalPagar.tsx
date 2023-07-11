@@ -28,8 +28,8 @@ export default function ModalPagar() {
                />
             </Button>
          </div>
-         <Modal open={open} handleOpen={handleOpen} title='Pagar'>
-            <Pagar />
+         <Modal open={open} handleOpen={handleOpen} title='Pagar'> 
+            <Pagar />     
          </Modal>
       </>
    );

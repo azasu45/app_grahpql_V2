@@ -55,7 +55,7 @@ export function PagoCard({ id }: { id: string }) {
                   </Badge>
                )}
                <Subtitle className='text-sm'>
-                  {data.perfilSuscrito?.comercio ?? data.perfilSuscrito?.nombre}{' '}
+                  {data.perfilPago?.comercio ?? data.perfilPago?.nombre}{' '}
                </Subtitle>
                <Subtitle className='text-sm'>
                   {data?.cobro ? (

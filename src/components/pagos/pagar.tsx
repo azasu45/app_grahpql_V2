@@ -1,191 +1,179 @@
 'use client';
 
-import '@uploadthing/react/styles.css';
-
-import { Button, Card, Col, Flex, Grid, Text, TextInput, Title } from '@tremor/react';
+import { Button, Card, Col, Flex, Grid, Text, TextInput } from '@tremor/react';
+import BuscarUsuarioV2 from './buscarUsuarioV2';
 import NumberInput from '../general/NumberInput';
-import { FormProvider, useForm } from 'react-hook-form';
+import { FormProvider, useForm, Controller } from 'react-hook-form';
 import { useBackgroundQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import {
-   PagarDocument,
-   SearchSelectPerfilDocument,
+    PagarDocument,
+    SearchSelectPerfilDocument,
 } from '@app/graphql/codegenGenerate/documents.generated';
-import BuscarUsuarioV2 from './buscarUsuarioV2';
-import { gql, useMutation } from '@apollo/client';
-import { Suspense, useCallback, useEffect, useState } from 'react';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { useMutation } from '@apollo/client';
+import { Suspense, useCallback, useState } from 'react';
+import sweetAlert from 'sweetalert2'
 import UploadFile from '../general/uploadFile';
 
 import { useUploadThing } from '@app/libs/uploadthingHelpers';
+import { classNames } from '@app/libs/className';
 
 export type CrearPagoType = {
-   referencia: string;
-   monto: number;
-   observacion: string;
-   urlImg: string;
-   file: FileList;
-   perfil: {
-      id: string;
-      nombre: string;
-   };
+    referencia: string;
+    monto: number;
+    observacion: string;
+    urlImg: string;
+    file: FileList;
+    perfilId: string;
 };
 
 export default function Pagar() {
-   const { startUpload, isUploading } = useUploadThing('imageUploader');
-   const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
-   const [mutation, { loading }] = useMutation(PagarDocument);
+    const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
+    const { startUpload, isUploading } = useUploadThing('imageUploader');
+    const [mutation, { loading }] = useMutation(PagarDocument, {
+        refetchQueries: ['misPagosRecibidos', 'misPagosRealizados']
+    });
 
-   const handleAbrirBuscarUsuario = useCallback(
-      (force?: boolean) => {
-         setAbrirBuscarUsuario(force ?? !abrirBuscarUsuario);
-      },
-      [abrirBuscarUsuario],
-   );
+    const handleAbrirBuscarUsuario = useCallback(
+        (force?: boolean) => {
+            setAbrirBuscarUsuario(force ?? !abrirBuscarUsuario);
+        },
+        [abrirBuscarUsuario],
+    );
 
-   const methods = useForm<CrearPagoType>({
-      defaultValues: {
-         monto: 0,
-         observacion: '',
-         referencia: '',
-         perfil: {
-            id: '',
+    const methods = useForm<CrearPagoType>({
+        defaultValues: {
+            monto: 0,
+            observacion: '',
+            referencia: '',
+            perfilId: '',
+            urlImg: '',
+        },
+    });
+
+    const { control } = methods;
+
+    const [queryRef, { refetch }] = useBackgroundQuery(SearchSelectPerfilDocument, {
+        canonizeResults: true,
+        variables: {
             nombre: '',
-         },
-         urlImg: '',
-      },
-   });
+        },
+        fetchPolicy: 'cache-first',
+    });
 
-   const { watch, getValues } = methods;
+    const onChangePerfil = async (value: string) => {
+        await refetch({
+            nombre: value,
+        });
+    };
 
-   const [queryRef, { refetch }] = useBackgroundQuery(SearchSelectPerfilDocument, {
-      canonizeResults: true,
-      variables: {
-         nombre: '',
-      },
-      fetchPolicy: 'cache-first',
-   });
-
-   const onChangePerfil = async (value: string) => {
-      await refetch({
-         nombre: value,
-      });
-   };
-
-   const {
-      watchQueryOptions: {},
-   } = queryRef;
-
-   const onSubmit = methods.handleSubmit(async (data) => {
-      const validFiles: File[] = [];
-      for (let i = 0; i < data.file.length; i++) {
-         const file = data.file[i];
-         if (file) {
-            if (!file.type.startsWith('image')) {
-               alert(`File with idx: ${i} is invalid`);
-               continue;
+    const onSubmit = methods.handleSubmit(async (data) => {
+        const validFiles: File[] = [];
+        for (let i = 0; i < data.file.length; i++) {
+            const file = data.file[i];
+            if (file) {
+                if (!file.type.startsWith('image')) {
+                    alert(`File with idx: ${i} is invalid`);
+                    continue;
+                }
+                validFiles.push(file);
             }
-            validFiles.push(file);
-         }
-      }
-      if (!validFiles.length) {
-         alert('No valid files were chosen');
-         return;
-      }
-      try {
-         const filesUrl = await startUpload(validFiles);
-         if (!filesUrl) return;
-         mutation({
-            variables: {
-               input: {
-                  captureImg: filesUrl[0].fileUrl,
-                  monto: data.monto,
-                  perfilId: data.perfil.id,
-                  observacion: data.observacion,
-                  referencia: data.referencia,
-               },
-            },
-         });
-      } catch (e) {}
-   });
+        }
+        if (!validFiles.length) {
+            alert('No valid files were chosen');
+            return;
+        }
+        try {
 
-   useEffect(() => {
-      if (getValues('perfil.nombre') !== '') handleAbrirBuscarUsuario(false);
-   }, [getValues, handleAbrirBuscarUsuario]);
+            sweetAlert.fire({ 
+                title: 'Seguro que quiere enviar este pago', 
+                text: 'text', 
+                icon: 'warning', 
+                showCancelButton: true, 
+            }).then(async (result) => {
+                if (result.isConfirmed) {
+                    const filesUrl = await startUpload(validFiles);
+                    if (!filesUrl) return;
+                    mutation({
+                        variables: {
+                            input: {
+                                captureImg: filesUrl[0].fileUrl,
+                                monto: data.monto,
+                                perfilId: data.perfilId,
+                                observacion: data.observacion,
+                                referencia: data.referencia,
+                            },
+                        },
+                        refetchQueries: [
+                            'misPagosRealizados'
+                        ]
+                    });
+                }
+            })
 
-   return (
-      <FormProvider {...methods}>
-         <form onSubmit={onSubmit}>
-            {!abrirBuscarUsuario && (
-               <Card className='max-w-md mx-auto'>
-                  <Flex>
-                     <Title>Pagar a {watch('perfil.nombre')}</Title>
-                     <Button
-                        size='xs'
-                        icon={MagnifyingGlassIcon}
-                        type='button'
-                        onClick={() => handleAbrirBuscarUsuario()}
-                     >
-                        Buscar
-                     </Button>
-                  </Flex>
-               </Card>
-            )}
+        } catch (e) { 
+            sweetAlert.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+              })
+              
+        }
+    });
 
-            {abrirBuscarUsuario && (
-               <Card className='mt-2 max-w-md max-auto mx-auto'>
-                  <Suspense fallback={<h1>cargando usuarios...</h1>}>
-                     <BuscarUsuarioV2 onChangePerfil={onChangePerfil} queryRef={queryRef} />
-                  </Suspense>
+    return (
+        <FormProvider {...methods}>
+            <form onSubmit={onSubmit}>
+                <Suspense fallback={<h1>cargando usuarios...</h1>}>
+                    <Controller control={control} name='perfilId' render={({ field: { onChange } }) => (
+                        <BuscarUsuarioV2
+                            onSelect={(value) => onChange(value)}
+                            queryRef={queryRef}
+                            openState={abrirBuscarUsuario}
+                            handleOpenState={handleAbrirBuscarUsuario}
+                            onCancel={() => handleAbrirBuscarUsuario(false)}
+                            onFetchMore={onChangePerfil} />
+                    )} />
 
-                  <Flex justifyContent='end' className='mt-2'>
-                     <Button size='xs' onClick={() => handleAbrirBuscarUsuario()}>
-                        Cancelar
-                     </Button>
-                  </Flex>
-               </Card>
-            )}
+                </Suspense>
+                <Card className={classNames(abrirBuscarUsuario ? 'hidden' : '', 'mt-2 mx-auto min-w-[18rem] max-w-md')}>
+                    <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
+                        <Col numColSpanMd={2}>
+                            <UploadFile />
+                        </Col>
 
-            {!abrirBuscarUsuario && (
-               <Card className='mt-2 max-w-md mx-auto'>
-                  <Grid numItems={1} numItemsMd={2} className='gap-2 mt-2'>
-                     <Col numColSpanMd={2}>
-                        <UploadFile />
-                     </Col>
-
-                     <div>
-                        <Text>Referencia</Text>
-                        <TextInput
-                           disabled={loading || isUploading}
-                           placeholder='00002M'
-                           {...methods.register('referencia')}
-                        />
-                     </div>
-                     <div>
-                        <Text>Observacion</Text>
-                        <TextInput
-                           disabled={loading || isUploading}
-                           placeholder='00002M'
-                           {...methods.register('observacion')}
-                        />
-                     </div>
-                     <div>
-                        <Text>Monto</Text>
-                        <NumberInput
-                           disabled={loading || isUploading}
-                           placeholder='00002M'
-                           type='number'
-                           {...methods.register('monto')}
-                        />
-                     </div>
-                  </Grid>
-                  <Flex justifyContent='center' className='mt-2'>
-                     <Button loading={loading || isUploading} type='submit'>
-                        Enviar Pago
-                     </Button>
-                  </Flex>
-               </Card>
-            )}
-         </form>
-      </FormProvider>
-   );
+                        <div>
+                            <Text>Referencia</Text>
+                            <TextInput
+                                disabled={loading || isUploading}
+                                placeholder='00002M'
+                                {...methods.register('referencia')}
+                            />
+                        </div>
+                        <div>
+                            <Text>Observacion</Text>
+                            <TextInput
+                                disabled={loading || isUploading}
+                                placeholder='00002M'
+                                {...methods.register('observacion')}
+                            />
+                        </div>
+                        <div>
+                            <Text>Monto</Text>
+                            <NumberInput
+                                disabled={loading || isUploading}
+                                placeholder='00002M'
+                                type='number'
+                                {...methods.register('monto')}
+                            />
+                        </div>
+                    </Grid>
+                    <Flex justifyContent='center' className='mt-2'>
+                        <Button loading={loading || isUploading} type='submit'>
+                            Enviar Pago
+                        </Button>
+                    </Flex>
+                </Card>
+            </form>
+        </FormProvider>
+    );
 }

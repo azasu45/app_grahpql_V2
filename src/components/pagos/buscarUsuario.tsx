@@ -20,7 +20,7 @@ export default function BuscarUsuario({
    return (
       <Controller
          control={control}
-         name='perfil.id'
+         name='perfilId'
          render={({ field: { onBlur, ref, value, onChange } }) => (
             <SearchSelect
                onValueChange={onChange}

@@ -108,6 +108,10 @@ fragment PagoCardFragment on Pago {
    observacion
    refAdmin
    referencia
+   perfilPago {
+      nombre
+      comercio
+   }
    perfilSuscrito {
       nombre
       comercio
