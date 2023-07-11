@@ -26,7 +26,7 @@ export type CrearPagoType = {
     perfilId: string;
 };
 
-export default function Pagar() {
+export default function Pagar({callback}:{callback:()=>void}) {
     const [abrirBuscarUsuario, setAbrirBuscarUsuario] = useState<boolean>(false);
     const { startUpload, isUploading } = useUploadThing('imageUploader');
     const [mutation, { loading }] = useMutation(PagarDocument, {
@@ -105,7 +105,22 @@ export default function Pagar() {
                         },
                         refetchQueries: [
                             'misPagosRealizados'
-                        ]
+                        ],
+                        onCompleted:(data)=>{
+                            sweetAlert.fire({
+                                icon:'success',
+                                timer:10000,
+                                title:'pago extiso' + data.crearPago?.referencia
+                            })
+                            if(callback) callback()
+                        },
+                        onError:(error)=>{
+                            sweetAlert.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: `${error}`,
+                              })
+                        }
                     });
                 }
             })

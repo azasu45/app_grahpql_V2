@@ -57,7 +57,7 @@ export default function BuscarUsuarioV2({
             </div>
             <Card className='mt-2'>
                <List>
-                  <ListItem>
+                     <ListItem>
                      <Flex>
                         <Text>Nombre</Text>
                         <Text>Cedula</Text>
