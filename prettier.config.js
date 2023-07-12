@@ -11,6 +11,8 @@ const config = {
    jsxSingleQuote: true,
    bracketSpacing: true,
    bracketSameLine: true,
+   tailwindConfig: './tailwind.config.js',
+   plugins:[require('prettier-plugin-tailwindcss')]
 }
 
 module.exports = config;

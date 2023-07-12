@@ -1,10 +1,10 @@
 'use client';
 
-import { Flex, Subtitle, Icon, Button } from '@tremor/react';
+import { Flex, Subtitle, Icon } from '@tremor/react';
 import { InformationCircleIcon } from '@heroicons/react/24/outline';
-import Filtros from './filtrosDrawer';
+import { PropsWithChildren } from 'react';
 
-function PageBar() {
+function PageBar( {children}:PropsWithChildren) {
    return (
       <Flex className='mt-2' alignItems='center'>
          <Flex className='space-x-0.5' justifyContent='start' alignItems='center'>
@@ -12,7 +12,7 @@ function PageBar() {
             <Icon icon={InformationCircleIcon} variant='simple' tooltip='descripción' />
          </Flex>
          <Flex flexDirection='row' alignItems='center' className='gap-1'>
-            <Filtros />
+            {children}
          </Flex>
       </Flex>
    );

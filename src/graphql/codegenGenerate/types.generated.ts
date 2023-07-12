@@ -41,6 +41,12 @@ export type InputFiltrosCobros = {
   fechaHasta?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type InputFiltrosPagos = {
+  fechaDesde?: InputMaybe<Scalars['String']['input']>;
+  fechaHasta?: InputMaybe<Scalars['String']['input']>;
+  referencia?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type Mutation = {
   __typename?: 'Mutation';
   agregarCobro: Cobro;
@@ -151,7 +157,14 @@ export type QueryGruposArgs = {
 
 
 export type QueryMisPagosRealizadosArgs = {
-  orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
+  filtros?: InputMaybe<InputFiltrosPagos>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  take?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type QueryMisPagosRealizadosCountArgs = {
+  filtros?: InputMaybe<InputFiltrosPagos>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
 };

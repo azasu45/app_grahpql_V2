@@ -3,6 +3,7 @@ import { builder } from '../builder';
 import { prisma } from '../db';
 import fs from 'fs';
 import path from 'path';
+import { addDays } from '../../libs/function';
 const DEFAULT_PAGE_SIZE = 10;
 
 builder.prismaNode('Pago', {
@@ -27,6 +28,15 @@ builder.prismaNode('Pago', {
       perfilSuscrito: t.relation('perfilSuscrito'),
    }),
 });
+
+const InputFiltrosPagos = builder.inputType('InputFiltrosPagos', {
+   fields: (t) => ({
+      referencia: t.string({ required: false }),
+      fechaDesde: t.string({ required: false }),
+      fechaHasta: t.string({ required: false }),
+   }),
+});
+
 
 builder.queryFields((t) => ({
    misPagosRecibidos: t.prismaField({
@@ -74,7 +84,7 @@ builder.queryFields((t) => ({
       args: {
          take: t.arg.int(),
          skip: t.arg.int(),
-         orderByFecha: t.arg.boolean(),
+         filtros: t.arg({ type: InputFiltrosPagos, required: false }),
       },
       resolve: async (query, _, args, ctx) => {
          const user = ctx.session.user;
@@ -85,12 +95,38 @@ builder.queryFields((t) => ({
                perfilSuscrito: {
                   userId: user.id,
                },
+               referencia:{
+                  contains: args.filtros?.referencia ?? undefined,
+                  mode: 'insensitive',
+               },
+               fecha: {
+                  gte: args.filtros?.fechaDesde ? new Date(args.filtros?.fechaDesde) : undefined,
+               },
+               AND: [
+                  {
+                     fecha: {
+                        lte:
+                           args.filtros?.fechaHasta && args.filtros?.fechaDesde
+                              ? addDays(new Date(args.filtros?.fechaHasta), 1)
+                              : undefined,
+                     },
+                  },
+                  {
+                     fecha: {
+                        lte:
+                           !args.filtros?.fechaHasta && args.filtros?.fechaDesde
+                              ? addDays(new Date(args.filtros?.fechaDesde), 1)
+                              : undefined,
+                     },
+                  },
+               ],
+
             },
             include: {
                cobro: true,
             },
             orderBy: {
-               fecha: args.orderByFecha ? 'asc' : 'desc',
+               fecha: 'asc',
             },
          });
       },
@@ -98,6 +134,11 @@ builder.queryFields((t) => ({
 
    misPagosRealizadosCount: t.field({
       type: 'Int',
+      args: {
+         take: t.arg.int(),
+         skip: t.arg.int(),
+         filtros: t.arg({ type: InputFiltrosPagos, required: false }),
+      },
       resolve: async (query, args, ctx) => {
          const user = ctx.session.user;
          return await prisma.pago.count({
@@ -105,6 +146,30 @@ builder.queryFields((t) => ({
                perfilSuscrito: {
                   userId: user.id,
                },
+               fecha: {
+                  gte: args.filtros?.fechaDesde ? new Date(args.filtros?.fechaDesde) : undefined,
+               },
+               AND: [
+                  {
+                     fecha: {
+                        lte:
+                           args.filtros?.fechaHasta && args.filtros?.fechaDesde
+                              ? addDays(new Date(args.filtros?.fechaHasta), 1)
+                              : undefined,
+                     },
+                  },
+                  {
+                     fecha: {
+                        lte:
+                           !args.filtros?.fechaHasta && args.filtros?.fechaDesde
+                              ? addDays(new Date(args.filtros?.fechaDesde), 1)
+                              : undefined,
+                     },
+                  },
+               ],
+            },        
+            orderBy: {
+               fecha: 'asc',
             },
          });
       },

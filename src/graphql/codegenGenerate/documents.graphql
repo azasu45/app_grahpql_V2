@@ -1,130 +1,126 @@
 query Cobros($skip: Int, $filtros: InputFiltrosCobros) {
-   cobros(skip: $skip, filtros: $filtros) {
-      id
-      monto
-      descripcion
-      fecha
-      pagosCount
-   }
-   cobrosCount
+  cobros(skip: $skip, filtros: $filtros) {
+    id
+    monto
+    descripcion
+    fecha
+    pagosCount
+  }
+  cobrosCount
 }
 
 mutation AgregarCobro($input: crearCobroPorUsuario!) {
-   agregarCobro(input: $input) {
-      id
-      descripcion
-      fecha
-      monto
-   }
+  agregarCobro(input: $input) {
+    id
+    descripcion
+    fecha
+    monto
+  }
 }
 
 mutation CrearOActualizarPerfil($input: crearOActualizarPerfil!) {
-   crearOActualizarPerfil(input: $input) {
-      id
-      cedula
-      userId
-   }
+  crearOActualizarPerfil(input: $input) {
+    id
+    cedula
+    userId
+  }
 }
 
 query Perfil {
-   perfil {
-      cedula
-      id
-      nombre
-      userId
-   }
+  perfil {
+    cedula
+    id
+    nombre
+    userId
+  }
 }
 
 query misPagosRecibidos($skip: Int) {
-   misPagosRecibidos(skip: $skip) {
-      id
-      estado
-      fecha
-      captureImg
+  misPagosRecibidos(skip: $skip) {
+    id
+    estado
+    fecha
+    captureImg
+    monto
+    observacion
+    refAdmin
+    referencia
+    perfilSuscrito {
+      nombre
+      comercio
+    }
+    cobro {
+      descripcion
       monto
-      observacion
-      refAdmin
-      referencia
-      perfilSuscrito {
-         nombre
-         comercio
-      }
-      cobro {
-         descripcion
-         monto
-      }
-   }
+    }
+  }
 
-   misPagosRecibidosCount
+  misPagosRecibidosCount
 }
 
-query misPagosRealizados($skip: Int) {
-   misPagosRealizados(skip: $skip) {
-      id
-      estado
-      fecha
-      captureImg
+query misPagosRealizados($skip: Int, $filtros: InputFiltrosPagos) {
+  misPagosRealizados(skip: $skip, filtros: $filtros) {
+    id
+    estado
+    fecha
+    captureImg
+    monto
+    observacion
+    refAdmin
+    referencia
+    perfilSuscrito {
+      nombre
+      comercio
+    }
+    cobro {
+      descripcion
       monto
-      observacion
-      refAdmin
-      referencia
-      perfilSuscrito {
-         nombre
-         comercio
-      }
-      cobro {
-         descripcion
-         monto
-      }
-   }
+    }
+  }
 
-   misPagosRealizadosCount
+  misPagosRealizadosCount
 }
 
 mutation Pagar($input: createPagoInput!) {
-   crearPago(input: $input) {
-      captureImg
-      estado
-      fecha
-      monto
-      observacion
-      referencia
-   }
+  crearPago(input: $input) {
+    captureImg
+    estado
+    fecha
+    monto
+    observacion
+    referencia
+  }
 }
 
 query SearchSelectPerfil($nombre: String!) {
-   buscarPerfiles(nombre: $nombre) {
-      id
-      nombre
-      cedula
-   }
+  buscarPerfiles(nombre: $nombre) {
+    id
+    nombre
+    cedula
+  }
 }
 
 fragment PagoCardFragment on Pago {
-   estado
-   fecha
-   captureImg
-   monto
-   observacion
-   refAdmin
-   referencia
-   perfilPago {
-      nombre
-      comercio
-   }
-   perfilSuscrito {
-      nombre
-      comercio
-   }
-   cobro {
-      descripcion
-      monto
-   }
+  estado
+  fecha
+  captureImg
+  monto
+  observacion
+  refAdmin
+  referencia
+  perfilSuscrito {
+    nombre
+    comercio
+  }
+  cobro {
+    descripcion
+    monto
+  }
 }
 
 fragment CobroCardFragment on Cobro {
-   descripcion
-   fecha
-   monto
-   pagosCount
+  descripcion
+  fecha
+  monto
+  pagosCount
 }
