@@ -1,13 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import Drawer from '@app/components/general/drawer';
+import { useMutation } from '@apollo/client';
+import { useForm } from 'react-hook-form';
 import { Button, TextInput } from '@tremor/react';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
-import { useForm } from 'react-hook-form';
-import NumberInput from '@app/components/general/NumberInput';
+
 import { AgregarCobroDocument } from '@app/graphql/codegenGenerate/documents.generated';
-import { useMutation } from '@apollo/client';
+
+import NumberInput from '@app/components/general/NumberInput';
+import Drawer from '@app/components/general/drawer';
+
 interface InputAddCobro {
    description: string;
    monto: number;

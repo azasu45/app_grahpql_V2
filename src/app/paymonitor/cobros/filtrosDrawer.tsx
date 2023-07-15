@@ -1,7 +1,6 @@
 'use client';
 
-import { NetworkStatus } from '@apollo/client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Drawer from '@app/components/general/drawer';
 
 /*
@@ -9,16 +8,12 @@ import Drawer from '@app/components/general/drawer';
    por children el contender a aplicar la animación   
 **/
 
-function Filtros({ loading, children }: React.PropsWithChildren<{ loading?: NetworkStatus }>) {
+function FiltrosDrawer({ children }: React.PropsWithChildren) {
    const [open, setOpen] = useState<boolean>(false);
 
    const handleOpenFilters = (force?: boolean) => {
       setOpen(force ?? !open);
    };
-
-   useEffect(() => {
-      if (loading === NetworkStatus.ready) setOpen(false);
-   }, [loading]);
 
    return (
       <>
@@ -29,4 +24,4 @@ function Filtros({ loading, children }: React.PropsWithChildren<{ loading?: Netw
    );
 }
 
-export default Filtros;
+export default FiltrosDrawer;

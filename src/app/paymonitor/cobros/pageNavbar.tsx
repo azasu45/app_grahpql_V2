@@ -12,7 +12,7 @@ type typeNavLikns = {
    href: string;
 };
 
-const SubNavbar = ({ navlinks }: { navlinks: typeNavLikns[] }) => {
+const PageNavbar = ({ navlinks }: { navlinks: typeNavLikns[] }) => {
    const pathname = usePathname();
 
    return (
@@ -42,4 +42,4 @@ const SubNavbar = ({ navlinks }: { navlinks: typeNavLikns[] }) => {
    );
 };
 
-export default SubNavbar;
+export default PageNavbar;

@@ -9,7 +9,7 @@ import { type DateRangePickerValue } from '@tremor/react';
 import { CobrosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 
 //* Components */
-import CobroBar from './cobroBar';
+import CobroBar from './pageBar';
 import { Cobros } from '@app/components/cobros';
 
 export type TypeFiltrosCobros = {
@@ -17,7 +17,7 @@ export type TypeFiltrosCobros = {
    date: DateRangePickerValue;
 };
 
-function ListaCobros() {
+function CobroList() {
    const [page, setPage] = useState<number>(0);
    const { handleSubmit } = useFormContext<TypeFiltrosCobros>();
 
@@ -53,7 +53,9 @@ function ListaCobros() {
 
    return (
       <>
-         <CobroBar onSubmit={onSubmit} />
+         <CobroBar>
+            
+         </CobroBar>
          <Cobros
             cobros={(data as any).cobros}
             cobrosCount={data.cobrosCount}
@@ -64,4 +66,4 @@ function ListaCobros() {
    );
 }
 
-export default ListaCobros;
+export default CobroList;

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ModalCSP from '@app/components/general/modal';
-import Filtros from '../../app/paymonitor/cobros/filtros';
+import Filtros from '../../app/paymonitor/cobros/filtrosDrawer';
 import { FormProvider, useForm } from 'react-hook-form';
 import { Bold, Button, Card, DateRangePickerValue, Flex, Metric, Text, Title } from '@tremor/react';
 import { useQuery, gql } from '@apollo/client';

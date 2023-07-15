@@ -1,12 +1,13 @@
 export const dynamic = 'force-dynamic';
 
-import ListaCobros from './listaCobros';
+import PageProviders from './pageProviders';
+import ListaCobros from './CobroList'
 
-const Page = async () => {
+function Page (){
    return (
-      <>
+      <PageProviders>
          <ListaCobros />
-      </>
+      </PageProviders>
    );
 };
 
