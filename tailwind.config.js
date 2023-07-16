@@ -3,6 +3,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,6 +15,9 @@ module.exports = {
     current: "currentColor",
     extend: {
       colors: {
+        gerenal: {
+          principal: "#121212"
+        },
         // light mode
         tremor: {
           brand: {
@@ -96,7 +100,7 @@ module.exports = {
         "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
       },
-       fontFamily: {
+      fontFamily: {
         sans: [...defaultTheme.fontFamily.sans],
       },
     },

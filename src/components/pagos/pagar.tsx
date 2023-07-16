@@ -53,7 +53,6 @@ export default function Pagar({callback}:{callback:()=>void}) {
     const { control } = methods;
 
     const [queryRef, { refetch }] = useBackgroundQuery(SearchSelectPerfilDocument, {
-        canonizeResults: true,
         variables: {
             nombre: '',
         },
