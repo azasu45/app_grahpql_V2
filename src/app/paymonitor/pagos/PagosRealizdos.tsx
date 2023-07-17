@@ -2,7 +2,7 @@
 
 export const dynamic = 'force-dynamic';
 
-import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
+import { useBackgroundQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { useFormContext } from 'react-hook-form';
 import { usePagination } from '@app/hooks/usePagination';
 import { MisPagosRealizadosDocument } from '@app/graphql/codegenGenerate/documents.generated';
@@ -24,7 +24,7 @@ export default function PagosRealizados() {
 
   const { handleSubmit } = useFormContext();
 
-  const { data, fetchMore, refetch } = useSuspenseQuery(MisPagosRealizadosDocument, {
+  const [referemce] = useBackgroundQuery(MisPagosRealizadosDocument, {
     fetchPolicy: 'cache-first',
     variables: {
       skip: (page - 1) * 10,
@@ -33,7 +33,10 @@ export default function PagosRealizados() {
   });
 
   const onSubmit = handleSubmit(async (data) => {
+    console.log(data);
+
     await refetch({
+      skip: (page - 1) * 10,
       filtros: {
         referencia: data.descripcion,
         fechaDesde: data?.date?.from?.toString() ?? undefined,
