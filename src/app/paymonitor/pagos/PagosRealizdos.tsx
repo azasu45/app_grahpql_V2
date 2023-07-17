@@ -3,13 +3,17 @@
 export const dynamic = 'force-dynamic';
 
 import { useBackgroundQuery } from '@apollo/experimental-nextjs-app-support/ssr';
+
+import { Pagos } from '@app/components/pagos';
+
 import { useFormContext } from 'react-hook-form';
 import { usePagination } from '@app/hooks/usePagination';
 import { MisPagosRealizadosDocument } from '@app/graphql/codegenGenerate/documents.generated';
-import { Pagos } from '@app/components/pagos';
+
 import PageBar from './pageBar';
-import FiltrosDrawer from './filtrosDrawer';
-import FiltrosForm from './filtrosForm';
+
+// import FiltrosDrawer from './filtrosDrawer';
+// import FiltrosForm from './filtrosForm';
 
 export default function PagosRealizados() {
   const { page, handlePageChange } = usePagination({
@@ -22,9 +26,7 @@ export default function PagosRealizados() {
     },
   });
 
-  const { handleSubmit } = useFormContext();
-
-  const [referemce] = useBackgroundQuery(MisPagosRealizadosDocument, {
+  const [queryRef, result] = useBackgroundQuery(MisPagosRealizadosDocument, {
     fetchPolicy: 'cache-first',
     variables: {
       skip: (page - 1) * 10,
@@ -32,34 +34,29 @@ export default function PagosRealizados() {
     notifyOnNetworkStatusChange: true,
   });
 
-  const onSubmit = handleSubmit(async (data) => {
-    console.log(data);
+  const { fetchMore } = result;
 
-    await refetch({
-      skip: (page - 1) * 10,
-      filtros: {
-        referencia: data.descripcion,
-        fechaDesde: data?.date?.from?.toString() ?? undefined,
-        fechaHasta: data?.date?.to?.toString() ?? undefined,
-      },
-    });
-  });
+  // const onSubmit = handleSubmit(async (data) => {
+  //   await refetch({
+  //     skip: (page - 1) * 10,
+  //     filtros: {
+  //       referencia: data.descripcion,
+  //       fechaDesde: data?.date?.from?.toString() ?? undefined,
+  //       fechaHasta: data?.date?.to?.toString() ?? undefined,
+  //     },
+  //   });
+  // });
 
   return (
     <>
       <PageBar>
-        <FiltrosDrawer>
+        {/* <FiltrosDrawer>
           <form onSubmit={onSubmit}>
             <FiltrosForm />
           </form>
-        </FiltrosDrawer>
+        </FiltrosDrawer> */}
       </PageBar>
-      <Pagos
-        pagos={data.misPagosRealizados}
-        page={page}
-        pagosCount={data.misPagosRealizadosCount}
-        handleChangePage={handlePageChange}
-      />
+      <Pagos queryRef={queryRef} page={page} handleChangePage={handlePageChange} />
     </>
   );
 }

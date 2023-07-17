@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const csrfToken = String(cookieStore.get('next-auth.csrf-token')?.value ?? '');
 
   return (
-    <html lang='es' className='antialiased scroll-auto dark'>
+    <html lang='es' className='antialiased scroll-auto'>
       <body className='h-full bg-gray-100 dark:bg-gerenal-principal'>
         <Providers>
           <ApolloWrapper delay={delay} token={authToken} csrf={csrfToken}>
