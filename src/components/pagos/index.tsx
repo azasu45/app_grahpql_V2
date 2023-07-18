@@ -2,7 +2,7 @@ import { Card, Grid } from '@tremor/react';
 
 import Pagination from '../general/pagination';
 
-import { PagoCard } from './pagoCard';
+import { PagoCard } from './pagoCardUser';
 
 import { useReadQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { QueryReference } from '@apollo/client/react/cache/QueryReference';

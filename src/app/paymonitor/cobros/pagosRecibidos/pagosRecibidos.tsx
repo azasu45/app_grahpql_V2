@@ -2,10 +2,8 @@
 
 export const dynamic = 'force-dynamic';
 
-import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr';
-
+import { useSuspenseQuery, useBackgroundQuery } from '@apollo/experimental-nextjs-app-support/ssr';
 import { MisPagosRecibidosDocument } from '@app/graphql/codegenGenerate/documents.generated';
-import { Pagos } from '@app/components/pagos';
 import { usePagination } from '@app/hooks/usePagination';
 
 import PageBar from './pageBar';
@@ -21,7 +19,7 @@ export default function PagosRecibidos() {
     },
   });
 
-  const { data, fetchMore } = useSuspenseQuery(MisPagosRecibidosDocument, {
+  const [queryRef, methods] = useBackgroundQuery(MisPagosRecibidosDocument, {
     fetchPolicy: 'cache-first',
     variables: {
       skip: page * 10,
@@ -29,10 +27,12 @@ export default function PagosRecibidos() {
     notifyOnNetworkStatusChange: true,
   });
 
+  const { fetchMore, refetch } = methods;
+
   return (
     <>
       <PageBar />
-      <Pagos page={page} handleChangePage={handlePageChange} />
+      {/*<Pagos queryRef={queryRef} page={page} handleChangePage={handlePageChange} />*/}
     </>
   );
 }

@@ -16,6 +16,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa eligendi voluptatibus.
       </Text>
       <PageNavbar navlinks={navigation} />
+
       {children}
     </>
   );

@@ -11,6 +11,7 @@ import { usePagination } from '@app/hooks/usePagination';
 import { MisPagosRealizadosDocument } from '@app/graphql/codegenGenerate/documents.generated';
 
 import PageBar from './pageBar';
+import { Suspense } from 'react';
 
 // import FiltrosDrawer from './filtrosDrawer';
 // import FiltrosForm from './filtrosForm';
@@ -56,6 +57,7 @@ export default function PagosRealizados() {
           </form>
         </FiltrosDrawer> */}
       </PageBar>
+
       <Pagos queryRef={queryRef} page={page} handleChangePage={handlePageChange} />
     </>
   );

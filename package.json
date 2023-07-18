@@ -16,7 +16,7 @@
       "codegen": "graphql-codegen -r dotenv/config --config codegen.ts"
    },
    "dependencies": {
-      "@apollo/client": "3.8.0-beta.7",
+      "@apollo/client": "3.8.0-rc.1",
       "@apollo/experimental-nextjs-app-support": "^0.3.4",
       "@graphql-codegen/schema-ast": "^4.0.0",
       "@headlessui/react": "^1.7.15",

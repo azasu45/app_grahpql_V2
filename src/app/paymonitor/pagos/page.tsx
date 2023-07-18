@@ -1,11 +1,13 @@
-import { usePagination } from '@app/hooks/usePagination';
+import { Suspense } from 'react';
 import PagosRealizados from './PagosRealizdos';
 import PageProviders from './pageProviders';
 
 function Page() {
   return (
     <PageProviders>
-      <PagosRealizados />
+      <Suspense>
+        <PagosRealizados />
+      </Suspense>
     </PageProviders>
   );
 }
