@@ -48,7 +48,7 @@ export function PagoCard({ id }: { id: string }) {
       className={`relative flex flex-col justify-between rounded-tl-3xl lg:w-full h-[6rem]`}
       decoration='right'
       decorationColor={getState(data.estado)}>
-      <div className='z-50 absolute cursor-pointer left-0 top-0 h-[4rem] w-[4rem] -translate-x-2 -translate-y-2 rounded-full border-[5px] border-gray-50 dark:border-gerenal-principal'>
+      <div className='z-10 absolute cursor-pointer left-0 top-0 h-[4rem] w-[4rem] -translate-x-2 -translate-y-2 rounded-full border-[5px] border-gray-50 dark:border-gerenal-principal'>
         <div
           className={classNames(
             !complete ? 'animate-pulse' : '',
@@ -76,7 +76,7 @@ export function PagoCard({ id }: { id: string }) {
         </div>
       </div>
       <Flex
-        className='absolute inset-0 gap-1 px-2 z-40'
+        className='absolute inset-0 gap-1 px-2 z-0'
         flexDirection='col'
         justifyContent='between'
         alignItems='start'>
