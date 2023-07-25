@@ -193,7 +193,7 @@ builder.queryFields((t) => ({
               },
             },
           ],
-        }
+        },
       });
     },
   }),
