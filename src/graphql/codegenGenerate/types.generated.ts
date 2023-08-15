@@ -3,20 +3,24 @@ export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
-export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = { [_ in K]?: never };
-export type Incremental<T> = T | { [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never };
+export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
+  [_ in K]?: never;
+};
+export type Incremental<T> =
+  | T
+  | { [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
-  ID: { input: string; output: string; }
-  String: { input: string; output: string; }
-  Boolean: { input: boolean; output: boolean; }
-  Int: { input: number; output: number; }
-  Float: { input: number; output: number; }
+  ID: { input: string; output: string };
+  String: { input: string; output: string };
+  Boolean: { input: boolean; output: boolean };
+  Int: { input: number; output: number };
+  Float: { input: number; output: number };
   /** A date string, such as 2007-12-03, compliant with the `full-date` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar. */
-  DateTime: { input: any; output: any; }
+  DateTime: { input: any; output: any };
   /** Floats that will have a value greater than 0. */
-  Decimal: { input: any; output: any; }
-  File: { input: any; output: any; }
+  Decimal: { input: any; output: any };
+  File: { input: any; output: any };
 };
 
 export type Cobro = Node & {
@@ -55,21 +59,17 @@ export type Mutation = {
   uploadFile?: Maybe<Scalars['Boolean']['output']>;
 };
 
-
 export type MutationAgregarCobroArgs = {
   input: CrearCobroPorUsuario;
 };
-
 
 export type MutationCrearOActualizarPerfilArgs = {
   input: CrearOActualizarPerfil;
 };
 
-
 export type MutationCrearPagoArgs = {
   input: CreatePagoInput;
 };
-
 
 export type MutationUploadFileArgs = {
   file: Scalars['File']['input'];
@@ -123,11 +123,9 @@ export type Query = {
   perfiles: Array<Perfil>;
 };
 
-
 export type QueryBuscarPerfilesArgs = {
   nombre: Scalars['String']['input'];
 };
-
 
 export type QueryCobrosArgs = {
   filtros?: InputMaybe<InputFiltrosCobros>;
@@ -135,13 +133,11 @@ export type QueryCobrosArgs = {
   take?: InputMaybe<Scalars['Int']['input']>;
 };
 
-
 export type QueryCobrosAdminArgs = {
   filtros?: InputMaybe<InputFiltrosCobros>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
 };
-
 
 export type QueryCountArgs = {
   filtros?: InputMaybe<InputFiltrosCobros>;
@@ -149,12 +145,10 @@ export type QueryCountArgs = {
   take?: InputMaybe<Scalars['Int']['input']>;
 };
 
-
 export type QueryGruposArgs = {
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
 };
-
 
 export type QueryMisPagosRealizadosArgs = {
   filtros?: InputMaybe<InputFiltrosPagos>;
@@ -162,13 +156,11 @@ export type QueryMisPagosRealizadosArgs = {
   take?: InputMaybe<Scalars['Int']['input']>;
 };
 
-
 export type QueryMisPagosRealizadosCountArgs = {
   filtros?: InputMaybe<InputFiltrosPagos>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   take?: InputMaybe<Scalars['Int']['input']>;
 };
-
 
 export type QueryMisPagosRecibidosArgs = {
   orderByFecha?: InputMaybe<Scalars['Boolean']['input']>;
@@ -176,11 +168,9 @@ export type QueryMisPagosRecibidosArgs = {
   take?: InputMaybe<Scalars['Int']['input']>;
 };
 
-
 export type QueryNodeArgs = {
   id: Scalars['ID']['input'];
 };
-
 
 export type QueryNodesArgs = {
   ids: Array<Scalars['ID']['input']>;
@@ -208,5 +198,5 @@ export type CreatePagoInput = {
 
 export enum OrderBy {
   Asc = 'asc',
-  Desc = 'desc'
+  Desc = 'desc',
 }

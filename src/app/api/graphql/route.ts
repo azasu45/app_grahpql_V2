@@ -6,17 +6,17 @@ import { Session, getServerSession } from 'next-auth';
 import { authOptions } from '@app/app/api/auth/[...nextauth]/route';
 
 const { handleRequest } = createYoga<{ session: Session }>({
-   schema,
-   async context() {
-      return { session: await getServerSession(authOptions) };
-   },
-   // While using Next.js file convention for routing, we need to configure Yoga to use the correct endpoint
-   graphqlEndpoint: '/api/graphql',
-   // Yoga needs to know how to create a valid Next response
-   fetchAPI: {
-      Response: NextResponse,
-   },
-   healthCheckEndpoint: '/live',
+  schema,
+  async context() {
+    return { session: await getServerSession(authOptions) };
+  },
+  // While using Next.js file convention for routing, we need to configure Yoga to use the correct endpoint
+  graphqlEndpoint: '/api/graphql',
+  // Yoga needs to know how to create a valid Next response
+  fetchAPI: {
+    Response: NextResponse,
+  },
+  healthCheckEndpoint: '/live',
 });
 
 export { handleRequest as GET, handleRequest as POST };

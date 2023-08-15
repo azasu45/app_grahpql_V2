@@ -1,65 +1,65 @@
 [
-   {
-      "id": "clihwg4u4007qvuvkrgbz523k",
-      "descripcion": "Inscripción",
-      "fecha": "1/2/2023 00:00:00",
-      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-      "monto": 20.0
-   },
-   {
-      "id": "clihwg4vk007svuvkt9uk00um",
-      "descripcion": "Mes febrero",
-      "fecha": "1/2/2023 00:00:00",
-      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-      "monto": 30.0
-   },
-   {
-      "id": "clihwg4wh007uvuvkadz8ajrh",
-      "descripcion": "Mes marzo",
-      "fecha": "1/3/2023 00:00:00",
-      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-      "monto": 30.0
-   },
-   {
-      "id": "clihwg4xk007wvuvkszflqmxp",
-      "descripcion": "Mes abril",
-      "fecha": "1/5/2023 00:00:00",
-      "cuentaId": "clihwg2b9002svuvks1r4c2tl",
-      "monto": 30.0
-   },
-   {
-      "id": "clihwg4yw007yvuvk3h8veany",
-      "descripcion": "Pago rifa",
-      "fecha": "1/5/2023 00:00:00",
-      "cuentaId": "clihwg2c4002uvuvk6pg40lqq",
-      "monto": 5.0
-   },
-   {
-      "id": "clihwg5080080vuvkxb0t0r6p",
-      "descripcion": "Inscripción",
-      "fecha": "1/3/2023 00:00:00",
-      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-      "monto": 10.0
-   },
-   {
-      "id": "clihwg51d0082vuvk9poyzce6",
-      "descripcion": "Mes de marzo",
-      "fecha": "1/3/2023 00:00:00",
-      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-      "monto": 15.0
-   },
-   {
-      "id": "clihwg52o0084vuvkn01tnoww",
-      "descripcion": "Mes de abril",
-      "fecha": "1/4/2023 00:00:00",
-      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-      "monto": 15.0
-   },
-   {
-      "id": "clihwg53s0086vuvkmhu2j29n",
-      "descripcion": "Mes de mayo",
-      "fecha": "1/5/2023 00:00:00",
-      "cuentaId": "clihwg2cq002wvuvknbjm5eus",
-      "monto": 15.0
-   }
+  {
+    "id": "clihwg4u4007qvuvkrgbz523k",
+    "descripcion": "Inscripción",
+    "fecha": "1/2/2023 00:00:00",
+    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+    "monto": 20.0
+  },
+  {
+    "id": "clihwg4vk007svuvkt9uk00um",
+    "descripcion": "Mes febrero",
+    "fecha": "1/2/2023 00:00:00",
+    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+    "monto": 30.0
+  },
+  {
+    "id": "clihwg4wh007uvuvkadz8ajrh",
+    "descripcion": "Mes marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+    "monto": 30.0
+  },
+  {
+    "id": "clihwg4xk007wvuvkszflqmxp",
+    "descripcion": "Mes abril",
+    "fecha": "1/5/2023 00:00:00",
+    "cuentaId": "clihwg2b9002svuvks1r4c2tl",
+    "monto": 30.0
+  },
+  {
+    "id": "clihwg4yw007yvuvk3h8veany",
+    "descripcion": "Pago rifa",
+    "fecha": "1/5/2023 00:00:00",
+    "cuentaId": "clihwg2c4002uvuvk6pg40lqq",
+    "monto": 5.0
+  },
+  {
+    "id": "clihwg5080080vuvkxb0t0r6p",
+    "descripcion": "Inscripción",
+    "fecha": "1/3/2023 00:00:00",
+    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+    "monto": 10.0
+  },
+  {
+    "id": "clihwg51d0082vuvk9poyzce6",
+    "descripcion": "Mes de marzo",
+    "fecha": "1/3/2023 00:00:00",
+    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+    "monto": 15.0
+  },
+  {
+    "id": "clihwg52o0084vuvkn01tnoww",
+    "descripcion": "Mes de abril",
+    "fecha": "1/4/2023 00:00:00",
+    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+    "monto": 15.0
+  },
+  {
+    "id": "clihwg53s0086vuvkmhu2j29n",
+    "descripcion": "Mes de mayo",
+    "fecha": "1/5/2023 00:00:00",
+    "cuentaId": "clihwg2cq002wvuvknbjm5eus",
+    "monto": 15.0
+  }
 ]

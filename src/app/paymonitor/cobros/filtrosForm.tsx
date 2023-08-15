@@ -30,6 +30,7 @@ function FiltrosForm() {
             onBlur={field.onBlur}
             selectPlaceholder='Seleccionar'
             enableSelect={false}
+            enableYearNavigation={true}
           />
         )}
       />

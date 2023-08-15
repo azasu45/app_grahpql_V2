@@ -6,6 +6,8 @@ import { PrismaAdapter } from '@next-auth/prisma-adapter';
 
 import { env } from '@app/env.mjs';
 
+const useSecureCookies = !!process.env.VERCEL_URL;
+
 declare module 'next-auth' {
   interface Session extends DefaultSession {
     user: {
@@ -37,12 +39,6 @@ export const authOptions: NextAuthOptions = {
         session.user.complete = user.complete;
       }
       return session;
-    },
-    redirect: ({ url, baseUrl }) => {
-      console.log(url, 'url');
-      console.log(baseUrl, 'base Url');
-
-      return baseUrl;
     },
   },
   providers: [

@@ -13,65 +13,65 @@ import { Controller, useFormContext } from 'react-hook-form';
 **/
 
 function Filtros({ loading }: React.PropsWithChildren<{ loading?: NetworkStatus }>) {
-   const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
 
-   const handleOpenFilters = (force?: boolean) => {
-      setOpen(force ?? !open);
-   };
+  const handleOpenFilters = (force?: boolean) => {
+    setOpen(force ?? !open);
+  };
 
-   const { register, control } = useFormContext();
+  const { register, control } = useFormContext();
 
-   useEffect(() => {
-      if (loading === NetworkStatus.ready) setOpen(false);
-   }, [loading]);
+  useEffect(() => {
+    if (loading === NetworkStatus.ready) setOpen(false);
+  }, [loading]);
 
-   return (
-      <>
-         <Icon
-            className='cursor-pointer ml-auto'
-            icon={FunnelIcon}
-            onClick={() => handleOpenFilters(true)}
-            size='md'
-         />
-         <Drawer open={open} handleOpen={handleOpenFilters} title='Filtrar Pagos'>
-            <Flex className='gap-1 mt-4 h-full' flexDirection='col'>
-               <TextInput
-                  //disabled={loading === NetworkStatus.refetch}
-                  {...register('descripcion')}
-                  className='w-full'
-                  placeholder='Buscar por nombre'
-                  icon={MagnifyingGlassIcon}
-               />
-               <Controller
-                  name='date'
-                  control={control}
-                  render={({ field }) => (
-                     <DateRangePicker
-                        //disabled={loading === NetworkStatus.refetch}
-                        ref={field.ref}
-                        className='mx-auto w-full'
-                        defaultValue={field.value}
-                        value={field.value}
-                        onValueChange={field.onChange}
-                        onBlur={field.onBlur}
-                        selectPlaceholder='Seleccionar'
-                        enableSelect={false}
-                     />
-                  )}
-               />
+  return (
+    <>
+      <Icon
+        className='cursor-pointer ml-auto'
+        icon={FunnelIcon}
+        onClick={() => handleOpenFilters(true)}
+        size='md'
+      />
+      <Drawer open={open} handleOpen={handleOpenFilters} title='Filtrar Pagos'>
+        <Flex className='gap-1 mt-4 h-full' flexDirection='col'>
+          <TextInput
+            //disabled={loading === NetworkStatus.refetch}
+            {...register('descripcion')}
+            className='w-full'
+            placeholder='Buscar por nombre'
+            icon={MagnifyingGlassIcon}
+          />
+          <Controller
+            name='date'
+            control={control}
+            render={({ field }) => (
+              <DateRangePicker
+                //disabled={loading === NetworkStatus.refetch}
+                ref={field.ref}
+                className='mx-auto w-full'
+                defaultValue={field.value}
+                value={field.value}
+                onValueChange={field.onChange}
+                onBlur={field.onBlur}
+                selectPlaceholder='Seleccionar'
+                enableSelect={false}
+              />
+            )}
+          />
 
-               <div className='flex mt-auto space-x-1 mb-6 mr-auto'>
-                  <Button type='submit' size='xs'>
-                     Buscar
-                  </Button>
-                  <Button color='red' size='xs' onClick={() => handleOpenFilters(false)}>
-                     Cancelar
-                  </Button>
-               </div>
-            </Flex>
-         </Drawer>
-      </>
-   );
+          <div className='flex mt-auto space-x-1 mb-6 mr-auto'>
+            <Button type='submit' size='xs'>
+              Buscar
+            </Button>
+            <Button color='red' size='xs' onClick={() => handleOpenFilters(false)}>
+              Cancelar
+            </Button>
+          </div>
+        </Flex>
+      </Drawer>
+    </>
+  );
 }
 
 export default Filtros;

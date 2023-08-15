@@ -10,6 +10,7 @@ import Image from 'next/image';
 import { User } from 'next-auth/core/types';
 import { Fragment } from 'react';
 import Link from 'next/link';
+import DarkModeButton from '@app/components/general/darkModeButton';
 
 const navigation = [
   { name: 'Mis Pagos', href: '/paymonitor/' },
@@ -61,6 +62,7 @@ const Navbar = ({ user }: { user: User | undefined }) => {
                   ))}
                 </div>
               </div>
+              <DarkModeButton />
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
                 {/* Profile dropdown */}
                 {user ? (

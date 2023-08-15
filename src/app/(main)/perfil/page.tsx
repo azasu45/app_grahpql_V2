@@ -11,32 +11,32 @@ import { getClient } from '@app/libs/apollo-client';
 import { PerfilDocument } from '@app/graphql/codegenGenerate/documents.generated';
 
 async function Page() {
-   const session = await getServerSession(authOptions);
+  const session = await getServerSession(authOptions);
 
-   if (!session) redirect('/api/auth/signin');
+  if (!session) redirect('/api/auth/signin');
 
-   const { data } = await getClient().query({
-      query: PerfilDocument,
-   });
+  const { data } = await getClient().query({
+    query: PerfilDocument,
+  });
 
-   return (
-      <Grid className='px-4 md:px-6 pt-16 gap-2' numItems={1} numItemsLg={3}>
-         <Col numColSpan={3}>
-            <HeaderPerfil complete={session?.user.complete} />
-            <Divider />
-         </Col>
-         <Col numColSpan={3} numColSpanMd={1}>
-            <CardUsuarioPerfil user={session?.user} />
-         </Col>
-         <Col numColSpan={3} numColSpanMd={2}>
-            <PerfilDataForm
-               defaultValues={{
-                  cedula: data.perfil?.cedula ?? '',
-                  nombre: data.perfil?.nombre ?? session.user.name ?? '',
-               }}
-            />
-         </Col>
-      </Grid>
-   );
+  return (
+    <Grid className='px-4 md:px-6 pt-16 gap-2' numItems={1} numItemsLg={3}>
+      <Col numColSpan={3}>
+        <HeaderPerfil complete={session?.user.complete} />
+        <Divider />
+      </Col>
+      <Col numColSpan={3} numColSpanMd={1}>
+        <CardUsuarioPerfil user={session?.user} />
+      </Col>
+      <Col numColSpan={3} numColSpanMd={2}>
+        <PerfilDataForm
+          defaultValues={{
+            cedula: data.perfil?.cedula ?? '',
+            nombre: data.perfil?.nombre ?? session.user.name ?? '',
+          }}
+        />
+      </Col>
+    </Grid>
+  );
 }
 export default Page;

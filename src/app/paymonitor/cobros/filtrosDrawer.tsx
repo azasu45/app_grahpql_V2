@@ -9,19 +9,19 @@ import Drawer from '@app/components/general/drawer';
 **/
 
 function FiltrosDrawer({ children }: React.PropsWithChildren) {
-   const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
 
-   const handleOpenFilters = (force?: boolean) => {
-      setOpen(force ?? !open);
-   };
+  const handleOpenFilters = (force?: boolean) => {
+    setOpen(force ?? !open);
+  };
 
-   return (
-      <>
-         <Drawer open={open} handleOpen={handleOpenFilters}>
-            {children}
-         </Drawer>
-      </>
-   );
+  return (
+    <>
+      <Drawer open={open} handleOpen={handleOpenFilters}>
+        {children}
+      </Drawer>
+    </>
+  );
 }
 
 export default FiltrosDrawer;
